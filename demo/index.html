@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Outdated Browser Plugin v1.0</title>
+		<link rel="stylesheet" type="text/css" href="../src/outdatedBrowser.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			body {background-color: #fafafa; font-family: 'Open Sans', sans-serif;}
+		</style>
+	</head>
+	<body>
+
+        <!-- outdated browser -->
+        <div id="outdated">
+            <div class="wrapperCenter">
+                <h6>your browser is out-of-date!</h6>
+                <p>update your browser to view the website correctly.</p>
+                <a class="update" href="http://outdatedbrowser.com/" target="_blank">update my browser now</a>
+            </div>
+            <a class="btnClose"></a>
+        </div>
+
+        <!-- javascript includes -->
+		<script src="../src/jquery.min.js"></script>
+		<script src="../src/jquery.easing.1.3.min.js"></script>
+		<script src="../src/jquery.outdatedBrowser.js"></script>
+
+		<!-- plugin call -->
+		<script>
+			$(function() {
+				$("#outdated").outdatedBrowser({
+					bgColor: '#F25648',
+					color: '#FFF',
+					easeType: 'easeOutExpo',
+					delayTime: 1000,
+					animationTime: 1200
+				});
+			});
+		</script>
+	</body>
+</html>
