@@ -1,4 +1,4 @@
-# jQuery Outdated Browser
+# jQuery Outdated Browser v1.0
 
 ### An easy solution to aware your users running an old browser version
 
@@ -40,7 +40,7 @@ You let him know he's running some old browser, he will call the shot if he upgr
 	        <div class="wrapperCenter">
 	            <h6>your browser is out-of-date!</h6>
 	            <p>update your browser to view the website correctly.</p>
-	            <a class="update" href="http://outdatedbrowser.com/" target="_blank">update my browser now</a>
+	            <a class="update" href="http://outdatedbrowser.com/" rel="external">update my browser now</a>
 	        </div>
 	        <a class="btnClose"></a>
 	    </div>
