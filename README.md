@@ -59,7 +59,7 @@ You let him know he's running some old browser, he will call the shot if he upgr
 
 	And you're done! Load your loved IE8 for a preview.
 
-## Structure
+<!--## Structure
 
 The basic structure of the project is given in the following way:
 
@@ -73,7 +73,7 @@ The basic structure of the project is given in the following way:
 	│   ├── jquery.min.js
 	│   ├── jquery.outdatedBrowser.js
 	│   ├── jquery.outdatedBrowser.min.js
-	│   └── outdatedBrowser.css
+	│   └── outdatedBrowser.css-->
 
 
 ## Team
