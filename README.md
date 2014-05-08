@@ -2,9 +2,9 @@
 
 ### An easy solution to aware your users running an old browser version
 
-So, you're tired of people visiting your modern website with an old IE version and don't do anything about it. Maybe they aren't "power" users, maybe it's your aunt running IE8 or 9 and trying to see the awesomeness of CSS3 animations and transforms. Let the user know they are running an outdated browser, and advise them for a better one. 
+So, you're tired of people visiting your modern website with an old IE version and don't do anything about it. Maybe they aren't "power" users, maybe it's your aunt running IE8 or 9 and trying to see awesome CSS3 animations and transforms. Let the user know htat they are running an outdated browser, and advise them for a better one. 
 
-With this solution you will check the user browser version and if he's running an old IE, it will show him a nice cool looking notice advising him to update the browser. That's it! As simple as it can get.
+With this solution you will check the user browser and if he's running a browser that cant handle CSS3 it will show him a nice cool looking notice advising him to update the browser. That's it! As simple as it can get.
 
 You let him know he's running some old browser, he will call the shot if he upgrades it or not. Don't force the user!
 
@@ -33,8 +33,6 @@ You let him know he's running some old browser, he will call the shot if he upgr
             </div>
             <a id="btnClose"></a>
         </div>
-	
-	The "outdated" id, aswell as all classes are required.
 
 6. Call the plugin:
 
