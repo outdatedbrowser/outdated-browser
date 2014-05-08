@@ -10,22 +10,11 @@ You let him know he's running some old browser, he will call the shot if he upgr
 
 ## How to use it
 
-1. Include jQuery (has to be a version prior to 1.9 due to support for older IE versions):
+
+1. Include plugin's script:
 
 	```html
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	```
-
-2. Include jQuery Easing for the div animation:
-
-	```html
-	<script src="jquery.easing.1.3.min.js"></script>
-	```
-
-3. Include plugin's code:
-
-	```html
-	<script src="jquery.outdatedBrowser.js"></script>
+	<script src="outdatedBrowser.js"></script>
 	```
 
 4. Include the CSS located in the html head:
@@ -37,25 +26,37 @@ You let him know he's running some old browser, he will call the shot if he upgr
 5. Include the required HTML:
  
 	    <div id="outdated">
-	        <div class="wrapperCenter">
-	            <h6>your browser is out-of-date!</h6>
-	            <p>update your browser to view the website correctly.</p>
-	            <a class="update" href="http://outdatedbrowser.com/" rel="external">update my browser now</a>
-	        </div>
-	        <a class="btnClose"></a>
-	    </div>
+            <div class="wrapperCenter">
+                <h6>your browser is out-of-date!</h6>
+                <p>update your browser to view the website correctly.</p>
+                <a id="update" href="http://outdatedbrowser.com/" rel="external">update my browser now</a>
+            </div>
+            <a id="btnClose"></a>
+        </div>
 	
 	The "outdated" id, aswell as all classes are required.
 
 6. Call the plugin:
 
-		$("#outdated").outdatedBrowser({
-			bgColor: '#F25648',
-			color: '#FFF',
-			easeType: 'easeOutExpo',
-			delayTime: 1000,
-			animationTime: 1200
-		});
+			//event listener form DOM ready
+			function addLoadEvent(func) {
+			    var oldonload = window.onload;
+			    if (typeof window.onload != 'function') {
+			        window.onload = func;
+			    } else {
+			        window.onload = function() {
+			            oldonload();
+			            func();
+			        }
+			    }
+			}
+			//call plugin function after DOM ready
+			addLoadEvent(
+				outdatedBrowser({
+					bgColor: '#3f3f3f',
+					color: '#e3e3e3'
+				})
+			);
 
 	And you're done! Load your loved IE8 for a preview.
 

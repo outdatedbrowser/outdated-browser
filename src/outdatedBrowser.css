@@ -5,22 +5,22 @@ author: 	Burocratik
 website: 	http://www.burocratik.com
 -----------------------------------------------------------------------*/
 #outdated {
-position: fixed; top: -333px; left: 0; width: 100%; height: 215px; background: #f25648; z-index: 1500; color: #fff; text-align: center; display: none;
+position: fixed; top: 0; left: 0; width: 100%; height: 215px; background: #f25648; z-index: 1500; color: #fff; text-align: center; display: none;
 }
 #outdated a {
 color: #fff; cursor: pointer;
 }
-#outdated .btnClose {
-position: absolute; top: 25px; right: 0; width: 15px; height: 15px; padding-left: 26px; background: transparent url(../imgs/outdatedBrowser-close.gif) no-repeat left center;
+#outdated #btnClose {
+position: absolute; top: 25px; z-index: 999; right: 0; right: 10px\9; width: 15px; height: 15px; padding-left: 26px; background: transparent url(../imgs/outdatedBrowser-close.gif) no-repeat left center;
 }
 #outdated .wrapperCenter {
-width: 680px; margin: 0 auto; text-transform: uppercase;
+width: 680px; margin: 0 auto; text-transform: uppercase; height: 200px;
 }
 #outdated .wrapperCenter p {
 margin-top: 0; font-size: 0.8em; margin-bottom: 50px;
 }
 #outdated .wrapperCenter a {
-padding: 13px 20px 11px 20px; text-decoration: none; border: 2px solid #FFF; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s;
+padding: 13px 20px 11px 20px; display: inline-block; text-decoration: none; border: 2px solid #FFF; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s;
 }
 #outdated .wrapperCenter a:hover {
 color: #f25648; background-color: #FFF;

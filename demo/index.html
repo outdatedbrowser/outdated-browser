@@ -7,6 +7,7 @@
 		<style type="text/css">
 			body {background-color: #fafafa; font-family: 'Open Sans', sans-serif;}
 		</style>
+		<!--<script src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>-->
 	</head>
 	<body>
 
@@ -15,27 +16,35 @@
             <div class="wrapperCenter">
                 <h6>your browser is out-of-date!</h6>
                 <p>update your browser to view the website correctly.</p>
-                <a class="update" href="http://outdatedbrowser.com/" rel="external">update my browser now</a>
+                <a id="update" href="http://outdatedbrowser.com/" rel="external">update my browser now</a>
             </div>
-            <a class="btnClose"></a>
+            <a id="btnClose"></a>
         </div>
 
         <!-- javascript includes -->
-		<script src="../src/jquery.min.js"></script>
-		<script src="../src/jquery.easing.1.3.min.js"></script>
-		<script src="../src/jquery.outdatedBrowser.js"></script>
+		<script src="../src/outdatedBrowser.js"></script>
 
 		<!-- plugin call -->
-		<script>		
-			$(function() {
-				$("#outdated").outdatedBrowser({
-					bgColor: '#F25648',
-					color: '#FFF',
-					easeType: 'easeOutExpo',
-					delayTime: 1000,
-					animationTime: 1200
-				});
-			});
+		<script>
+			//event listener form DOM ready
+			function addLoadEvent(func) {
+			    var oldonload = window.onload;
+			    if (typeof window.onload != 'function') {
+			        window.onload = func;
+			    } else {
+			        window.onload = function() {
+			            oldonload();
+			            func();
+			        }
+			    }
+			}
+			//call function after DOM ready
+			addLoadEvent(
+				outdatedBrowser({
+					bgColor: '#3f3f3f',
+					color: '#e3e3e3'
+				})
+			);
 		</script>
 	</body>
 </html>
