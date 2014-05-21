@@ -14,17 +14,34 @@ var outdatedBrowser = function(options) {
     // Default settings
     this.defaultOpts = {
 		bgColor: '#F25648',
-		color: '#FFF'
+		color: '#FFF',
+		showForLowerThan: 'IE10'
     }
 
 	if (options) {
 		this.defaultOpts.bgColor = options.bgColor,
 		this.defaultOpts.color = options.color;
+
+		//assign css3 property to IE borwser version
+		if(options.showForLowerThan == 'IE8') {
+			options.showForLowerThan = 'borderSpacing';
+		} else if (options.showForLowerThan == 'IE9') {
+			options.showForLowerThan = 'boxShadow';
+		} else if (options.showForLowerThan == 'IE10' || options.showForLowerThan == '' || typeof options.showForLowerThan === "undefined") {
+			options.showForLowerThan = 'transform';
+		} else if (options.showForLowerThan == 'IE11') {
+			options.showForLowerThan = 'borderImage';
+		}
+
+		this.defaultOpts.showForLowerThan = options.showForLowerThan;
+
 		bkgColor = this.defaultOpts.bgColor;
 		txtColor = this.defaultOpts.color;
+		cssProp = this.defaultOpts.showForLowerThan;
 	} else {
 		bkgColor = this.defaultOpts.bgColor;
 		txtColor = this.defaultOpts.color;
+		cssProp = this.defaultOpts.showForLowerThan;
 	}
 
 	//Define opacity and fadeIn/fadeOut functions
@@ -58,14 +75,29 @@ var outdatedBrowser = function(options) {
 		return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
 	}
 
-	//check for css3 property support (transform)
-	if (document.createElement("detect").style.webkitTransform === "" || document.createElement("detect").style.transform === ""){
-	    document.getElementsByTagName("body")[0].className += " cssTransform";
-	}
+	var supports = (function() {
+	   var div = document.createElement('div'),
+	      vendors = 'Khtml Ms O Moz Webkit'.split(' '),
+	      len = vendors.length;
+	 
+	   return function(prop) {
+	      if ( prop in div.style ) return true;
+	 
+	      prop = prop.replace(/^[a-z]/, function(val) {
+	         return val.toUpperCase();
+	      });
+	 
+	      while(len--) {
+	         if ( vendors[len] + prop in div.style ) {
+	            return true;
+	         } 
+	      }
+	      return false;
+	   };
+	})();
 
-	var bodyElement = document.getElementsByTagName("body")[0];
-	if(hasClass(bodyElement, 'cssTransform') === true) {
-
+	//check for css3 property support (transform=default)
+	if ( !supports(''+ cssProp +'') ) {
 	    if (done && outdated.style.opacity !== '1') {
 	        done = false;
 	        for (var i = 1; i <= 100; i++) {
@@ -82,6 +114,7 @@ var outdatedBrowser = function(options) {
 			return false;
 		};
 	}
+
 
 	//check settings attributes
 	outdated.style.backgroundColor = bkgColor;

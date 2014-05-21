@@ -56,7 +56,7 @@ You let him know he's running some old browser, he will call the shot if he upgr
 				})
 			);
 
-	And you're done! Load your loved IE8 for a preview.
+	And you're done!
 
 <!--## Structure
 
