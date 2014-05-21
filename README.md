@@ -52,7 +52,8 @@ You let him know he's running some old browser, he will call the shot if he upgr
 			addLoadEvent(
 				outdatedBrowser({
 					bgColor: '#3f3f3f',
-					color: '#e3e3e3'
+					color: '#e3e3e3',
+					showForLowerThan: 'IE9'
 				})
 			);
 
