@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------
-JAVASCRIPT "www.burocratik.com"
-Version:    1.0 - 2014
+JAVASCRIPT "Outdated Browser"
+Version:    1.0.0 - 2014
 author:     Burocratik
 website:    http://www.burocratik.com
 -----------------------------------------------------------------------*/
@@ -9,39 +9,39 @@ var outdatedBrowser = function(options) {
     //Variable definition
     var outdated = document.getElementById("outdated");
     var btnClose = document.getElementById("btnClose");
-    var btnUpdate = document.getElementById("update");
+    var btnUpdate = document.getElementById("btnUpdate");
 
     // Default settings
     this.defaultOpts = {
         bgColor: '#F25648',
         color: '#FFF',
-        showForLowerThan: 'IE10'
+        lowerThan: 'IE10'
     }
 
     if (options) {
         this.defaultOpts.bgColor = options.bgColor,
         this.defaultOpts.color = options.color;
 
-        //assign css3 property to IE borwser version
-        if(options.showForLowerThan == 'IE8') {
-            options.showForLowerThan = 'borderSpacing';
-        } else if (options.showForLowerThan == 'IE9') {
-            options.showForLowerThan = 'boxShadow';
-        } else if (options.showForLowerThan == 'IE10' || options.showForLowerThan == '' || typeof options.showForLowerThan === "undefined") {
-            options.showForLowerThan = 'transform';
-        } else if (options.showForLowerThan == 'IE11') {
-            options.showForLowerThan = 'borderImage';
+        //assign css3 property to IE browser version
+        if(options.lowerThan == 'IE8') {
+            options.lowerThan = 'borderSpacing';
+        } else if (options.lowerThan == 'IE9') {
+            options.lowerThan = 'boxShadow';
+        } else if (options.lowerThan == 'IE10' || options.lowerThan == '' || typeof options.lowerThan === "undefined") {
+            options.lowerThan = 'transform';
+        } else if (options.lowerThan == 'IE11') {
+            options.lowerThan = 'borderImage';
         }
 
-        this.defaultOpts.showForLowerThan = options.showForLowerThan;
+        this.defaultOpts.lowerThan = options.lowerThan;
 
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
-        cssProp = this.defaultOpts.showForLowerThan;
+        cssProp = this.defaultOpts.lowerThan;
     } else {
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
-        cssProp = this.defaultOpts.showForLowerThan;
+        cssProp = this.defaultOpts.lowerThan;
     }
 
     //Define opacity and fadeIn/fadeOut functions
@@ -118,9 +118,11 @@ var outdatedBrowser = function(options) {
 
     //check settings attributes
     outdated.style.backgroundColor = bkgColor;
+    outdated.style.color = txtColor;
 
     //check settings attributes
     btnUpdate.style.color = txtColor;
+    btnUpdate.style.borderColor = txtColor;
 
     //Override the update button color to match the background color
     btnUpdate.onmouseover = function() {

@@ -11,15 +11,12 @@
     </head>
     <body>
 
-        <!-- outdated browser -->
-        <div id="outdated">
-             <div class="wrapperCenter">
-                 <h6>your browser is out-of-date!</h6>
-                 <p>update your browser to view the website correctly.</p>
-                 <a id="update" href="http://outdatedbrowser.com/" rel="external">update my browser now</a>
-             </div>
-             <p id="btnClose"><a href="#">Close Navigation</a></p>
-         </div>
+    <!-- Outdated Browser -->
+    <div id="outdated">
+         <h6>Your browser is out-of-date!</h6>
+         <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
+         <p id="btnClose"><a href="#">Close</a></p>
+     </div>
 
         <!-- javascript includes -->
         <script src="../src/outdatedBrowser.js"></script>
@@ -41,8 +38,8 @@
             //call function after DOM ready
             addLoadEvent(
                 outdatedBrowser({
-                    bgColor: '#3f3f3f',
-                    color: '#e3e3e3',
+                    bgColor: '#b7b7b7',
+                    color: '#ff0000',
                     lowerThan: 'IE11'
                 })
             );
