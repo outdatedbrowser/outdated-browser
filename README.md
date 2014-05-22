@@ -1,6 +1,6 @@
 # jQuery Outdated Browser v1.0
 
-### An easy solution to aware your users running an old browser version
+### A time saving tool for developers, that detects if an outdated browser is being used and advises the users to update for a new one.
 
 So, you're tired of people visiting your modern website with an old IE version and don't do anything about it. Maybe they aren't "power" users, maybe it's your aunt running IE8 or 9 and trying to see awesome CSS3 animations and transforms. Let the user know htat they are running an outdated browser, and advise them for a better one. 
 
