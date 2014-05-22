@@ -31,7 +31,7 @@ You let him know he's running some old browser, he will call the shot if he upgr
                 <p>update your browser to view the website correctly.</p>
                 <a id="update" href="http://outdatedbrowser.com/" rel="external">update my browser now</a>
             </div>
-            <a id="btnClose"></a>
+            <p id="btnClose"><a href="#">Close Navigation</a></p>
         </div>
 
 6. Call the plugin:
@@ -56,6 +56,17 @@ You let him know he's running some old browser, he will call the shot if he upgr
 					showForLowerThan: 'IE9'
 				})
 			);
+			
+			//or if you're using jQuery
+			$( document ).ready(function() {
+				outdatedBrowser({
+					bgColor: '#3f3f3f',
+					color: '#e3e3e3',
+					showForLowerThan: 'IE9'
+				})
+			});
+
+
 
 	And you're done!
 

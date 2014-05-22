@@ -10,9 +10,10 @@ position: fixed; top: 0; left: 0; width: 100%; height: 215px; background: #f2564
 #outdated a {
 color: #fff; cursor: pointer;
 }
-#outdated #btnClose {
+#btnClose {
 position: absolute; top: 25px; z-index: 999; right: 0; right: 10px\9; width: 15px; height: 15px; padding-left: 26px; background: transparent url(../imgs/outdatedBrowser-close.gif) no-repeat left center;
 }
+#btnClose a { text-indent: -9000px; text-transform: capitalize;  }
 #outdated .wrapperCenter {
 width: 680px; margin: 0 auto; text-transform: uppercase; height: 200px;
 }
