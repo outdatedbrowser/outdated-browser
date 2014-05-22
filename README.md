@@ -14,13 +14,13 @@ You let him know he's running some old browser, he will call the shot if he upgr
 1. Include plugin's script:
 
 	```html
-	<script src="outdatedBrowser.js"></script>
+	<script src="outdatedBrowser.min.js"></script>
 	```
 
 4. Include the CSS located in the html head:
 
 	```html
-	<style type="text/css" src="outdatedBrowser.css"></style>
+	<style type="text/css" src="outdatedBrowser.min.css"></style>
 	```
 
 5. Include the required HTML:
@@ -62,7 +62,7 @@ You let him know he's running some old browser, he will call the shot if he upgr
 				outdatedBrowser({
 					bgColor: '#3f3f3f',
 					color: '#e3e3e3',
-					showForLowerThan: 'IE9'
+					lowerThan: 'IE9'
 				})
 			});
 
