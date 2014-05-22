@@ -105,7 +105,7 @@ The basic structure of the project is given in the following way:
 
 ## Team
 
-Made with love by the guys at Bürocratik.
+Made with love at Bürocratik.
 
 
 ## License
