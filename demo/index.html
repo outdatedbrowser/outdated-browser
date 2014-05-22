@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>jQuery Outdated Browser Plugin v1.0</title>
-		<link rel="stylesheet" type="text/css" href="../src/outdatedBrowser.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<style type="text/css">
-			body {background-color: #fafafa; font-family: 'Open Sans', sans-serif;}
-		</style>
-		<!--<script src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>-->
-	</head>
-	<body>
+    <head>
+        <title>jQuery Outdated Browser Plugin v1.0</title>
+        <link rel="stylesheet" type="text/css" href="../src/outdatedBrowser.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            body {background-color: #fafafa; font-family: 'Open Sans', sans-serif;}
+        </style>
+        <!--<script src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>-->
+    </head>
+    <body>
 
         <!-- outdated browser -->
-		<div id="outdated">
-		     <div class="wrapperCenter">
-		         <h6>your browser is out-of-date!</h6>
-		         <p>update your browser to view the website correctly.</p>
-		         <a id="update" href="http://outdatedbrowser.com/" rel="external">update my browser now</a>
-		     </div>
-		     <p id="btnClose"><a href="#">Close Navigation</a></p>
-		 </div>
+        <div id="outdated">
+             <div class="wrapperCenter">
+                 <h6>your browser is out-of-date!</h6>
+                 <p>update your browser to view the website correctly.</p>
+                 <a id="update" href="http://outdatedbrowser.com/" rel="external">update my browser now</a>
+             </div>
+             <p id="btnClose"><a href="#">Close Navigation</a></p>
+         </div>
 
         <!-- javascript includes -->
-		<script src="../src/outdatedBrowser.js"></script>
+        <script src="../src/outdatedBrowser.js"></script>
 
-		<!-- plugin call -->
-		<script>
-			//event listener form DOM ready
-			function addLoadEvent(func) {
-			    var oldonload = window.onload;
-			    if (typeof window.onload != 'function') {
-			        window.onload = func;
-			    } else {
-			        window.onload = function() {
-			            oldonload();
-			            func();
-			        }
-			    }
-			}
-			//call function after DOM ready
-			addLoadEvent(
-				outdatedBrowser({
-					bgColor: '#3f3f3f',
-					color: '#e3e3e3',
-					lowerThan: 'IE11'
-				})
-			);
-		</script>
-	</body>
+        <!-- plugin call -->
+        <script>
+            //event listener form DOM ready
+            function addLoadEvent(func) {
+                var oldonload = window.onload;
+                if (typeof window.onload != 'function') {
+                    window.onload = func;
+                } else {
+                    window.onload = function() {
+                        oldonload();
+                        func();
+                    }
+                }
+            }
+            //call function after DOM ready
+            addLoadEvent(
+                outdatedBrowser({
+                    bgColor: '#3f3f3f',
+                    color: '#e3e3e3',
+                    lowerThan: 'IE11'
+                })
+            );
+        </script>
+    </body>
 </html>
