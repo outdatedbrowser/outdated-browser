@@ -1,4 +1,4 @@
-# jQuery Outdated Browser v1.0
+# Outdated Browser v1.0
 
 ### A time saving tool for developers, that detects if an outdated browser is being used and advises the users to update for a new one.
 
