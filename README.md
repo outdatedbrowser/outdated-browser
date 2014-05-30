@@ -72,15 +72,14 @@ That's it! As simple as it can get.
 
 5. Targeting browsers:
 
-    You can do it using Internet Explorer browsers as reference to a CSS3 property.
+    You can do it in two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you.
+
     
     Lower Than:
-     * "IE11" -> browsers that dont support "borderImage"
-     * "IE10" -> browsers that dont support "transform"
-     * "IE9"  -> browsers that dont support "boxShadow"
-     * "IE8"  -> browsers that dont support "borderSpacing"
-
-
+    * "IE11","borderImage"
+    * "IE10", "transform"
+    * "IE9", "boxShadow"
+    * "IE8", "borderSpacing"
 
 
 And you're done! 
