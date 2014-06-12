@@ -1,6 +1,6 @@
 # Outdated Browser v1.0
 
-### A time saving tool for developers that detects outdated browsers and advises the users to upgrade for a new version.
+### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
 So, you're tired of people visiting your modern website with an old browser and don't do anything about it. Maybe they aren't "power" users, maybe it's your auntie running a browser from the last century trying to see awesome CSS3 animations and transforms. Let the user know that’s an outdated browser, and advise for a better one.
 
