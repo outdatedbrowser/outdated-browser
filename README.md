@@ -107,6 +107,14 @@ The basic structure of the project is given in the following way:
 Made with love at Bürocratik.
 
 
+## Contributing
+
+Fork the project.
+Read through the outstanding issues or report new ones.
+Write some tests to make sure we don't accidentally break each other's code.
+Send a pull request.
+
+
 ## License
 
 [MIT License](http://zenorocha.mit-license.org/)
