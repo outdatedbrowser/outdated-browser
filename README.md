@@ -2,9 +2,10 @@
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
-So, you're tired of people visiting your modern website with an old browser and don't do anything about it. Maybe they aren't "power" users, maybe it's your auntie running a browser from the last century trying to see awesome CSS3 animations and transforms. Let the user know that’s an outdated browser, and advise for a better one.
+So, you're tired of people visiting your modern website with an outdated browser and not doing anything about it.
+Maybe they aren't "power" users, maybe it's your auntie running a last century browser trying to see awesome CSS3 animations and transforms. Let the user know that’s an outdated browser, and advise them on a better one.
 
-With this solution you will check if the user’s browser can handle it. If not, it will show a nice cool looking notice advising to update the browser, he will call the shot if he upgrades it or not. Don't force the user!
+With this solution you can check if the user’s browser can handle your website. If not, it will show a cool looking notice advising the user to update the browser. It'll be up to him/her to decide if he upgrades or not. Don't force the user!
 
 That's it! As simple as it can get.
 
@@ -72,7 +73,7 @@ That's it! As simple as it can get.
 
 5. Targeting browsers:
 
-    You can do it in two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you.
+    You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you.
 
     
     Lower Than:
