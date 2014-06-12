@@ -110,9 +110,9 @@ Made with love at Bürocratik.
 ## Contributing
 
 Fork the project.
-Read through the outstanding issues or report new ones.
-Write some tests to make sure we don't accidentally break each other's code.
-Send a pull request.
+<br>Read through the outstanding issues or report new ones.
+<br>Write some tests to make sure we don't accidentally break each other's code.
+<br>Send a pull request.
 
 
 ## License
