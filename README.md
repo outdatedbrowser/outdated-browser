@@ -26,12 +26,14 @@ That's it! As simple as it can get.
     ```
 
 3. Paste the required HTML:
-
-        <div id="outdated">
-            <h6>Your browser is out-of-date!</h6>
-             <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
-             <p id="btnClose"><a href="#">Close</a></p>
-         </div>
+    
+    ```html
+    <div id="outdated">
+        <h6>Your browser is out-of-date!</h6>
+         <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
+         <p id="btnClose"><a href="#">Close</a></p>
+     </div>
+    ```
 
 
 
@@ -39,6 +41,7 @@ That's it! As simple as it can get.
 
 4. Call the plugin:
 
+        ```js
          //PLAIN JAVASCRIPT
             //event listener form DOM ready
             function addLoadEvent(func) {
@@ -69,6 +72,7 @@ That's it! As simple as it can get.
                     lowerThan: 'IE10'
                 })
             })
+        ```
 
 
 5. Targeting browsers:
