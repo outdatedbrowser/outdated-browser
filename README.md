@@ -78,7 +78,7 @@ That's it! As simple as it can get.
     You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you.
 
 
-    Lower Than:
+    Lower Than (<):
     * "IE11","borderImage"
     * "IE10", "transform" (Default property)
     * "IE9", "boxShadow"
