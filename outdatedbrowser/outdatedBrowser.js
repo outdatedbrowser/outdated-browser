@@ -1,8 +1,9 @@
-/*--------------------------------------------------------------------
+/*!--------------------------------------------------------------------
 JAVASCRIPT "Outdated Browser"
 Version:    1.0.0 - 2014
 author:     Burocratik
 website:    http://www.burocratik.com
+* @preserve
 -----------------------------------------------------------------------*/
 var outdatedBrowser = function(options) {
 
@@ -14,8 +15,8 @@ var outdatedBrowser = function(options) {
     // Default settings
     this.defaultOpts = {
         bgColor: '#F25648',
-        color: '#FFF',
-        lowerThan: 'IE10'
+        color: '#ffffff',
+        lowerThan: 'transform'
     }
 
     if (options) {

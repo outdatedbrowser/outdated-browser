@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Outdated Browser</title>
+    <meta name="description" content="A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="../outdatedbrowser/outdatedBrowser.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body {background-color: #fafafa; font-family: 'Open Sans', sans-serif;}
+    </style>
+</head>
+
+<body>
+    <!-- ============= YOUR CONTENT ============= -->
+    <h1>Outdated Browser</h1>
+    <p>Remember: If you can't see the message, is a good thing! You are using a modern browser :D</p>
+    <h3>DEFAULT</h3>
+    <p>bgColor: '#f25648', color: '#ff0000', lowerThan: 'transform'  (&lt;IE10)</p>
+
+    <!-- ============= Outdated Browser ============= -->
+    <div id="outdated">
+         <h6>Your browser is out-of-date!</h6>
+         <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
+         <p id="btnClose"><a href="#">Close</a></p>
+     </div>
+
+    <!-- javascript includes -->
+    <script src="../outdatedbrowser/outdatedBrowser.js"></script>
+
+    <!-- plugin call -->
+    <script>
+        //event listener form DOM ready
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    oldonload();
+                    func();
+                }
+            }
+        }
+        //call function after DOM ready
+        addLoadEvent(
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'transform'
+            })
+        );
+    </script>
+</body>
+</html>

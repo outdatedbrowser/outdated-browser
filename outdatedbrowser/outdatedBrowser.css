@@ -5,7 +5,7 @@ author:     Burocratik
 website:    http://www.burocratik.com
 -----------------------------------------------------------------------*/
 #outdated{
-    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 170px;
+    display: block; position: fixed; top: 0; left: 0; width: 100%; height: 170px;
     text-align: center; text-transform: uppercase; z-index:1500;
 }
 * html #outdated{position: absolute;}
@@ -15,9 +15,9 @@ website:    http://www.burocratik.com
     display: block; position: relative; padding: 10px 20px; margin: 30px auto 0; width: 180px;
     color: #fff; text-decoration: none; border: 2px solid #FFF; cursor: pointer;
 }
-#outdated #btnUpdate:hover{color: #f25648; background-color:#FFF;}
+#outdated #btnUpdate:hover{background-color:#FFF;}
 #outdated #btnClose{position: absolute; top: 20px; right: 25px; width: 15px; height: 15px;}
 #outdated #btnClose a{
     display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; text-indent:-5555px;
-    background: transparent url(../imgs/outdatedBrowser-close.gif) no-repeat left center;
+    background: transparent url(outdatedBrowser-close.gif) no-repeat left center;
 }
