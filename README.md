@@ -1,4 +1,4 @@
-# Outdated Browser v1.0
+# Outdated Browser v1.0.0
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
@@ -77,7 +77,7 @@ That's it! As simple as it can get.
 
     You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you.
 
-    
+
     Lower Than:
     * "IE11","borderImage"
     * "IE10", "transform" (Default property)
@@ -85,7 +85,7 @@ That's it! As simple as it can get.
     * "IE8", "borderSpacing"
 
 
-And you're done! 
+And you're done!
 ***
 
 <!--## Structure
@@ -104,6 +104,10 @@ The basic structure of the project is given in the following way:
     │   ├── jquery.outdatedBrowser.min.js
     │   └── outdatedBrowser.css-->
 
+
+## FAQs
+
+Check out our Wiki FAQs page: https://github.com/burocratik/outdated-browser/wiki/FAQs
 
 ## Team
 
