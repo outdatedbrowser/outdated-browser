@@ -9,8 +9,8 @@ var outdatedBrowser = function(options) {
 
     //Variable definition
     var outdated = document.getElementById("outdated");
-    var btnClose = document.getElementById("btnClose");
-    var btnUpdate = document.getElementById("btnUpdate");
+    var btnClose = document.getElementById("btnCloseUpdateBrowser");
+    var btnUpdate = document.getElementById("btnUpdateBrowser");
 
     // Default settings
     this.defaultOpts = {
@@ -124,6 +124,7 @@ var outdatedBrowser = function(options) {
     //check settings attributes
     btnUpdate.style.color = txtColor;
     btnUpdate.style.borderColor = txtColor;
+    btnClose.style.color = txtColor;
 
     //Override the update button color to match the background color
     btnUpdate.onmouseover = function() {
@@ -134,5 +135,4 @@ var outdatedBrowser = function(options) {
         this.style.color = txtColor;
         this.style.backgroundColor = bkgColor;
     };
-
 }//end of function

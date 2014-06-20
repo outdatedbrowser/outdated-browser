@@ -19,11 +19,13 @@
     <h3>DEFAULT</h3>
     <p>bgColor: '#f25648', color: '#ff0000', lowerThan: 'transform'  (&lt;IE10)</p>
 
+
+
     <!-- ============= Outdated Browser ============= -->
     <div id="outdated">
          <h6>Your browser is out-of-date!</h6>
-         <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
-         <p id="btnClose"><a href="#">Close</a></p>
+         <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
      </div>
 
     <!-- javascript includes -->
@@ -44,13 +46,21 @@
             }
         }
         //call function after DOM ready
+        // addLoadEvent(
+        //     outdatedBrowser({
+        //         bgColor: '#f25648',
+        //         color: '#ffffff',
+        //         lowerThan: 'transform'
+        //     })
+        // );
         addLoadEvent(
             outdatedBrowser({
-                bgColor: '#f25648',
-                color: '#ffffff',
+                bgColor: '#FF0000',
+                color: '#1919D1',
                 lowerThan: 'transform'
             })
         );
+
     </script>
 </body>
 </html>
