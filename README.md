@@ -29,9 +29,9 @@ That's it! As simple as it can get.
 
     ```html
     <div id="outdated">
-        <h6>Your browser is out-of-date!</h6>
-        <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
-        <p id="btnClose"><a href="#">Close</a></p>
+         <h6>Your browser is out-of-date!</h6>
+         <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
     </div>
     ```
 
@@ -57,18 +57,18 @@ That's it! As simple as it can get.
     //call plugin function after DOM ready
     addLoadEvent(
         outdatedBrowser({
-            bgColor: '#3f3f3f',
-            color: '#e3e3e3',
-            lowerThan: 'IE10'
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'transform'
         })
         );
 
     //USING jQuery
     $( document ).ready(function() {
         outdatedBrowser({
-            bgColor: '#3f3f3f',
-            color: '#e3e3e3',
-            lowerThan: 'IE10'
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'transform'
         })
     })
     ```
