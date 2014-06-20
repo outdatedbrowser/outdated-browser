@@ -25,7 +25,7 @@ That's it! As simple as it can get.
     <style type="text/css" src="outdatedBrowser.min.css"></style>
     ```
 
-3. Paste the required HTML:
+3. Paste the required HTML at the end of your document (see demo examples):
 
     ```html
     <div id="outdated">
