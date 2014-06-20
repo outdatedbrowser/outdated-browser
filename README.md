@@ -27,49 +27,51 @@ That's it! As simple as it can get.
 
 3. Paste the required HTML:
 
-        <div id="outdated">
-            <h6>Your browser is out-of-date!</h6>
-             <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
-             <p id="btnClose"><a href="#">Close</a></p>
-         </div>
-
+    ```html
+    <div id="outdated">
+        <h6>Your browser is out-of-date!</h6>
+        <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
+        <p id="btnClose"><a href="#">Close</a></p>
+    </div>
+    ```
 
 
 
 
 4. Call the plugin:
 
-         //PLAIN JAVASCRIPT
-            //event listener form DOM ready
-            function addLoadEvent(func) {
-                var oldonload = window.onload;
-                if (typeof window.onload != 'function') {
-                    window.onload = func;
-                } else {
-                    window.onload = function() {
-                        oldonload();
-                        func();
-                    }
-                }
+    ```javascript
+    //PLAIN JAVASCRIPT
+    //event listener form DOM ready
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                oldonload();
+                func();
             }
-            //call plugin function after DOM ready
-            addLoadEvent(
-                outdatedBrowser({
-                    bgColor: '#3f3f3f',
-                    color: '#e3e3e3',
-                    lowerThan: 'IE10'
-                })
-            );
+        }
+    }
+    //call plugin function after DOM ready
+    addLoadEvent(
+        outdatedBrowser({
+            bgColor: '#3f3f3f',
+            color: '#e3e3e3',
+            lowerThan: 'IE10'
+        })
+        );
 
-          //USING jQuery
-            $( document ).ready(function() {
-                outdatedBrowser({
-                    bgColor: '#3f3f3f',
-                    color: '#e3e3e3',
-                    lowerThan: 'IE10'
-                })
-            })
-
+    //USING jQuery
+    $( document ).ready(function() {
+        outdatedBrowser({
+            bgColor: '#3f3f3f',
+            color: '#e3e3e3',
+            lowerThan: 'IE10'
+        })
+    })
+    ```
 
 5. Targeting browsers:
 
