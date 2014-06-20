@@ -1,12 +1,12 @@
 /*!--------------------------------------------------------------------
-JAVASCRIPT "Outdated Browser"
+STYLES "Outdated Browser"
 Version:    1.0.1 - 2014
 author:     Burocratik
 website:    http://www.burocratik.com
 * @preserve
 -----------------------------------------------------------------------*/
 #outdated{
-    display: block; position: fixed; top: 0; left: 0; width: 100%; height: 170px;
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 170px;
     text-align: center; text-transform: uppercase; z-index:1500;
     background-color: #f25648; color: #ffffff;
 }
