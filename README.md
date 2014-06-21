@@ -61,8 +61,9 @@ That's it! As simple as it can get.
             color: '#ffffff',
             lowerThan: 'transform'
         })
-        );
-
+    );
+    ```
+    ```javascript
     //USING jQuery
     $( document ).ready(function() {
         outdatedBrowser({
