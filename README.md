@@ -124,4 +124,4 @@ Fork the project.
 
 ## License
 
-[MIT License](http://zenorocha.mit-license.org/)
+[StopNerds Public License](http://stopnerds.org/license/)
