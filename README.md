@@ -105,9 +105,9 @@ The basic structure of the project is given in the following way:
     │   └── outdatedBrowser.css-->
 
 
-## FAQs
+## FAQ
 
-Before opening a new issue please check our FAQ's page: https://github.com/burocratik/outdated-browser/wiki/FAQ's
+Before opening a new issue please check our FAQ page: https://github.com/burocratik/outdated-browser/wiki/FAQ
 
 
 ## Contributing
@@ -118,11 +118,11 @@ Fork the project.
 <br>Send a pull request.
 
 
-## License
-
-[MIT License](http://zenorocha.mit-license.org/)
-
-
 ## Team
 
 Made with love at Bürocratik.
+
+
+## License
+
+[MIT License](http://zenorocha.mit-license.org/)
