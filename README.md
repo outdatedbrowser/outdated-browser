@@ -107,17 +107,13 @@ The basic structure of the project is given in the following way:
 
 ## FAQs
 
-Check out our Wiki FAQs page: https://github.com/burocratik/outdated-browser/wiki/FAQs
-
-## Team
-
-Made with love at Bürocratik.
+Before opening a new issue please check our FAQ's page: https://github.com/burocratik/outdated-browser/wiki/FAQs
 
 
 ## Contributing
 
 Fork the project.
-<br>Read through the outstanding issues or report new ones.
+<br>Read through the issues or report new ones.
 <br>Write some tests to make sure we don't accidentally break each other's code.
 <br>Send a pull request.
 
@@ -125,3 +121,8 @@ Fork the project.
 ## License
 
 [MIT License](http://zenorocha.mit-license.org/)
+
+
+## Team
+
+Made with love at Bürocratik.
