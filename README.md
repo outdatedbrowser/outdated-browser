@@ -120,7 +120,7 @@ Fork the project.
 
 ## Team
 
-Made with love at [Bürocratik](http://burocratik.com) .
+Made with love at [Bürocratik](http://burocratik.com)
 
 
 ## License
