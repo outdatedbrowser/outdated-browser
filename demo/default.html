@@ -8,18 +8,34 @@
     <link rel="stylesheet" type="text/css" href="../outdatedbrowser/outdatedBrowser.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <style type="text/css">
-        body {background-color: #fafafa; font-family: 'Open Sans', sans-serif;}
+        body {
+            font-family: 'Open Sans', sans-serif; text-align: center;
+            background-color: #fafafa; color: #0a0a0a; line-height: 1.5em;
+        }
+        h1{font-size: 2.6em; line-height: 2em;}
+        h3, h4{line-height: 1em; margin: 2.5em 0 -.4em 0; text-transform: uppercase;}
+        h3 span, h4 span{text-transform: none;}
+        p{padding-bottom: 1em;}
+        p.designBy{position: absolute; bottom: 0; right: 1em; font-size: .8em;}
+        a {color: #0a0a0a;}
+        ul{list-style-type: none; padding: 0;}
     </style>
 </head>
 
 <body>
     <!-- ============= YOUR CONTENT ============= -->
-    <h1>Outdated Browser</h1>
+    <h1><a href="index.html">Outdated Browser</a></h1>
     <p>Remember: If you can't see the message, is a good thing! You are using a modern browser :D</p>
     <h3>DEFAULT</h3>
     <p>bgColor: '#f25648', color: '#ff0000', lowerThan: 'transform'  (&lt;IE10)</p>
-
-
+    <h3>HOW does it look like? <span>(it may differ in your tests) </span></h3>
+    <ul>
+        <li><a href="http://take.ms/rGjRk">IE9 - Win7</a></li>
+        <li><a href="http://take.ms/UBfbu">IE8 - XP</a></li>
+        <li><a href="http://take.ms/7IENH">IE7 - Vista</a></li>
+        <li><a href="http://take.ms/LBRAl">IE6 - XP</a></li>
+    </ul>
+    <p class="designBy">by <a href="http://www.burocratik.com">Bürocratik</a></p>
 
     <!-- ============= Outdated Browser ============= -->
     <div id="outdated">
