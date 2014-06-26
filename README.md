@@ -86,6 +86,7 @@ That's it! As simple as it can get.
 
 
 And you're done!
+PS: check de "demo" folder, it may help you.
 ***
 
 <!--## Structure
