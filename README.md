@@ -38,7 +38,7 @@ That's it! As simple as it can get.
 
 
 
-4. Call the plugin:
+4. Call the plugin by placing the following at the bottom of the HTML body:
 
     ```javascript
     //PLAIN JAVASCRIPT
