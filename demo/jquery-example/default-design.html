@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Outdated Browser</title>
+    <meta name="description" content="A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="../../outdatedbrowser/outdatedBrowser.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body {background-color: #fafafa; font-family: 'Open Sans', sans-serif;}
+        /*do not use this!*/
+        #outdated{display: block;}
+    </style>
+</head>
+
+<body>
+    <!-- ============= YOUR CONTENT ============= -->
+    <h1>Outdated Browser</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu accumsan nisi. Aenean consequat, metus faucibus commodo tristique, quam lorem porta eros, fermentum commodo dolor arcu nec est. Vivamus commodo, eros vel accumsan tempus, nisl lorem lobortis nisl, rhoncus pretium odio ligula quis arcu. Praesent eget sapien mattis, aliquam velit ut, hendrerit dui. Aliquam eget sapien erat. Vestibulum tristique tempor dolor. Vestibulum pulvinar condimentum nibh, id cursus massa faucibus vitae.</p>
+    <h3>DEFAULT</h3>
+    <p>bgColor: '#f25648', color: '#ff0000', lowerThan: 'transform'  (&lt;IE10)</p>
+    <h3>IMPORTANT</h3>
+    <p>DO NOT USE THIS html! It's just to show off the design!</p>
+
+
+
+    <!-- ============= Outdated Browser ============= -->
+    <div id="outdated">
+         <h6>Your browser is out-of-date!</h6>
+         <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+     </div>
+
+    <!-- javascript includes -->
+    <script src="../../outdatedbrowser/outdatedBrowser.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- plugin call -->
+    <script>
+        $(document).ready(function() {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'transform'
+            })
+        })
+    </script>
+</body>
+</html>
