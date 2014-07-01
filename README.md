@@ -10,12 +10,9 @@
 
 1. Inside /language folder, duplicate folder /en (our default language is english)
 
-2. Rename with a proper language abbreviation: it — italian , de — german, fr — french, nl — dutch , etc
-
+2. Rename with a proper language abbreviation: it — italian , de — german, fr — french, nl — dutch , br — brazilian portuguese, etc. <br> NOTE: we are using a two letter  code for the language. If you have variations of the same language use URL country code, e.g.: br—brazilian portuguese; us—american english
 
 3. Translate site_lang.php file. Please don't change anything else.
-
-
 
 
 4. Send a pull request for this branch ( feature/WEBSITE_languages ), and we do the rest asap.
@@ -31,8 +28,10 @@ Before opening a new issue please check our FAQ page: https://github.com/burocra
 
 ## Contributing
 
-Fork the project, and read "How to".
-
+Fork the project, and read "How to".<br><br>
+en — 100% (done)<br>
+pt — 1% (needs translation)<br>
+br — 1% (needs translation)<br>
 
 ## Team
 
