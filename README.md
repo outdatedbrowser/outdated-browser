@@ -108,7 +108,7 @@ The basic structure of the project is given in the following way:
 
 ## FAQ
 
-Before opening a new issue please check our FAQ page: https://github.com/burocratik/outdated-browser/wiki/FAQ
+Before opening a new issue please check our [FAQ page](https://github.com/burocratik/outdated-browser/wiki/FAQ)
 
 
 ## Contributing
