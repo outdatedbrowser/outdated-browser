@@ -31,7 +31,7 @@ Before opening a new issue please check our FAQ page: https://github.com/burocra
 
 ## Contributing
 
-Fork the project, and read "HOW".
+Fork the project, and read "How to".
 
 
 ## Team
