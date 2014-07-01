@@ -13,16 +13,16 @@ That's it! As simple as it can get.
 ## How to use it
 
 
-1. Include plugin's script:
+1. Include plugin's script at the bottom of the HTML body:
 
     ```html
     <script src="outdatedBrowser.min.js"></script>
     ```
 
-2. Include the CSS located in the html head:
+2. Include the CSS located in the HTML head:
 
     ```html
-    <style type="text/css" src="outdatedBrowser.min.css"></style>
+    <link rel="stylesheet" href="outdatedBrowser.min.css">    
     ```
 
 3. Paste the required HTML at the end of your document (see demo examples):
