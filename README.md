@@ -27,7 +27,7 @@ Thank you for the help
 
 ## FAQ
 
-Before opening a new issue please check our FAQ page: https://github.com/burocratik/outdated-browser/wiki/FAQ-%E2%80%94-translations-for-outdatedbrowser.com-website
+Before opening a new issue please check our FAQ page: https://github.com/burocratik/outdated-browser/wiki/FAQ-%E2%80%94-translations-for-outdatedbrowser.com
 
 ## Contributing
 
