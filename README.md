@@ -30,6 +30,7 @@ Before opening a new issue please check our [FAQ page](https://github.com/burocr
 
 Fork the project, and read "How to".<br><br>
 en — 100% (done)<br>
+de - 100% (done) <br>
 pt — 1% (needs translation)<br>
 br — 1% (needs translation)<br>
 
