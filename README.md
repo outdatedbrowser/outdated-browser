@@ -15,7 +15,7 @@
 3. Translate site_lang.php file. Please don't change anything else.
 
 
-4. Send a pull request for this branch ( feature/WEBSITE_languages ), and we do the rest asap.
+4. Send a pull request for this branch ( feature/languages-website ), and we do the rest asap.
 
 
 <br>
@@ -24,7 +24,7 @@ Thank you for the help
 
 ## FAQ
 
-Before opening a new issue please check our FAQ page: https://github.com/burocratik/outdated-browser/wiki/FAQ-%E2%80%94-translations-for-outdatedbrowser.com
+Before opening a new issue please check our [FAQ page](https://github.com/burocratik/outdated-browser/wiki/FAQ-translations-for-outdatedbrowser.com)
 
 ## Contributing
 
