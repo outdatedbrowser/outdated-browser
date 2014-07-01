@@ -108,7 +108,7 @@ The basic structure of the project is given in the following way:
 
 ## FAQ
 
-Before opening a new issue please check our FAQ page: https://github.com/burocratik/outdated-browser/wiki/FAQ
+Before opening a new issue please check our [FAQ page](https://github.com/burocratik/outdated-browser/wiki/FAQ)
 
 
 ## Contributing
@@ -117,6 +117,10 @@ Fork the project.
 <br>Read through the issues or report new ones.
 <br>Write some tests to make sure we don't accidentally break each other's code.
 <br>Send a pull request.
+
+**TRANSLATIONS** <br>
+Rename with a proper language abbreviation: it — italian , de — german, fr — french, nl — dutch , br — brazilian portuguese, etc. <br>
+NOTE: we are using a two letter code for the language. If you have variations of the same language use URL country code, e.g.: br—brazilian portuguese; us—american english
 
 
 ## Team
