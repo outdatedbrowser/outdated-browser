@@ -5,7 +5,7 @@
 
 
 
-## How
+## How to
 
 
 1. Inside /language folder, duplicate folder /en (our default language is english)
@@ -13,7 +13,7 @@
 2. Rename with a proper language abbreviation: it — italian , de — german, fr — french, nl — dutch , etc
 
 
-3. Translate site_lang.php. Do not change variables name! or add new ones ;)
+3. Translate site_lang.php file. Please don't change anything else.
 
 
 
@@ -27,8 +27,7 @@ Thank you for the help
 
 ## FAQ
 
-Before opening a new issue please check our FAQ page: https://github.com/burocratik/outdated-browser/wiki/FAQ
-
+Before opening a new issue please check our FAQ page: https://github.com/burocratik/outdated-browser/wiki/FAQ-%E2%80%94-translations-for-outdatedbrowser.com-website
 
 ## Contributing
 
