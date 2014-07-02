@@ -39,10 +39,10 @@ That's it! As simple as it can get.
 
 
 4. Call the plugin by placing the following at the bottom of the HTML body:
-
+<br>
+— PLAIN JAVASCRIPT <br>
     ```javascript
-    //PLAIN JAVASCRIPT
-    //event listener form DOM ready
+    //event listener: DOM ready
     function addLoadEvent(func) {
         var oldonload = window.onload;
         if (typeof window.onload != 'function') {
@@ -62,8 +62,10 @@ That's it! As simple as it can get.
             lowerThan: 'transform'
         })
         );
-
-    //USING jQuery
+    ```    
+<br>
+— USING jQuery (version that supports IE<9) <br>
+    ```javascript
     $( document ).ready(function() {
         outdatedBrowser({
             bgColor: '#f25648',
