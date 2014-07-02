@@ -64,7 +64,7 @@ That's it! As simple as it can get.
         );
     ```    
 <br>
-— USING jQuery (version that supports IE<9) <br>
+— USING jQuery (version that supports IE&lt;9) <br>
     ```javascript
     $( document ).ready(function() {
         outdatedBrowser({
