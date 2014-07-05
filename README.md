@@ -61,7 +61,7 @@ That's it! As simple as it can get.
             color: '#ffffff',
             lowerThan: 'transform'
         })
-        );
+    );
     ```    
 <br>
 — Using jQuery (version that supports IE&lt;9) <br>
