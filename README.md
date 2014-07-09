@@ -1,11 +1,11 @@
-# Outdated Browser v1.0.1
+# Outdated Browser v1.0.2
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
 So, you're tired of people visiting your modern website with an outdated browser and not doing anything about it.
 Maybe they aren't "power" users, maybe it's your auntie running a last century browser trying to see awesome CSS3 animations and transforms. Let the user know that’s an outdated browser, and advise them on a better one.
 
-With this solution you can check if the user’s browser can handle your website. If not, it will show a cool looking notice advising the user to update the browser. It'll be up to him/her to decide if he upgrades or not. Don't force the user!
+With this solution you can check if the user’s browser can handle your website. If not, it will show a cool [looking notice](http://cl.ly/image/3q012Z0W2W0s) advising the user to update the browser. It'll be up to him/her to decide if he upgrades or not. Don't force the user!
 
 That's it! As simple as it can get.
 
@@ -13,16 +13,16 @@ That's it! As simple as it can get.
 ## How to use it
 
 
-1. Include plugin's script:
+1. Include plugin's script at the bottom of the HTML body:
 
     ```html
     <script src="outdatedBrowser.min.js"></script>
     ```
 
-2. Include the CSS located in the html head:
+2. Include the CSS located in the HTML head:
 
     ```html
-    <style type="text/css" src="outdatedBrowser.min.css"></style>
+    <link rel="stylesheet" href="outdatedBrowser.min.css">    
     ```
 
 3. Paste the required HTML at the end of your document (see demo examples):
@@ -38,11 +38,11 @@ That's it! As simple as it can get.
 
 
 
-4. Call the plugin:
-
+4. Call the plugin by placing the following at the bottom of the HTML body:
+<br><br>
+— Plain Javascript <br>
     ```javascript
-    //PLAIN JAVASCRIPT
-    //event listener form DOM ready
+    //event listener: DOM ready
     function addLoadEvent(func) {
         var oldonload = window.onload;
         if (typeof window.onload != 'function') {
@@ -61,9 +61,11 @@ That's it! As simple as it can get.
             color: '#ffffff',
             lowerThan: 'transform'
         })
-        );
-
-    //USING jQuery
+    );
+    ```    
+<br>
+— Using jQuery (version that supports IE&lt;9) <br>
+    ```javascript
     $( document ).ready(function() {
         outdatedBrowser({
             bgColor: '#f25648',

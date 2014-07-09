@@ -1,6 +1,6 @@
 /*!--------------------------------------------------------------------
 JAVASCRIPT "Outdated Browser"
-Version:    1.0.1 - 2014
+Version:    1.0.2 - 2014
 author:     Burocratik
 website:    http://www.burocratik.com
 * @preserve
@@ -119,7 +119,10 @@ var outdatedBrowser = function(options) {
 
     //check settings attributes
     outdated.style.backgroundColor = bkgColor;
+    //why to har to put !important on IE6
     outdated.style.color = txtColor;
+    outdated.children[0].style.color = txtColor;
+    outdated.children[1].style.color = txtColor;
 
     //check settings attributes
     btnUpdate.style.color = txtColor;
