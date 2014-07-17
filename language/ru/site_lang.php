@@ -46,7 +46,7 @@ $lang['proj_desc3_2'] = 'Разработано в <br> Bürolabs';
 /*HOW*/
 $lang['how_title1'] = 'Скачайте <br> пакет';
 $lang['how_desc1'] = 'Сей пакет содержит все необходимы файлы: JS и CSS. Мы также включили пример с HTML-кодом уведомления.';
-$lang['how_desc1_2'] = 'Скачать старом Github';
+$lang['how_desc1_2'] = 'Скачать с Github';
 
 $lang['how_title2'] = 'Подключите их <br> в свой проект';
 $lang['how_desc2'] = 'Загрузите css-файл в блок &#x3c;head&#x3e; и JS-файл в конец &#x3c;body&#x3e;.';
