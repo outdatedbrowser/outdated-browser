@@ -16,7 +16,7 @@ var outdatedBrowser = function(options) {
         color: '#FFFFFF',
         lowerThan: 'transform',
         useAjax: true,
-        filePath: 'lang/en.html'
+        languagePath: '../outdatedbrowser/lang/en.html'
     }
 
     if (options) {
@@ -35,19 +35,19 @@ var outdatedBrowser = function(options) {
         this.defaultOpts.color = options.color;
         this.defaultOpts.lowerThan = options.lowerThan;
         this.defaultOpts.useAjax = options.useAjax;
-        this.defaultOpts.filePath = options.filePath;
+        this.defaultOpts.languagePath = options.languagePath;
 
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         useAjax = this.defaultOpts.useAjax;
-        filePath = this.defaultOpts.filePath;
+        languagePath = this.defaultOpts.languagePath;
     } else {
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         useAjax = this.defaultOpts.useAjax;
-        filePath = this.defaultOpts.filePath;
+        languagePath = this.defaultOpts.languagePath;
     };//end if options
 
 
