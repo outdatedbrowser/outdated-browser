@@ -7,20 +7,19 @@ website:    http://www.burocratik.com
 -----------------------------------------------------------------------*/
 var outdatedBrowser = function(options) {
 
-    //Variable definition
+    //Variable definition (before ajax)
     var outdated = document.getElementById("outdated");
-    var btnClose = document.getElementById("btnCloseUpdateBrowser");
-    var btnUpdate = document.getElementById("btnUpdateBrowser");
 
     // Default settings
     this.defaultOpts = {
         bgColor: '#F25648',
-        color: '#ffffff',
-        lowerThan: 'transform'
+        color: '#FFFFFF',
+        lowerThan: 'transform',
+        useAjax:'true'
     }
 
     if (options) {
-        this.defaultOpts.bgColor = options.bgColor,
+        this.defaultOpts.bgColor = options.bgColor;
         this.defaultOpts.color = options.color;
 
         //assign css3 property to IE browser version
@@ -35,15 +34,19 @@ var outdatedBrowser = function(options) {
         }
 
         this.defaultOpts.lowerThan = options.lowerThan;
+        this.defaultOpts.useAjax = options.useAjax;
 
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
+        useAjax = this.defaultOpts.useAjax;
     } else {
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
-    }
+        useAjax = this.defaultOpts.useAjax;
+    };//end if options
+
 
     //Define opacity and fadeIn/fadeOut functions
     var done = true;
@@ -53,13 +56,13 @@ var outdatedBrowser = function(options) {
         outdated.style.filter = 'alpha(opacity=' + opacity_value + ')';
     }
 
-    function function_fade_out(opacity_value) {
-        function_opacity(opacity_value);
-        if (opacity_value == 1) {
-            outdated.style.display = 'none';
-            done = true;
-        }
-    }
+    // function function_fade_out(opacity_value) {
+    //     function_opacity(opacity_value);
+    //     if (opacity_value == 1) {
+    //         outdated.style.display = 'none';
+    //         done = true;
+    //     }
+    // }
 
     function function_fade_in(opacity_value) {
         function_opacity(opacity_value);
@@ -72,9 +75,9 @@ var outdatedBrowser = function(options) {
     }
 
     //check if element has a particular class
-    function hasClass(element, cls) {
-        return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
-    }
+    // function hasClass(element, cls) {
+    //     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+    // }
 
     var supports = (function() {
        var div = document.createElement('div'),
@@ -104,50 +107,57 @@ var outdatedBrowser = function(options) {
             for (var i = 1; i <= 100; i++) {
                 setTimeout((function (x) {
                     return function () {
-                        function_fade_in(x)
+                        function_fade_in(x);
                     };
                 })(i), i * 10);
             }
         }
+    };//end if
+
+
+
+    function startStylesAndEvents(){
+        var btnClose = document.getElementById("btnCloseUpdateBrowser");
+        var btnUpdate = document.getElementById("btnUpdateBrowser");
+
+        //check settings attributes
+        outdated.style.backgroundColor = bkgColor;
+        //way too hard to put !important on IE6
+        outdated.style.color = txtColor;
+        outdated.children[0].style.color = txtColor;
+        outdated.children[1].style.color = txtColor;
+
+        //check settings attributes
+        btnUpdate.style.color = txtColor;
+        btnUpdate.style.borderColor = txtColor;
+        btnClose.style.color = txtColor;
+
         //close button
         btnClose.onmousedown = function() {
             outdated.style.display = 'none';
             return false;
         };
-    }
 
-
-    //check settings attributes
-    outdated.style.backgroundColor = bkgColor;
-    //way too hard to put !important on IE6
-    outdated.style.color = txtColor;
-    outdated.children[0].style.color = txtColor;
-    outdated.children[1].style.color = txtColor;
-
-    //check settings attributes
-    btnUpdate.style.color = txtColor;
-    btnUpdate.style.borderColor = txtColor;
-    btnClose.style.color = txtColor;
-
-    //Override the update button color to match the background color
-    btnUpdate.onmouseover = function() {
-        this.style.color = bkgColor;
-        this.style.backgroundColor = txtColor;
-    };
-    btnUpdate.onmouseout = function() {
-        this.style.color = txtColor;
-        this.style.backgroundColor = bkgColor;
-    };
-
-    //NEW LANG
+        //Override the update button color to match the background color
+        btnUpdate.onmouseover = function() {
+            this.style.color = bkgColor;
+            this.style.backgroundColor = txtColor;
+        };
+        btnUpdate.onmouseout = function() {
+            this.style.color = txtColor;
+            this.style.backgroundColor = bkgColor;
+        };
+    }//end styles and events
 
 
 
+    //IF AJAX with request ERROR > insert english default
+    var ajaxEnglishDefault = '<h6>Your browser is out-of-date!</h6>'
+        + '<p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>'
+        + '<p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>';
 
-}//end of outdatedBrowser function
 
-
-    //Bulletproof Ajax by Jeremy Keith
+    //** AJAX FUNCTIONS - Bulletproof Ajax by Jeremy Keith **
     function getHTTPObject() {
       var xhr = false;
       if (window.XMLHttpRequest) {
@@ -167,29 +177,42 @@ var outdatedBrowser = function(options) {
     };//end function
 
     function grabFile(file) {
-      var request = getHTTPObject();
-      if (request) {
-        request.onreadystatechange = function() {
-          displayResponse(request);
-        };
-        request.open("GET", file, true);
-        request.send(null);
-      }
-      return false;
+        var request = getHTTPObject();
+            if (request) {
+                request.onreadystatechange = function() {
+                displayResponse(request);
+            };
+                request.open("GET", file, true);
+                request.send(null);
+            }
+        return false;
     };//end grabFile
 
     function displayResponse(request) {
-      if (request.readyState == 4) {
-        if (request.status == 200 || request.status == 304) {
-          alert(request.responseText);
+        var insertContentHere = document.getElementById("outdated");
+        if (request.readyState == 4) {
+            if (request.status == 200 || request.status == 304) {
+                insertContentHere.innerHTML = request.responseText;
+            }else{
+                insertContentHere.innerHTML = ajaxEnglishDefault;
+            }
         }
-      }
       return false;
     };//end displayResponse
 
 
 var btnTESTE = document.getElementById("alex");
 btnTESTE.onclick=function(){
-    grabFile("pt.txt");
+    grabFile("pts.html");
     return false;
 };
+
+////////END of outdatedBrowser function
+};
+
+
+
+
+
+
+
