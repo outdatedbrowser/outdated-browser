@@ -163,7 +163,7 @@ var outdatedBrowser = function(options) {
     // IF AJAX with request ERROR > insert english default
     var ajaxEnglishDefault = '<h6>Your browser is out-of-date!</h6>'
         + '<p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>'
-        + '<p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>';
+        + '<p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close"> &times; </a></p>';
 
 
     //** AJAX FUNCTIONS - Bulletproof Ajax by Jeremy Keith **
