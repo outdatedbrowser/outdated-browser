@@ -15,13 +15,11 @@ var outdatedBrowser = function(options) {
         bgColor: '#F25648',
         color: '#FFFFFF',
         lowerThan: 'transform',
-        useAjax:'true'
+        useAjax: true,
+        filePath: 'lang/en.html'
     }
 
     if (options) {
-        this.defaultOpts.bgColor = options.bgColor;
-        this.defaultOpts.color = options.color;
-
         //assign css3 property to IE browser version
         if(options.lowerThan == 'IE8' || options.lowerThan == 'borderSpacing') {
             options.lowerThan = 'borderSpacing';
@@ -32,19 +30,24 @@ var outdatedBrowser = function(options) {
         } else if (options.lowerThan == 'IE11' || options.lowerThan == 'borderImage') {
             options.lowerThan = 'borderImage';
         }
-
+        //all properties
+        this.defaultOpts.bgColor = options.bgColor;
+        this.defaultOpts.color = options.color;
         this.defaultOpts.lowerThan = options.lowerThan;
         this.defaultOpts.useAjax = options.useAjax;
+        this.defaultOpts.filePath = options.filePath;
 
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         useAjax = this.defaultOpts.useAjax;
+        filePath = this.defaultOpts.filePath;
     } else {
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         useAjax = this.defaultOpts.useAjax;
+        filePath = this.defaultOpts.filePath;
     };//end if options
 
 
@@ -114,6 +117,13 @@ var outdatedBrowser = function(options) {
         }
     };//end if
 
+    //Check AJAX Options
+    if( useAjax ){
+        grabFile(filePath);
+    }else{
+        // If I don't use ajax, html is needed inside <div id="outdated">
+        startStylesAndEvents();
+    }
 
 
     function startStylesAndEvents(){
@@ -150,8 +160,7 @@ var outdatedBrowser = function(options) {
     }//end styles and events
 
 
-
-    //IF AJAX with request ERROR > insert english default
+    // IF AJAX with request ERROR > insert english default
     var ajaxEnglishDefault = '<h6>Your browser is out-of-date!</h6>'
         + '<p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>'
         + '<p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>';
@@ -196,16 +205,10 @@ var outdatedBrowser = function(options) {
             }else{
                 insertContentHere.innerHTML = ajaxEnglishDefault;
             }
+            startStylesAndEvents();
         }
       return false;
     };//end displayResponse
-
-
-var btnTESTE = document.getElementById("alex");
-btnTESTE.onclick=function(){
-    grabFile("pts.html");
-    return false;
-};
 
 ////////END of outdatedBrowser function
 };
