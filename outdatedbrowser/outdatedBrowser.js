@@ -12,10 +12,9 @@ var outdatedBrowser = function(options) {
 
     // Default settings
     this.defaultOpts = {
-        bgColor: '#F25648',
-        color: '#FFFFFF',
+        bgColor: '#f25648',
+        color: '#ffffff',
         lowerThan: 'transform',
-        useAjax: true,
         languagePath: '../outdatedbrowser/lang/en.html'
     }
 
@@ -34,19 +33,16 @@ var outdatedBrowser = function(options) {
         this.defaultOpts.bgColor = options.bgColor;
         this.defaultOpts.color = options.color;
         this.defaultOpts.lowerThan = options.lowerThan;
-        this.defaultOpts.useAjax = options.useAjax;
         this.defaultOpts.languagePath = options.languagePath;
 
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
-        useAjax = this.defaultOpts.useAjax;
         languagePath = this.defaultOpts.languagePath;
     } else {
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
-        useAjax = this.defaultOpts.useAjax;
         languagePath = this.defaultOpts.languagePath;
     };//end if options
 
@@ -117,15 +113,14 @@ var outdatedBrowser = function(options) {
         }
     };//end if
 
-    //Check AJAX Options
-    if( useAjax ){
-        grabFile(languagePath);
-    }else{
-        // If I don't use ajax, html is needed inside <div id="outdated">
+    //Check AJAX Options: if languagePath == '' > use no Ajax way, html is needed inside <div id="outdated">
+    if( languagePath === ' ' || languagePath.length == 0 ){
         startStylesAndEvents();
+    }else{
+        grabFile(languagePath);
     }
 
-
+    //events and colors
     function startStylesAndEvents(){
         var btnClose = document.getElementById("btnCloseUpdateBrowser");
         var btnUpdate = document.getElementById("btnUpdateBrowser");
