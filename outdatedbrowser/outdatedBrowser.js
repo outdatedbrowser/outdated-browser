@@ -15,12 +15,12 @@ var outdatedBrowser = function(options) {
     // Default settings
     this.defaultOpts = {
         bgColor: '#F25648',
-        color: '#ffffff',
+        color: '#FFFFFF',
         lowerThan: 'transform'
-    }
+    };
 
     if (options) {
-        this.defaultOpts.bgColor = options.bgColor,
+        this.defaultOpts.bgColor = options.bgColor;
         this.defaultOpts.color = options.color;
 
         //assign css3 property to IE browser version
@@ -104,7 +104,7 @@ var outdatedBrowser = function(options) {
             for (var i = 1; i <= 100; i++) {
                 setTimeout((function (x) {
                     return function () {
-                        function_fade_in(x)
+                        function_fade_in(x);
                     };
                 })(i), i * 10);
             }
@@ -138,4 +138,4 @@ var outdatedBrowser = function(options) {
         this.style.color = txtColor;
         this.style.backgroundColor = bkgColor;
     };
-}//end of function
+};//end of function
