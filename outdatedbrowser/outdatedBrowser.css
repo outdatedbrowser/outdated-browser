@@ -14,7 +14,7 @@ website:    http://www.burocratik.com
 #outdated h6{font-size: 25px; line-height: 25px; margin: 30px 0 10px;}
 #outdated p{font-size: 12px; line-height: 12px;}
 #outdated #btnUpdateBrowser{
-    display: block; position: relative; padding: 10px 20px; margin: 30px auto 0; width: 180px;
+    display: block; position: relative; padding: 10px 20px; margin: 30px auto 0; width: 230px; /*need for IE*/
     color: #ffffff; text-decoration: none; border: 2px solid #ffffff; cursor: pointer;
 }
 #outdated #btnUpdateBrowser:hover{color: #f25648; background-color:#ffffff;}
