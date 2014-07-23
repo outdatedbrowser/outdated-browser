@@ -108,7 +108,7 @@ var outdatedBrowser = function(options) {
                     return function () {
                         function_fade_in(x);
                     };
-                })(i), i * 10);
+                })(i), i * 8);
             }
         }
     };//end if
