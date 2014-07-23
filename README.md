@@ -28,11 +28,7 @@ That's it! As simple as it can get.
 3. Paste the required HTML at the end of your document (see demo examples):
 
     ```html
-    <div id="outdated">
-         <h6>Your browser is out-of-date!</h6>
-         <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
-    </div>
+    <div id="outdated"> </div>
     ```
 
 
@@ -59,7 +55,8 @@ That's it! As simple as it can get.
         outdatedBrowser({
             bgColor: '#f25648',
             color: '#ffffff',
-            lowerThan: 'transform'
+            lowerThan: 'transform',
+            languagePath: '../outdatedbrowser/lang/en.html'
         })
     );
     ```    
@@ -70,7 +67,8 @@ That's it! As simple as it can get.
         outdatedBrowser({
             bgColor: '#f25648',
             color: '#ffffff',
-            lowerThan: 'transform'
+            lowerThan: 'transform',
+            languagePath: '../outdatedbrowser/lang/en.html'
         })
     })
     ```
@@ -86,7 +84,11 @@ That's it! As simple as it can get.
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
 
+6. Choose the language:
 
+	Download the “lang" folder, and if you have the language you want, just write the correct path for the language file in your project.
+If you don’t have your language, you can write your own html file, and please share it with us.  
+    
 And you're done!
 <br>PS: check de "demo" folder, it may help you.
 ***
