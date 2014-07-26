@@ -45,24 +45,24 @@ $lang['proj_desc3_2'] = 'Developed at <br> Bürolabs';
 
 /*HOW*/
 $lang['how_title1'] = 'A csomag <br> letöltése';
-$lang['how_desc1'] = 'Our package contains all the required files: JS and CSS. We&rsquo;ve also added an example with the HTML structure for the message.';
-$lang['how_desc1_2'] = 'Download on Github';
+$lang['how_desc1'] = 'A csomagung tartalmaz minden szükséges CSS és JS fájl, és még egy almalmazási mintát is mellékeltünk!';
+$lang['how_desc1_2'] = 'Letöltés Github-ról';
 
-$lang['how_title2'] = 'Include them <br> in Your Project';
-$lang['how_desc2'] = 'Load the css file in the &#x3c;head&#x3e; element and the JS file at the end of the &#x3c;body&#x3e;.';
-$lang['how_desc2_2'] = 'Copy this code to clipboard ';
-$lang['how_alt2'] = 'browser ';
+$lang['how_title2'] = 'Add hozzáa <br> a Projektedhez';
+$lang['how_desc2'] = 'Add a CSS fájlt a &#x3c;head&#x3e; elemhez és a JS fájlt a záró &#x3c;body&#x3e; tag elé.';
+$lang['how_desc2_2'] = 'Másold ezt a kódot a vágólapra ';
+$lang['how_alt2'] = 'böngésző ';
 
-$lang['how_title3'] = 'Include the <br> Required <br> HTML';
-$lang['how_desc3'] = 'You can place this code right before the &#x3c;/body&#x3e; tag.';
+$lang['how_title3'] = 'Illeszd be a <br> szükséges <br> HTML-t';
+$lang['how_desc3'] = 'Ezt a részletet közvetlenül a &#x3c;/body&#x3e; tag elé is teheted.';
 $lang['how_desc3_2'] = '
  &lt;h6&gt;A b&ouml;ng&eacute;szője elavult!&lt;/h6&gt;
  &lt;p&gt;Firss&iacute;tse vagy cser&eacute;lje le a b&ouml;ng&eacute;szőj&eacute;t. &lt;a id=&quot;btnUpdateBrowser&quot; href=&quot;http://outdatedbrowser.com/&quot;&gt;A b&ouml;ng&eacute;szpm friss&iacute;t&eacute;se &lt;/a&gt;&lt;/p&gt;
  &lt;p class=&quot;last&quot;&gt;&lt;a href=&quot;#&quot; id=&quot;btnCloseUpdateBrowser&quot; title=&quot;Close&quot;&gt;&amp;times;&lt;/a&gt;&lt;/p&gt;
 ';
 
-$lang['how_title4'] = 'Call the <br> Plugin and';
+$lang['how_title4'] = 'Hívd meg a <br> Plugin-t és';
 $lang['how_alt4'] = 'kész';
-$lang['how_desc4'] = 'From now on, any user with an old browser will be presented with a fancy notice on the top of the page.<br><br> If you like this project fork it and share it with the world!';
+$lang['how_desc4'] = 'Mostantól, ha bárki régi böngsészővel nézi meg az oldalad egy flancos értesítő fog megjelenni a lap tetején.<br><br> Ha tetszik ez a projekt oszd meg a világgal!';
 $lang['how_desc4_2'] = '//plugin function, place inside DOM ready function';
 
