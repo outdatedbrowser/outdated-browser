@@ -11,18 +11,18 @@ That's it! As simple as it can get.
 
 
 ## How to use it
+Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement this plugin before any other javascripts (plugins or your own scripts) — these browsers have "strange" js errors and the plugin may not be working as intended. 
 
-
-1. Include plugin's script at the bottom of the HTML body:
+1. Include the CSS located in the HTML head:
 
     ```html
-    <script src="outdatedBrowser.min.js"></script>
+    <link rel="stylesheet" href="your_path/outdatedbrowser/outdatedbrowser.min.css">    
     ```
-
-2. Include the CSS located in the HTML head:
+    
+2. Include plugin's script at the bottom of the HTML body:
 
     ```html
-    <link rel="stylesheet" href="outdatedBrowser.min.css">    
+    <script src="your_path/outdatedbrowser/outdatedbrowser.min.js"></script>
     ```
 
 3. Paste the required HTML at the end of your document (see demo examples):
@@ -30,8 +30,6 @@ That's it! As simple as it can get.
     ```html
     <div id="outdated"> </div>
     ```
-
-
 
 
 4. Call the plugin by placing the following at the bottom of the HTML body:
@@ -56,7 +54,7 @@ That's it! As simple as it can get.
             bgColor: '#f25648',
             color: '#ffffff',
             lowerThan: 'transform',
-            languagePath: '../outdatedbrowser/lang/en.html'
+            languagePath: 'your_path/outdatedbrowser/lang/en.html'
         })
     );
     ```    
@@ -68,10 +66,10 @@ That's it! As simple as it can get.
             bgColor: '#f25648',
             color: '#ffffff',
             lowerThan: 'transform',
-            languagePath: '../outdatedbrowser/lang/en.html'
+            languagePath: 'your_path/outdatedbrowser/lang/en.html'
         })
     })
-    ```
+    ```    
 
 5. Targeting browsers:
 
