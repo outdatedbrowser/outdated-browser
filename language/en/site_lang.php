@@ -23,6 +23,7 @@ $lang['txt_keepcalm'] = 'keep calm <br><span class="xs">this is a tool for</span
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'For a better experience, keep your browser up to date. Check here for latest versions.';
+$lang['home_subtitle_nojs'] = 'Javascript is disabled in your web browser. Turn it on for a better experience.';
 $lang['home_subtitle_mobile'] = 'This is a tool for desktop, <br>but feel free to explore.';
 $lang['home_percentage'] = 'people are using <br>this browser';
 $lang['home_download'] = 'DOWNLOAD';
@@ -40,7 +41,7 @@ $lang['proj_desc2'] = 'When executed, this script detects whether the browser su
 $lang['proj_desc2_2'] = 'A website running on an old browser';
 
 $lang['proj_title3'] = '3 Steps to <br> Start Using It!';
-$lang['proj_desc3'] = 'It only takes 3 minutes. Include the JS and CSS file, and paste a couple of HTML lines. <br><br>For more info check the <a class="github" href="https://github.com/burocratik/outdated-browser">Github</a> page ;)';
+$lang['proj_desc3'] = 'It only takes 3 minutes. Include the JS and CSS file, and paste a couple of HTML lines. <br><br>For more info check the <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> page ;)';
 $lang['proj_desc3_2'] = 'Developed at <br> Bürolabs';
 
 /*HOW*/
