@@ -88,7 +88,7 @@ That's it! As simple as it can get.
 
 
 And you're done!
-<br>PS: check de "demo" folder, it may help you.
+<br>PS: check the "demo" folder, it may help you.
 ***
 
 <!--## Structure
