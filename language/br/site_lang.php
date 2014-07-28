@@ -40,7 +40,7 @@ $lang['proj_desc2'] = 'Quando executado, este script detecta se o navegador supo
 $lang['proj_desc2_2'] = 'Um site rodando em um velho navegador';
 
 $lang['proj_title3'] = '3 passos para &lt;br&gt; come&ccedil;ar a usar!';
-$lang['proj_desc3'] = 'Leva s&oacute; 3 minutos. Inclua o JS e o arquivo CSS, e cole algumas linhas de HTML. &lt;br&gt;&lt;br&gt;Para mais informa&ccedil;&otilde;es, acesse nossa p&aacute;gina no &lt;a class="github" href="https://github.com/burocratik/outdated-browser"&gt;Github&lt;/a&gt;;)';
+$lang['proj_desc3'] = 'Leva s&oacute; 3 minutos. Inclua o JS e o arquivo CSS, e cole algumas linhas de HTML. &lt;br&gt;&lt;br&gt;Para mais informa&ccedil;&otilde;es, acesse nossa p&aacute;gina no &lt;a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github" &gt;Github&lt;/a&gt;;)';
 $lang['proj_desc3_2'] = 'Desenvolvido &lt;br&gt; no B&uuml;rolabs';
 
 /*HOW*/

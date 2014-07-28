@@ -40,7 +40,7 @@ $lang['proj_desc2'] = 'Po spuštění tohoto skriptu zjistí, zda prohlížeč p
 $lang['proj_desc2_2'] = 'Web se zobrazuje ve neaktuápním prohlížeči';
 
 $lang['proj_title3'] = '3 kroky k <br> používání';
-$lang['proj_desc3'] = 'Trvá to jen 3 minuty zahrnout JS a CSS soubor a vložit pár řádků HTML. <br> Pro více informací zkontrolujte stránku na <a class="github" href="https://github.com/burocratik/outdated-browser"> Github </ a> ;)';
+$lang['proj_desc3'] = 'Trvá to jen 3 minuty zahrnout JS a CSS soubor a vložit pár řádků HTML. <br> Pro více informací zkontrolujte stránku na <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github"> Github </ a> ;)';
 $lang['proj_desc3_2'] = 'Vytvořeno v <br> Bürolabs';
 
 /*HOW*/

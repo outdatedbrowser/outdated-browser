@@ -40,7 +40,7 @@ $lang['proj_desc2'] = 'Wenn das Skript ausgeführt wird, erkennt es, ob der Brow
 $lang['proj_desc2_2'] = 'Eine Webseite geöffnet in einem alten Browser';
 
 $lang['proj_title3'] = 'Nur 3 Schritte um <br> zu starten!';
-$lang['proj_desc3'] = 'Es dauert nur 3 Minuten. Binde die JS- und das CSS-Datei ein und füge ein paar HTML-Zeilen ein. <br><br>Für mehr Infos besuche die <a class="github" href="https://github.com/burocratik/outdated-browser">Github</a>-Seite ;)';
+$lang['proj_desc3'] = 'Es dauert nur 3 Minuten. Binde die JS- und das CSS-Datei ein und füge ein paar HTML-Zeilen ein. <br><br>Für mehr Infos besuche die <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a>-Seite ;)';
 $lang['proj_desc3_2'] = 'Entwickelt von <br> Bürolabs';
 
 /*HOW*/
