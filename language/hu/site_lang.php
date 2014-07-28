@@ -23,6 +23,7 @@ $lang['txt_keepcalm'] = 'NYUGI <br><span class="xs">ez az eszköz</span>asztali 
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'A jobb élményért tartsa naprakészen a böngészőjét. Itt találhatóak a legfrissebbek.';
+$lang['home_subtitle_nojs'] = 'Javascript is disabled in your web browser. Turn it on for a better experience.';
 $lang['home_subtitle_mobile'] = 'Ez az eszköz asztali gépekre készült, <br>de fedezd fel nyugodtan.';
 $lang['home_percentage'] = 'ember használja <br>ezt a böngészőt';
 $lang['home_download'] = 'LETÖLTÉS';

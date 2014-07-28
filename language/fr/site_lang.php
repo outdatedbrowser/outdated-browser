@@ -23,6 +23,7 @@ $lang['txt_keepcalm'] = 'on se calme <br><span class="xs">ceci est un outils pou
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'Pour une expérience optimale, gardez votre navigateur à jour. Obtenez ici les versions les plus récentes.';
+$lang['home_subtitle_nojs'] = 'Javascript is disabled in your web browser. Turn it on for a better experience.';
 $lang['home_subtitle_mobile'] = 'Ceci est un outils pour ordinateur, <br>mais libre à vous d&rsquo;explorer.';
 $lang['home_percentage'] = 'des internautes utilisent <br>ce navigateur';
 $lang['home_download'] = 'TÉLÉCHARGER';

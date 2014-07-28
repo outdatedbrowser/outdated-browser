@@ -23,6 +23,7 @@ $lang['txt_keepcalm'] = 'buďte v klidu <br><span class="xs">toto je nástroj</s
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'Pro lepší zážitek udržujte váš prohlížeč aktuální. Zkontrolujte zda máte nejnovější verze.';
+$lang['home_subtitle_nojs'] = 'Javascript is disabled in your web browser. Turn it on for a better experience.';
 $lang['home_subtitle_mobile'] = 'Toto je nástroj pro desktop, <br>ale klidně si jej prozkoumejte.';
 $lang['home_percentage'] = 'lidé používající <br>tento prohlížeč';
 $lang['home_download'] = 'STÁHNOUT';
