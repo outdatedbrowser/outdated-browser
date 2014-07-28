@@ -40,7 +40,7 @@ $lang['proj_desc2'] = 'Lorsque mis en oeuvre, ce script détecte si le navigateu
 $lang['proj_desc2_2'] = 'Un site Web s&rsquo;affichant sur un ancien navigateur';
 
 $lang['proj_title3'] = '3 étapes pour <br> commencer à l&rsquo;utiliser!';
-$lang['proj_desc3'] = 'Ça ne prend que 3 minutes. Ajouter les fichiers CSS et Javascript et coller quelques lignes de code HTML. <br><br>Pour plus d&rsquo;informations, visitez la page <a class="github" href="https://github.com/burocratik/outdated-browser">Github</a> ;)';
+$lang['proj_desc3'] = 'Ça ne prend que 3 minutes. Ajouter les fichiers CSS et Javascript et coller quelques lignes de code HTML. <br><br>Pour plus d&rsquo;informations, visitez la page <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> ;)';
 $lang['proj_desc3_2'] = 'Conçu chez <br> Bürolabs';
 
 /*HOW*/

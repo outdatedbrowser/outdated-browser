@@ -40,7 +40,7 @@ $lang['proj_desc2'] = 'Wanneer dit script wordt uitgevoerd, detecteert het of de
 $lang['proj_desc2_2'] = 'Een website op een verouderde browser';
 
 $lang['proj_title3'] = '3 Stappen om <br> het te Gebruiken';
-$lang['proj_desc3'] = 'Het duurt maar 3 minuten. Voeg de JS en CSS bestanden toe en plak een paar lijntjes HTML. <br><br> Voor meer informatie, bezoek de <a class="github" href="https://github.com/burocratik/outdated-browser">Github</a> pagina ;)';
+$lang['proj_desc3'] = 'Het duurt maar 3 minuten. Voeg de JS en CSS bestanden toe en plak een paar lijntjes HTML. <br><br> Voor meer informatie, bezoek de <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> pagina ;)';
 $lang['proj_desc3_2'] = 'Ontwikkeld door Bürolabs. <br> Nederlandse vertaling door Pixeo';
 
 

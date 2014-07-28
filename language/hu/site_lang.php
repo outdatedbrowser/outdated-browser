@@ -40,7 +40,7 @@ $lang['proj_desc2'] = 'Futtatáskor a böngésző CSS3 támogatása ellenőrzés
 $lang['proj_desc2_2'] = 'A website running on an old browser';
 
 $lang['proj_title3'] = '3 lépés <br> hogy használd!';
-$lang['proj_desc3'] = 'Csak 3 perc a beépítés. Add az oldalhosz a CSS és JS fájlokat, és másolj be egy pár sor HTML kódot. <br><br>A részleteket megtalálod a <a class="github" href="https://github.com/burocratik/outdated-browser">Github</a> oldalunkon';
+$lang['proj_desc3'] = 'Csak 3 perc a beépítés. Add az oldalhosz a CSS és JS fájlokat, és másolj be egy pár sor HTML kódot. <br><br>A részleteket megtalálod a <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> oldalunkon';
 $lang['proj_desc3_2'] = 'Developed at <br> Bürolabs';
 
 /*HOW*/
