@@ -23,6 +23,7 @@ $lang['txt_keepcalm'] = 'Fique calmo &lt;br&gt;&lt;span class="xs"&gt;essa &eacu
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'Para ter uma experi&ecirc;ncia melhor, mantenha seu navegador atualizado. Confira aqui as &uacute;ltimas vers&otilde;es.';
+$lang['home_subtitle_nojs'] = 'Javascript is disabled in your web browser. Turn it on for a better experience.';
 $lang['home_subtitle_mobile'] = 'Essa &eacute; uma ferramenta para desktop, &lt;br&gt;mas sinta-se livre para explorar.';
 $lang['home_percentage'] = 'Pessoas usando&lt;br&gt;este browser';
 $lang['home_download'] = 'BAIXAR';
