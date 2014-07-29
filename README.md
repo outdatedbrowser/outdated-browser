@@ -124,6 +124,9 @@ Fork the project.
 Rename with a proper language abbreviation: it — italian , de — german, fr — french, nl — dutch , br — brazilian portuguese, etc. <br>
 NOTE: we are using a two letter code for the language. If you have variations of the same language use URL country code, e.g.: br—brazilian portuguese; us—american english
 
+## CMS, Frameworks, etc
+— [Wordpress Plugin](https://github.com/deblynprado/wp-outdated-browser) by Deblyn Prado<br>
+— [Ruby Gem](https://github.com/luisalima/outdatedbrowser_rails) by Luisa Lima
 
 ## Team
 
