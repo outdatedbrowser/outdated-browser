@@ -23,7 +23,7 @@ $lang['txt_keepcalm'] = 'зберігайте спокій <br><span class="xs">
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'Для комфортної работи в Мережі потрібен сучасний браузер. Тут можна знайти останні версії.';
-$lang['home_subtitle_nojs'] = 'Javascript is disabled in your web browser. Turn it on for a better experience.';
+$lang['home_subtitle_nojs'] = 'У вашому браузері вимкнений JavaScript. Увімкніть його для більш комфортної роботи в Мережі.';
 $lang['home_subtitle_mobile'] = 'Цей сайт призначений для комп&rsquo;ютерів, але <br>ви можете вільно користуватися ним.';
 $lang['home_percentage'] = 'людей користується <br>цим браузером';
 $lang['home_download'] = 'СКАЧАТИ';
