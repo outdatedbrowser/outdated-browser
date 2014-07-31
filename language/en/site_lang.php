@@ -11,7 +11,7 @@ $lang['mainNav_git'] = 'GITHUB PAGE';
 
 /*SHARE*/
 $lang['share_share'] = 'Share';
-$lang['share_twitter'] = 'A time saving %23tool for %23developers. It detects %23outdated %23browsers and advises users to %23upgrade to a new version';
+$lang['share_twitter'] = 'A time saving #tool for #developers. It detects #outdated #browsers and advises users to #upgrade to a new version';
 $lang['share_twitter_t'] = 'Share on Twitter';
 $lang['share_fb_t'] = 'Share on Facebook';
 
@@ -46,20 +46,20 @@ $lang['proj_desc3_2'] = 'Developed at <br> Bürolabs';
 
 /*HOW*/
 $lang['how_title1'] = 'Download <br> the Package';
-$lang['how_desc1'] = 'Our package contains all the required files: JS and CSS. We&rsquo;ve also added an example with the HTML structure for the message.';
+$lang['how_desc1'] = "Our package contains all the required files: JS and CSS. We've also added an example with the HTML structure for the message.";
 $lang['how_desc1_2'] = 'Download on Github';
 
 $lang['how_title2'] = 'Include them <br> in Your Project';
-$lang['how_desc2'] = 'Load the css file in the &#x3c;head&#x3e; element and the JS file at the end of the &#x3c;body&#x3e;.';
+$lang['how_desc2'] = 'Load the css file in the &lt;head&gt; element and the JS file at the end of the &lt;body&gt;.';
 $lang['how_desc2_2'] = 'Copy this code to clipboard ';
 $lang['how_alt2'] = 'browser ';
 
 $lang['how_title3'] = 'Include the <br> Required <br> HTML';
-$lang['how_desc3'] = 'You can place this code right before the &#x3c;/body&#x3e; tag.';
+$lang['how_desc3'] = 'You can place this code right before the &lt;/body&gt; tag.';
 $lang['how_desc3_2'] = '
-&#x3c;h6&#x3e;Your browser is out-of-date!&#x3c;/h6&#x3e;
-&#x3c;p&#x3e;Update your browser to view this website correctly. &#x3c;a id="btnUpdateBrowser" href="http://outdatedbrowser.com/"&#x3e;Update my browser now&#x3c;/a&#x3e;&#x3c;/p&#x3e;
-&#x3c;p class="last"&#x3e; &#x3c;a href="#" id="btnCloseUpdateBrowser" title="Close"&#x3e; &times; &#x3c;/a&#x3e; &#x3c;/p&#x3e;
+<h6>Your browser is out-of-date!</h6>
+<p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now</a></p>
+<p class="last"> <a href="#" id="btnCloseUpdateBrowser" title="Close"> &times; </a> </p>
 ';
 
 $lang['how_title4'] = 'Call the <br> Plugin and';
