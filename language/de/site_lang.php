@@ -11,7 +11,7 @@ $lang['mainNav_git'] = 'GITHUB SEITE';
 
 /*SHARE*/
 $lang['share_share'] = 'Teilen';
-$lang['share_twitter'] = 'Ein Zeit sparendes %23Tool für %23Entwickler. Es erkennt %23veraltete %23Browser und rät Benutzer zur neusten Version zu %23aktualisieren';
+$lang['share_twitter'] = 'Ein Zeit sparendes #Tool für #Entwickler. Es erkennt #veraltete #Browser und rät Benutzer zur neusten Version zu #aktualisieren';
 $lang['share_twitter_t'] = 'Auf Twitter teilen';
 $lang['share_fb_t'] = 'Auf Facebook teilen';
 
@@ -50,17 +50,16 @@ $lang['how_desc1'] = 'Unser Paket enthält alle benötigten Dateien: JS und CSS.
 $lang['how_desc1_2'] = 'Auf Github herunterladen';
 
 $lang['how_title2'] = 'Binde sie in <br> Dein Projekt ein';
-$lang['how_desc2'] = 'Lade die CSS-Datei in dem &#x3c;head&#x3e;-Element und die JS-Datei am Ende von &#x3c;body&#x3e;.';
+$lang['how_desc2'] = 'Lade die CSS-Datei in dem &lt;head&gt; element und die JS-Datei am Ende von &lt;body&gt;.';
 $lang['how_desc2_2'] = 'Code in die Zwischenablage kopieren ';
 $lang['how_alt2'] = 'Browser ';
 
 $lang['how_title3'] = 'Füge den nötigen <br> HTML-Code ein';
-$lang['how_desc3'] = 'Du kannst diesen Code direkt vor &#x3c;/body&#x3e; einfügen.';
+$lang['how_desc3'] = 'Du kannst diesen Code direkt vor &lt;/body&gt; einfügen.';
 $lang['how_desc3_2'] = '
-&#x3c;h6&#x3e;Dein Browser ist veraltet!&#x3c;/h6&#x3e;
-&#x3c;p&#x3e;Aktualisiere deinen Browser um diese Seite korrekt anzusehen. &#x3c;a id="btnUpdateBrowser" href="http://outdatedbrowser.com/"&#x3e;Browser jetzt aktualisieren&#x3c;/a&#x3e;&#x3c;/p&#x3e;
-&#x3c;p class="last"&#x3e; &#x3c;a href="#" id="btnCloseUpdateBrowser" title="Schließen"&#x3e; &times; &#x3c;/a&#x3e; &#x3c;/p&#x3e;
-';
+<h6>Dein Browser ist veraltet!</h6>
+<p>Aktualisiere deinen Browser um diese Seite korrekt anzusehen. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Browser jetzt aktualisieren</a></p>
+<p class="last"> <a href="#" id="btnCloseUpdateBrowser" title="Schließen"> &times; </a> </p>';
 
 $lang['how_title4'] = 'Ruf das <br> Plugin auf und';
 $lang['how_alt4'] = 'fertig';

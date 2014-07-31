@@ -11,7 +11,7 @@ $lang['mainNav_git'] = 'GITHUB';
 
 /*SHARE*/
 $lang['share_share'] = 'Sdílet';
-$lang['share_twitter'] = '%23Nástroj pro %23vývojáře šetřící čas. Detekuje #zastaralé #prohlížeče a radí uživatelům, aby přešli na novou verzi.';
+$lang['share_twitter'] = '#Nástroj pro #vývojáře šetřící čas. Detekuje #zastaralé #prohlížeče a radí uživatelům, aby přešli na novou verzi.';
 $lang['share_twitter_t'] = 'Sdílet na Twitter';
 $lang['share_fb_t'] = 'Sdílet na Facebook';
 
@@ -50,16 +50,16 @@ $lang['how_desc1'] = 'Náš balíček obsahuje všechny potřebné soubory JS a 
 $lang['how_desc1_2'] = 'Stáhnout z Github';
 
 $lang['how_title2'] = 'Vložte do <br> vašeho projektu';
-$lang['how_desc2'] = 'Vložte css soubor do &#x3c;head&#x3e; elementu a JS soubor nakonec &#x3c;body&#x3e;.';
+$lang['how_desc2'] = 'Vložte css soubor do &lt;head&gt; elementu a JS soubor nakonec &lt;body&gt;.';
 $lang['how_desc2_2'] = 'Zkopírovat kód do schránky';
 $lang['how_alt2'] = 'prohlížeč';
 
 $lang['how_title3'] = 'Vložte do <br> požadovaného <br> HTML';
-$lang['how_desc3'] = 'Můžete vložit před &#x3c;/body&#x3e; tag.';
+$lang['how_desc3'] = 'Můžete vložit před &lt;/body&gt; tag.';
 $lang['how_desc3_2'] = '
-&#x3c;h6&#x3e;Váš prohlížeč je zastaralý!&#x3c;/h6&#x3e;
-&#x3c;p&#x3e;Pro správné zobrazení aktualizujte váš prohlížeč. &#x3c;a id="btnUpdateBrowser" href="http://outdatedbrowser.com/"&#x3e;Aktualizovat nyní svůj prohlížeč&#x3c;/a&#x3e;&#x3c;/p&#x3e;
-&#x3c;p class="last"&#x3e; &#x3c;a href="#" id="btnCloseUpdateBrowser" title="Zavřít"&#x3e; &times; &#x3c;/a&#x3e; &#x3c;/p&#x3e;
+<h6>Váš prohlížeč je zastaralý!</h6>
+<p>Pro správné zobrazení aktualizujte váš prohlížeč. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Aktualizovat nyní svůj prohlížeč</a></p>
+<p class="last"> <a href="#" id="btnCloseUpdateBrowser" title="Zavřít"> &times; </a> </p>
 ';
 
 $lang['how_title4'] = 'Spusťte <br> plugin a';
