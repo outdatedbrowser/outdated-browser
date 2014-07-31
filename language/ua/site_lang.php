@@ -11,7 +11,7 @@ $lang['mainNav_git'] = 'СТОРІНКА GITHUB';
 
 /*SHARE*/
 $lang['share_share'] = 'Поділитися';
-$lang['share_twitter'] = '%23Інструмент, здатний заощадити час %23розробників. Виявляє %23застарілі %23браузери й рекомендує користувачу %23оновитися до нової версії.';
+$lang['share_twitter'] = '#Інструмент, здатний заощадити час #розробників. Виявляє #застарілі #браузери й рекомендує користувачу #оновитися до нової версії.';
 $lang['share_twitter_t'] = 'Поділитися в Twitter';
 $lang['share_fb_t'] = 'Поділитися в Facebook';
 
@@ -50,16 +50,16 @@ $lang['how_desc1'] = 'Цей пакет містить усі необхідні
 $lang['how_desc1_2'] = 'Скачати з Github';
 
 $lang['how_title2'] = 'Підключіть їх <br> до свого проекту';
-$lang['how_desc2'] = 'Завантажте css-файл до блоку &#x3c;head&#x3e; та JS-файл в кінець &#x3c;body&#x3e;.';
+$lang['how_desc2'] = 'Завантажте css-файл до блоку &lt;head&gt; та JS-файл в кінець &lt;body&gt;.';
 $lang['how_desc2_2'] = 'Скопіювати готовий код до буферу ';
 $lang['how_alt2'] = 'браузер ';
 
 $lang['how_title3'] = 'Підключіть <br> необхідний <br> HTML';
-$lang['how_desc3'] = 'Можете розмістити цей код прямо перед тегом &#x3c;/body&#x3e;.';
+$lang['how_desc3'] = 'Можете розмістити цей код прямо перед тегом &lt;/body&gt;.';
 $lang['how_desc3_2'] = '
-&#x3c;h6&#x3e;Ваш браузер застарів!&#x3c;/h6&#x3e;
-&#x3c;p&#x3e;Оновіть свій браузер для правильного відображення цього сайта. &#x3c;a id="btnUpdateBrowser" href="http://outdatedbrowser.com/"&#x3e;Оновити браузер&#x3c;/a&#x3e;&#x3c;/p&#x3e;
-&#x3c;p class="last"&#x3e; &#x3c;a href="#" id="btnCloseUpdateBrowser" title="Закрити"&#x3e; &times; &#x3c;/a&#x3e; &#x3c;/p&#x3e;
+<h6>Ваш браузер застарів!</h6>
+<p>Оновіть свій браузер для правильного відображення цього сайта. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Оновити браузер</a></p>
+<p class="last"> <a href="#" id="btnCloseUpdateBrowser" title="Закрити"> &times; </a> </p>
 ';
 
 $lang['how_title4'] = 'Викличте <br> плагін і ';

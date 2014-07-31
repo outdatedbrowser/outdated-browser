@@ -32,14 +32,15 @@ Fork the project, and read "How to".<br><br>
 br — 100% (done) <br>
 cz — 100% (done) <br>
 de — 100% (done) <br>
-en — 100% (done)<br>
+en — 100% (done) <br>
 
-fr — 
-hu — 
-nl — 
-pt — 
-ru — 
-ua — 
+fr — 99% <br>
+hu — 99% <br>
+nl — 99% <br>
+pt — 90% (review needed)<br>
+
+ru — 100% (done) <br>
+ua — 100% (done) <br>
 
 
 ## Team
