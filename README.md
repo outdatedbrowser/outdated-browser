@@ -5,7 +5,7 @@
 So, you're tired of people visiting your modern website with an outdated browser and not doing anything about it.
 Maybe they aren't "power" users, maybe it's your auntie running a last century browser trying to see awesome CSS3 animations and transforms. Let the user know that’s an outdated browser, and advise them on a better one.
 
-With this solution you can check if the user’s browser can handle your website. If not, it will show a cool [looking notice](http://buro.pt/Wis6) advising the user to update the browser. It'll be up to him/her to decide if he upgrades or not. Don't force the user!
+With this solution you can check if the user’s browser can handle your website. If not, it will show a cool [looking notice](http://buro.pt/Wis6) advising the user to update the browser. It’ll be up to the user to upgrade or not. Don't force the user!
 
 That's it! As simple as it can get.
 
@@ -28,7 +28,7 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
 3. Paste the required HTML at the end of your document (see demo examples):
 
     ```html
-    <div id="outdated"> </div>
+    <div id="outdated"></div>
     ```
 
 
@@ -82,7 +82,7 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
     </div>
     ```
     <br>
-    — Call the plugin just like before but with languagePath: '':
+    — Call the plugin (see 4.) but with the variable languagePath empty:
      ```javascript
     //DOM ready or jQuery
         outdatedBrowser({
