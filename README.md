@@ -71,7 +71,32 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
     })
     ```    
 
-5. Targeting browsers:
+6. Using the plugin without AJAX calls:
+
+    — Paste the required HTML at the end of your document (see demo examples):
+    ```html
+    <div id="outdated">
+         <h6>Your browser is out-of-date!</h6>
+         <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+    ```
+    <br>
+    — Call the plugin just like before but with languagePath: '':
+     ```javascript
+    $( document ).ready(function() {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'transform',
+            languagePath: ''
+        })
+    })
+    ```     
+    
+    
+    
+6. Targeting browsers:
 
     You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you.
 
@@ -82,10 +107,9 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
 
-6. Choose the language:
+7. Choose the language:
 
-	Download the “lang" folder, and if you have the language you want, just write the correct path for the language file in your project.
-If you don’t have your language, you can write your own html file, and please share it with us.  
+	Download the “lang" folder: If you have the language you want, just write the correct path for the language file in your project; If you don’t have your language, you can write your own html file, and please share it with us.  
     
 And you're done!
 <br>PS: check de "demo" folder, it may help you.
