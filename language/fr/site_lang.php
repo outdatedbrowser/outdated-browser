@@ -37,7 +37,7 @@ $lang['proj_alt1'] = 'désespéré';
 $lang['proj_desc1_2'] = 'Un développeur en perte de contrôle';
 
 $lang['proj_title2'] = 'Comment ça <br>Fonctionne?';
-$lang['proj_desc2'] = 'Lorsque mis en oeuvre, ce script détecte si le navigateur supporte une propriété CSS 3. Si la propriété n&rsquo;est pas supportée, nous afficherons un message d&rsquo;alerte visuellement intéressant recommandant à l&rsquo;utilisateur de mettre à jour son navigateur.';
+$lang['proj_desc2'] = 'Lorsque mis en oeuvre, ce script détecte si le navigateur supporte une propriété CSS. Si la propriété n&rsquo;est pas supportée, nous afficherons un message d&rsquo;alerte visuellement intéressant recommandant à l&rsquo;utilisateur de mettre à jour son navigateur.';
 $lang['proj_desc2_2'] = 'Un site Web s&rsquo;affichant sur un ancien navigateur';
 
 $lang['proj_title3'] = '3 Étapes pour <br>Commencer <br>à l&rsquo;utiliser!';
@@ -46,7 +46,7 @@ $lang['proj_desc3_2'] = 'Conçu chez <br> Bürolabs';
 
 /*HOW*/
 $lang['how_title1'] = 'Télécharger <br> le Projet';
-$lang['how_desc1'] = 'Notre projet contient tous les fichiers nécessaires: CSS et Javascript. Nous avons même ajouté un exemple avec le code HTML pour le message d&rsquo;alerte.';
+$lang['how_desc1'] = 'Notre projet contient tous les fichiers nécessaires: CSS, Javascript et langues.';
 $lang['how_desc1_2'] = 'Télécharger sur Github';
 
 $lang['how_title2'] = 'Inclure à <br> Votre Projet';

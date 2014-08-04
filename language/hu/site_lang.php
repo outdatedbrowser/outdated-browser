@@ -37,7 +37,7 @@ $lang['proj_alt1'] = 'kétségbeesett';
 $lang['proj_desc1_2'] = 'Egy őrült fejlesztő';
 
 $lang['proj_title2'] = 'Hogyan <br>működik?';
-$lang['proj_desc2'] = 'Futtatáskor a böngésző CSS3 támogatása ellenőrzésre kerül. Ha hiányos a támogatás, megjelenítünk szép és látványos értesítést, hogy nem ártana frissíteni vagy lecserélni a bönészőt.';
+$lang['proj_desc2'] = 'Futtatáskor a böngésző CSS támogatása ellenőrzésre kerül. Ha hiányos a támogatás, megjelenítünk szép és látványos értesítést, hogy nem ártana frissíteni vagy lecserélni a bönészőt.';
 $lang['proj_desc2_2'] = 'A website running on an old browser';
 
 $lang['proj_title3'] = '3 lépés hogy <br>használd!';
@@ -46,7 +46,7 @@ $lang['proj_desc3_2'] = 'Developed at <br> Bürolabs';
 
 /*HOW*/
 $lang['how_title1'] = 'A csomag <br> letöltése';
-$lang['how_desc1'] = 'A csomagung tartalmaz minden szükséges CSS és JS fájl, és még egy almalmazási mintát is mellékeltünk!';
+$lang['how_desc1'] = 'A csomag tartalmazza az összes szükséges CSS, JS és a nyelvi fájlokat.';
 $lang['how_desc1_2'] = 'Letöltés Github-ról';
 
 $lang['how_title2'] = 'Add hozzáa <br> a Projektedhez';

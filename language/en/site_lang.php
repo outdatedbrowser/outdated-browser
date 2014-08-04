@@ -37,7 +37,7 @@ $lang['proj_alt1'] = 'desperate';
 $lang['proj_desc1_2'] = 'A dev going crazy';
 
 $lang['proj_title2'] = 'How Does <br>It Work?';
-$lang['proj_desc2'] = 'When executed, this script detects whether the browser supports a CSS3 property. If it doesn&rsquo;t, we&rsquo;ll show a nice and cool looking warning advising the user to update the browser.';
+$lang['proj_desc2'] = 'When executed, this script detects whether the browser supports a CSS property. If it doesn&rsquo;t, we&rsquo;ll show a nice and cool looking warning advising the user to update the browser.';
 $lang['proj_desc2_2'] = 'A website running on an old browser';
 
 $lang['proj_title3'] = '3 Steps to <br> Start Using It!';
@@ -46,7 +46,7 @@ $lang['proj_desc3_2'] = 'Developed at <br> Bürolabs';
 
 /*HOW*/
 $lang['how_title1'] = 'Download <br> the Package';
-$lang['how_desc1'] = "Our package contains all the required files: JS and CSS. We've also added an example with the HTML structure for the message.";
+$lang['how_desc1'] = "Our package contains all the required files: JS, CSS and languages.";
 $lang['how_desc1_2'] = 'Download on Github';
 
 $lang['how_title2'] = 'Include them <br> in Your Project';
