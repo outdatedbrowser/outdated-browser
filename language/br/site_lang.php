@@ -11,7 +11,7 @@ $lang['mainNav_git'] = 'PÁGINA NO GITHUB';
 
 /*SHARE*/
 $lang['share_share'] = 'Compartilhar';
-$lang['share_twitter'] = 'A #ferramenta para salvar os #desenvolvedores. Detecta se o #navegador está desatualizado e sugere uma atualização!';
+$lang['share_twitter'] = 'A %23ferramenta para salvar os %23desenvolvedores. Detecta se o %23navegador está desatualizado e sugere uma atualização!';
 $lang['share_twitter_t'] = 'Compartilhar no Twitter';
 $lang['share_fb_t'] = 'Compartilhar no Facebook';
 
@@ -30,17 +30,17 @@ $lang['home_version'] = 'Versão';
 $lang['home_available'] = 'DISPONÍVEL EM';
 
 /*PROJECT*/
-$lang['proj_title1'] = 'Uma causa <br> DESESPERADORA!';
+$lang['proj_title1'] = 'Uma Causa <br>Desesperadora!';
 $lang['proj_desc1'] = 'Depois de perder muito tempo otimizando nossos sites para navegadores antigos, nós da Büro, decidimos criar uma solução que não vai apenas reduzir seu tempo, mas também vai deixar você ir para casa mais cedo.<br><br> Pizzas não estão incluídas!';
 $lang['proj_alt1'] = 'desesperado';
 $lang['proj_desc1_2'] = 'Um desenvolvedor ficando louco';
 
-$lang['proj_title2'] = 'Como <br>funciona?';
+$lang['proj_title2'] = 'Como <br>Funciona?';
 $lang['proj_desc2'] = 'Quando executado, este script detecta se o navegador suporta determinada propriedade da CSS3. Caso ele não suporte, é exibida uma mensagem de alerta pedindo para o usuário atualizar o navegador.';
 $lang['proj_desc2_2'] = 'Um site rodando em um velho navegador';
 
-$lang['proj_title3'] = '3 passos para <br> começar a usar!';
-$lang['proj_desc3'] = 'Leva só 3 minutos. Inclua o JS e o arquivo CSS, e cole algumas linhas de HTML. <br><br>Para mais informações, acesse nossa página no <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a>;)';
+$lang['proj_title3'] = '3 Passos para <br> Começar a Usar!';
+$lang['proj_desc3'] = 'Leva só 3 minutos. Inclua o JS e o arquivo CSS, e cole algumas linhas de HTML. <br><br>Para mais informações, acesse nossa página no <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> ;)';
 $lang['proj_desc3_2'] = 'Desenvolvido <br> no Bürolabs';
 
 /*HOW*/
@@ -53,7 +53,7 @@ $lang['how_desc2'] = 'Carregue o arquivo CSS em &lt;head&gt; e o arquivo JS file
 $lang['how_desc2_2'] = 'Copiar para o clipboard';
 $lang['how_alt2'] = 'browser';
 
-$lang['how_title3'] = 'Inclua o <br> HTML <br> necessário';
+$lang['how_title3'] = 'Inclua o <br> HTML <br> Necessário';
 $lang['how_desc3'] = 'Você pode colar esse código logo antes da tag &lt;/body&gt;.';
 $lang['how_desc3_2'] = '
 <h6>Seu navegador está desatualizado!</h6>

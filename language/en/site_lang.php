@@ -11,7 +11,7 @@ $lang['mainNav_git'] = 'GITHUB PAGE';
 
 /*SHARE*/
 $lang['share_share'] = 'Share';
-$lang['share_twitter'] = 'A time saving #tool for #developers. It detects #outdated #browsers and advises users to #upgrade to a new version';
+$lang['share_twitter'] = 'A time saving %23tool for %23developers. It detects %23outdated %23browsers and advises users to %23upgrade to a new version';
 $lang['share_twitter_t'] = 'Share on Twitter';
 $lang['share_fb_t'] = 'Share on Facebook';
 
