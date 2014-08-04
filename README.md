@@ -84,14 +84,13 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
     <br>
     — Call the plugin just like before but with languagePath: '':
      ```javascript
-    $( document ).ready(function() {
+    //DOM ready or jQuery
         outdatedBrowser({
             bgColor: '#f25648',
             color: '#ffffff',
             lowerThan: 'transform',
             languagePath: ''
         })
-    })
     ```     
     
     
