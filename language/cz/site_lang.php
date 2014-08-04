@@ -37,7 +37,7 @@ $lang['proj_alt1'] = 'příčina';
 $lang['proj_desc1_2'] = 'Vývojáři šílí';
 
 $lang['proj_title2'] = 'Jak to <br>funguje?';
-$lang['proj_desc2'] = 'Po spuštění tohoto skriptu zjistí, zda prohlížeč podporuje CSS3 vlastnosti. Pokud tomu tak není, ukáže se pěkný a cool vypadající upozornění pro uživatele aby aktualizoval prohlížeč.';
+$lang['proj_desc2'] = 'Po spuštění tohoto skriptu zjistí, zda prohlížeč podporuje CSS vlastnosti. Pokud tomu tak není, ukáže se pěkný a cool vypadající upozornění pro uživatele aby aktualizoval prohlížeč.';
 $lang['proj_desc2_2'] = 'Web se zobrazuje ve neaktuápním prohlížeči';
 
 $lang['proj_title3'] = '3 kroky k <br> používání';
@@ -46,7 +46,7 @@ $lang['proj_desc3_2'] = 'Vytvořeno v <br> Bürolabs';
 
 /*HOW*/
 $lang['how_title1'] = 'Stáhnout <br> projekt';
-$lang['how_desc1'] = 'Náš balíček obsahuje všechny potřebné soubory JS a CSS. Přidali jsme také příklad se strukturou HTML pro zprávy.';
+$lang['how_desc1'] = 'Náš balíček obsahuje veškeré nezbytné soubory JS, CSS a jazyk.';
 $lang['how_desc1_2'] = 'Stáhnout z Github';
 
 $lang['how_title2'] = 'Vložte do <br> vašeho projektu';

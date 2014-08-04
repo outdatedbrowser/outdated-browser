@@ -37,7 +37,7 @@ $lang['proj_alt1'] = 'wanhopig';
 $lang['proj_desc1_2'] = 'Een ontwikkelaar die gek wordt.';
 
 $lang['proj_title2'] = 'Hoe Werkt <br>Dit?';
-$lang['proj_desc2'] = 'Wanneer dit script wordt uitgevoerd, detecteert het of de browser een bepaalde CSS3 eigenschap ondersteunt. Zo niet, toont ie een leuke waarschuwing die de gebruiker adviseert zijn browser te updaten.';
+$lang['proj_desc2'] = 'Wanneer dit script wordt uitgevoerd, detecteert het of de browser een bepaalde CSS eigenschap ondersteunt. Zo niet, toont ie een leuke waarschuwing die de gebruiker adviseert zijn browser te updaten.';
 $lang['proj_desc2_2'] = 'Een website op een verouderde browser';
 
 $lang['proj_title3'] = '3 Stappen <br>om het te <br>Gebruiken';
@@ -47,7 +47,7 @@ $lang['proj_desc3_2'] = 'Ontwikkeld door Bürolabs. <br> Nederlandse vertaling d
 
 /*HOW*/
 $lang['how_title1'] = 'Download <br> het Pakket';
-$lang['how_desc1'] = 'Ons pakket bevat al de vereiste bestanden: JS en CSS. We hebben ook een HTML structuur van de boodschap voorzien.';
+$lang['how_desc1'] = 'Ons pakket bevat al de vereiste bestanden: JS, CSS en talen.';
 $lang['how_desc1_2'] = 'Download op Github';
 
 $lang['how_title2'] = 'Steek ze in <br>Je Project';

@@ -37,7 +37,7 @@ $lang['proj_alt1'] = 'verzweifelt';
 $lang['proj_desc1_2'] = 'Ein Entwickler am Durchdrehen';
 
 $lang['proj_title2'] = 'Wie funkti-<br>oniert es?';
-$lang['proj_desc2'] = 'Wenn das Skript ausgeführt wird, erkennt es, ob der Browser eine CSS3 Eigenschaft unterstützt. Wenn nicht, zeigen wir eine freundliche und modern aussehende Warnung den Browser zu aktualisieren.';
+$lang['proj_desc2'] = 'Wenn das Skript ausgeführt wird, erkennt es, ob der Browser eine CSS Eigenschaft unterstützt. Wenn nicht, zeigen wir eine freundliche und modern aussehende Warnung den Browser zu aktualisieren.';
 $lang['proj_desc2_2'] = 'Eine Webseite geöffnet in einem alten Browser';
 
 $lang['proj_title3'] = 'Nur 3 Schritte <br>um zu starten!';
@@ -46,7 +46,7 @@ $lang['proj_desc3_2'] = 'Entwickelt von <br> Bürolabs';
 
 /*HOW*/
 $lang['how_title1'] = 'Lade das <br>Paket runter';
-$lang['how_desc1'] = 'Unser Paket enthält alle benötigten Dateien: JS und CSS. Wir haben außerdem ein Beispiel mit der HTML-Struktur für die Nachricht hinzugefügt.';
+$lang['how_desc1'] = 'Unser Paket enthält alle benötigten Dateien: JS, CSS und Sprachen.';
 $lang['how_desc1_2'] = 'Auf Github herunterladen';
 
 $lang['how_title2'] = 'Binde sie <br>in Dein <br>Projekt ein';

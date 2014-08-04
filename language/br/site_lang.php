@@ -36,7 +36,7 @@ $lang['proj_alt1'] = 'desesperado';
 $lang['proj_desc1_2'] = 'Um desenvolvedor ficando louco';
 
 $lang['proj_title2'] = 'Como <br>Funciona?';
-$lang['proj_desc2'] = 'Quando executado, este script detecta se o navegador suporta determinada propriedade da CSS3. Caso ele não suporte, é exibida uma mensagem de alerta pedindo para o usuário atualizar o navegador.';
+$lang['proj_desc2'] = 'Quando executado, este script detecta se o navegador suporta determinada propriedade da CSS. Caso ele não suporte, é exibida uma mensagem de alerta pedindo para o usuário atualizar o navegador.';
 $lang['proj_desc2_2'] = 'Um site rodando em um velho navegador';
 
 $lang['proj_title3'] = '3 Passos para <br> Começar a Usar!';
@@ -45,7 +45,7 @@ $lang['proj_desc3_2'] = 'Desenvolvido <br> no Bürolabs';
 
 /*HOW*/
 $lang['how_title1'] = 'Baixar <br> o Pacote';
-$lang['how_desc1'] = 'Nosso pacote contém todos os arquivos necessários: JS e CSS. Nós também adicionamos um exemplo com a estrutura HTML da mensagem.';
+$lang['how_desc1'] = 'Nosso pacote contém todos os arquivos necessários: JS, CSS e idiomas.';
 $lang['how_desc1_2'] = 'Baixar do Github';
 
 $lang['how_title2'] = 'Inclua isso <br> em seu Projeto';
