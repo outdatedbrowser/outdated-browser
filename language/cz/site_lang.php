@@ -11,7 +11,7 @@ $lang['mainNav_git'] = 'GITHUB';
 
 /*SHARE*/
 $lang['share_share'] = 'Sdílet';
-$lang['share_twitter'] = '#Nástroj pro #vývojáře šetřící čas. Detekuje #zastaralé #prohlížeče a radí uživatelům, aby přešli na novou verzi.';
+$lang['share_twitter'] = '%23Nástroj pro %23vývojáře šetřící čas. Detekuje %23zastaralé %23prohlížeče a radí uživatelům, aby přešli na novou verzi.';
 $lang['share_twitter_t'] = 'Sdílet na Twitter';
 $lang['share_fb_t'] = 'Sdílet na Facebook';
 
@@ -32,7 +32,7 @@ $lang['home_available'] = 'DOSTUPNÝ PRO';
 
 /*PROJECT*/
 $lang['proj_title1'] = 'Příčina <br> zoufalství!';
-$lang['proj_desc1'] = 'Poté, co jste strávili příliš mnoho času optimalizací vaší webové stránky pro staré prohlížeče, jsme na Büro rozhodli vytvořit řešení, které nejen šetří váš čas, ale také vás domu pošle dříve. <br> Pizza není součástí dodávky!';
+$lang['proj_desc1'] = 'Poté, co jste strávili příliš mnoho času optimalizací vaší webové stránky pro staré prohlížeče, jsme na Büro rozhodli vytvořit řešení, které nejen šetří váš čas, ale také vás domu pošle dříve. <br><br>Pizza není součástí dodávky!';
 $lang['proj_alt1'] = 'příčina';
 $lang['proj_desc1_2'] = 'Vývojáři šílí';
 
@@ -41,7 +41,7 @@ $lang['proj_desc2'] = 'Po spuštění tohoto skriptu zjistí, zda prohlížeč p
 $lang['proj_desc2_2'] = 'Web se zobrazuje ve neaktuápním prohlížeči';
 
 $lang['proj_title3'] = '3 kroky k <br> používání';
-$lang['proj_desc3'] = 'Trvá to jen 3 minuty zahrnout JS a CSS soubor a vložit pár řádků HTML. <br> Pro více informací zkontrolujte stránku na <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github"> Github </ a> ;)';
+$lang['proj_desc3'] = 'Trvá to jen 3 minuty zahrnout JS a CSS soubor a vložit pár řádků HTML. <br><br>Pro více informací zkontrolujte stránku na <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> ;)';
 $lang['proj_desc3_2'] = 'Vytvořeno v <br> Bürolabs';
 
 /*HOW*/

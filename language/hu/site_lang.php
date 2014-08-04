@@ -31,7 +31,7 @@ $lang['home_version'] = 'VERZIÓ';
 $lang['home_available'] = 'ELÉRHETŐ';
 
 /*PROJECT*/
-$lang['proj_title1'] = 'Egy Kétségbeesett<br> Ügy!';
+$lang['proj_title1'] = 'Egy Kétség-<br>beesett Ügy!';
 $lang['proj_desc1'] = 'Miután túl sok időt töltöttünk azzal, hogy elavult böngészőkre is elérhetővé tegyük az oldalainkat, mi a Büro-nál úgy döntöttünk, hogy létrehozunk egy megoldást ami nem csak időt takarít meg, de korábban is hazajutunk.<br><br> Pizzát nem mellékelünk!';
 $lang['proj_alt1'] = 'kétségbeesett';
 $lang['proj_desc1_2'] = 'Egy őrült fejlesztő';
@@ -40,7 +40,7 @@ $lang['proj_title2'] = 'Hogyan <br>működik?';
 $lang['proj_desc2'] = 'Futtatáskor a böngésző CSS3 támogatása ellenőrzésre kerül. Ha hiányos a támogatás, megjelenítünk szép és látványos értesítést, hogy nem ártana frissíteni vagy lecserélni a bönészőt.';
 $lang['proj_desc2_2'] = 'A website running on an old browser';
 
-$lang['proj_title3'] = '3 lépés <br> hogy használd!';
+$lang['proj_title3'] = '3 lépés hogy <br>használd!';
 $lang['proj_desc3'] = 'Csak 3 perc a beépítés. Add az oldalhosz a CSS és JS fájlokat, és másolj be egy pár sor HTML kódot. <br><br>A részleteket megtalálod a <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> oldalunkon';
 $lang['proj_desc3_2'] = 'Developed at <br> Bürolabs';
 
@@ -50,16 +50,16 @@ $lang['how_desc1'] = 'A csomagung tartalmaz minden szükséges CSS és JS fájl,
 $lang['how_desc1_2'] = 'Letöltés Github-ról';
 
 $lang['how_title2'] = 'Add hozzáa <br> a Projektedhez';
-$lang['how_desc2'] = 'Add a CSS fájlt a &#x3c;head&#x3e; elemhez és a JS fájlt a záró &#x3c;body&#x3e; tag elé.';
+$lang['how_desc2'] = 'Add a CSS fájlt a &lt;head&gt; elemhez és a JS fájlt a záró &lt;body&gt; tag elé.';
 $lang['how_desc2_2'] = 'Másold ezt a kódot a vágólapra ';
 $lang['how_alt2'] = 'böngésző ';
 
 $lang['how_title3'] = 'Illeszd be a <br> szükséges <br> HTML-t';
-$lang['how_desc3'] = 'Ezt a részletet közvetlenül a &#x3c;/body&#x3e; tag elé is teheted.';
+$lang['how_desc3'] = 'Ezt a részletet közvetlenül a &lt;/body&gt; tag elé is teheted.';
 $lang['how_desc3_2'] = '
- &lt;h6&gt;A b&ouml;ng&eacute;szője elavult!&lt;/h6&gt;
- &lt;p&gt;Firss&iacute;tse vagy cser&eacute;lje le a b&ouml;ng&eacute;szőj&eacute;t. &lt;a id=&quot;btnUpdateBrowser&quot; href=&quot;http://outdatedbrowser.com/&quot;&gt;A b&ouml;ng&eacute;szpm friss&iacute;t&eacute;se &lt;/a&gt;&lt;/p&gt;
- &lt;p class=&quot;last&quot;&gt;&lt;a href=&quot;#&quot; id=&quot;btnCloseUpdateBrowser&quot; title=&quot;Close&quot;&gt;&amp;times;&lt;/a&gt;&lt;/p&gt;
+ <h6>A b&ouml;ng&eacute;szője elavult!</h6>
+ <p>Firss&iacute;tse vagy cser&eacute;lje le a b&ouml;ng&eacute;szőj&eacute;t. <a id=&quot;btnUpdateBrowser&quot; href=&quot;http://outdatedbrowser.com/&quot;>A b&ouml;ng&eacute;szpm friss&iacute;t&eacute;se </a></p>
+ <p class=&quot;last&quot;><a href=&quot;#&quot; id=&quot;btnCloseUpdateBrowser&quot; title=&quot;Close&quot;>&amp;times;</a></p>
 ';
 
 $lang['how_title4'] = 'Hívd meg a <br> Plugin-t és';

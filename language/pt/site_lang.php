@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /*NAVIGATION and META*/
-$lang['meta_desc'] = '(traduzir) A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.';
+$lang['meta_desc'] = 'Uma ferramenta que poupa tempo aos developers. Deteta se o browser está desatualizado e aconselha o utilizador a atualizar para uma versão mais recente.';
 $lang['btn_closenav'] = 'Fechar Navegação';
 $lang['mainNav_home'] = 'INÍCIO';
 $lang['mainNav_project'] = 'O PROJETO';
@@ -11,59 +11,58 @@ $lang['mainNav_git'] = 'PÁGINA GITHUB';
 
 /*SHARE*/
 $lang['share_share'] = 'Partilhar';
-$lang['share_twitter'] = '(traduzir) A time saving %23tool for %23developers. It detects %23outdated %23browsers and advises users to %23upgrade to a new version';
+$lang['share_twitter'] = 'Uma %23ferramenta que poupa tempo aos %23developers. Deteta se o %23browser está desatualizado e aconselha o utilizador a atualizar para uma versão mais recente.';
 $lang['share_twitter_t'] = 'Partilhar no Twitter';
 $lang['share_fb_t'] = 'Partilhar no Facebook';
 
 
 /*GENERIC*/
 $lang['txt_close'] = 'Fechar';
-$lang['txt_keepcalm'] = '(traduzir) keep calm <br><span class="xs">this is a tool for</span>desktop<br><span class="xs">not</span> mobile devices';
+$lang['txt_keepcalm'] = 'Calma <br><span class="xs">esta é uma ferramenta</span>para desktop<br><span class="xs">não para</span> dispositivos móveis';
 
 
 /*HOMEPAGE*/
-$lang['home_subtitle'] = '(traduzir) For a better experience, keep your browser up to date. Check here for latest versions.';
-$lang['home_subtitle_nojs'] = '(traduzir) Javascript is disabled in your web browser. Turn it on for a better experience.';
-$lang['home_subtitle_mobile'] = '(traduzir) This is a tool for desktop, <br>but feel free to explore.';
+$lang['home_subtitle'] = 'Para uma melhor experiência mantenha o seu browser atualizado. Veja aqui as últimas versões.';
+$lang['home_subtitle_nojs'] = 'O Javascript está desativado no seu browser. Ative-o para uma melhor experiência.';
+$lang['home_subtitle_mobile'] = 'Esta é uma ferramenta para desktop, <br>mas podes explorar à vontade.';
 $lang['home_percentage'] = 'Pessoas a usar<br>este browser';
 $lang['home_download'] = 'DESCARREGAR';
-$lang['home_version'] = 'Vers&atilde;o';
-$lang['home_available'] = 'DISPON&iacute;VEL EM';
+$lang['home_version'] = 'VERSÃO';
+$lang['home_available'] = 'DISPONÍVEL PARA';
 
 /*PROJECT*/
-$lang['proj_title1'] = '(traduzir) A Desperate <br> Cause!';
-$lang['proj_desc1'] = '(traduzir) After spending too much time optimising our websites for old browsers, we at Büro, decided to create a solution that not only saves you time, but also sends you home earlier.<br><br> Pizzas not included!';
+$lang['proj_title1'] = 'Uma Causa <br>Desesperante!';
+$lang['proj_desc1'] = 'Depois de perdermos demasiado tempo a otimizar os nossos sites para browsers antigos, nós na Büro, decidimos criar uma solução que não só nos poupa tempo, como também permite-nos ir para casa mais cedo.<br><br> Pizzas não incluídas!';
 $lang['proj_alt1'] = 'desesperado';
-$lang['proj_desc1_2'] = '(traduzir) A dev going crazy';
+$lang['proj_desc1_2'] = 'Um dev a dar em doido';
 
-$lang['proj_title2'] = 'Como <br>funciona?';
-$lang['proj_desc2'] = '(traduzir) When executed, this script detects whether the browser supports a CSS3 property. If it doesn&rsquo;t, we&rsquo;ll show a nice and cool looking warning advising the user to update the browser.';
-$lang['proj_desc2_2'] = '(traduzir) A website running on an old browser';
+$lang['proj_title2'] = 'Como <br>Funciona?';
+$lang['proj_desc2'] = 'Quando executado, o script deteta se o browser suporta uma determinada propriedade de CSS3. Caso não suporte, é apresentado uma mensagem a sugerir que o utilizador atualize o browser.';
+$lang['proj_desc2_2'] = 'Website num browser desatualizado';
 
-$lang['proj_title3'] = '(traduzir) 3 Steps to <br> Start Using It!';
-$lang['proj_desc3'] = '(traduzir) It only takes 3 minutes. Include the JS and CSS file, and paste a couple of HTML lines. <br><br>For more info check the <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> page ;)';
+$lang['proj_title3'] = '3 Passos <br>para Começar <br>a Usar!';
+$lang['proj_desc3'] = 'Demora apenas 3 minutos. Inclui o ficheiro de JS e CSS e cola umas linhas de HTML. <br><br>Para mais detalhes consulta o <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> ;)';
 $lang['proj_desc3_2'] = 'Desenvolvido <br> no Bürolabs';
 
 /*HOW*/
-$lang['how_title1'] = '(traduzir) Download <br> the Package';
-$lang['how_desc1'] = '(traduzir) Our package contains all the required files: JS and CSS. We&rsquo;ve also added an example with the HTML structure for the message.';
-$lang['how_desc1_2'] = 'Descarregar no Github';
+$lang['how_title1'] = 'Download <br>dos Ficheiros';
+$lang['how_desc1'] = 'A pasta contém todos os ficheiros necessários: JS e CSS. Também adicionámos um exemplo da estrutura HTML para a mensagem.';
+$lang['how_desc1_2'] = 'Download no Github';
 
-$lang['how_title2'] = '(traduzir) Include them <br> in Your Project';
-$lang['how_desc2'] = '(traduzir) Load the css file in the &#x3c;head&#x3e; element and the JS file at the end of the &#x3c;body&#x3e;.';
-$lang['how_desc2_2'] = '(traduzir) Copy this code to clipboard ';
+$lang['how_title2'] = 'Inclui-os <br>no Projeto';
+$lang['how_desc2'] = 'Carrega o ficheiro de CSS no &lt;head&gt; do documento e o ficheiro de JS no final do &lt;body&gt;.';
+$lang['how_desc2_2'] = 'Copiar para o clipboard ';
 $lang['how_alt2'] = 'browser ';
 
-$lang['how_title3'] = '(traduzir) Include the <br> Required <br> HTML';
-$lang['how_desc3'] = '(traduzir) You can place this code right before the &#x3c;/body&#x3e; tag.';
+$lang['how_title3'] = 'Inclui <br>o HTML <br>Necessário';
+$lang['how_desc3'] = 'Podes colar este código antes da tag &lt;/body&gt;.';
 $lang['how_desc3_2'] = '
-&#x3c;h6&#x3e;Your browser is out-of-date!&#x3c;/h6&#x3e;
-&#x3c;p&#x3e;Update your browser to view this website correctly. &#x3c;a id="btnUpdateBrowser" href="http://outdatedbrowser.com/"&#x3e;Update my browser now&#x3c;/a&#x3e;&#x3c;/p&#x3e;
-&#x3c;p class="last"&#x3e; &#x3c;a href="#" id="btnCloseUpdateBrowser" title="Close"&#x3e; &times; &#x3c;/a&#x3e; &#x3c;/p&#x3e;
-';
+<h6>O seu browser está desatualizado!</h6>
+<p>Atualize o seu browser para uma uma melhor experiência e visualização deste site. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Atualize o browser agora</a></p>
+<p class="last"> <a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>';
 
-$lang['how_title4'] = 'Chamar o <br> Plugin e';
-$lang['how_alt4'] = 'feito';
-$lang['how_desc4'] = '(traduzir) From now on, any user with an old browser will be presented with a fancy notice on the top of the page.<br><br> If you like this project fork it and share it with the world!';
+$lang['how_title4'] = 'Chamar o <br>Plugin e';
+$lang['how_alt4'] = 'Feito';
+$lang['how_desc4'] = 'A partir de agora, qualquer utilizador com um browser desatualizado irá ver um aviso no topo da página.<br><br> Se gostas deste projeto partilha com o mundo!';
 $lang['how_desc4_2'] = '//plugin function, place inside DOM ready function';
 
