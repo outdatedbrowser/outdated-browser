@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,11 +26,11 @@
     <!-- ============= YOUR CONTENT ============= -->
     <h1><a href="index.html">Outdated Browser</a></h1>
     <p>Remember: If you can't see the message, it's a good thing! You are using a modern browser :D</p>
-    <h3>DEFAULT properties but using jQuery (must support IE6+)</h3>
-    <p>bgColor: '#f25648', color: '#ffffff', lowerThan: 'transform'  (&lt;IE10), languagePath: 'your_path/outdatedbrowser/lang/en.html'</p>
-    <h3>What does it look like? <span>(it may differ in your tests) </span></h3>
+    <h3>DEFAULT with another language</h3>
+    <p>bgColor: '#f25648', color: '#ffffff', lowerThan: 'transform' (&lt;IE10), languagePath: 'your_path/outdatedbrowser/lang/pt.html'</p>
+    <h3>What does it look like? <span>(it may differ in your tests)</span></h3>
     <ul>
-        <li><a href="http://buro.pt/Whwf">IE7 - VISTA</a></li>
+        <li><a href="http://buro.pt/WiWB">IE6 - XP</a></li>
     </ul>
     <p class="designBy">by <a href="http://www.burocratik.com">Bürocratik</a></p>
 
@@ -39,21 +38,31 @@
     <div id="outdated"></div>
 
     <!-- javascript includes -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script src="../outdatedbrowser/outdatedbrowser.min.js"></script>
 
     <!-- plugin call -->
     <script>
-        //USING jQuery
-        $(document).ready(function() {
+        //event listener form DOM ready
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    oldonload();
+                    func();
+                }
+            }
+        }
+        //call function after DOM ready
+        addLoadEvent(
             outdatedBrowser({
                 bgColor: '#f25648',
                 color: '#ffffff',
                 lowerThan: 'transform',
-                languagePath: '../outdatedbrowser/lang/en.html'
+                languagePath: '../outdatedbrowser/lang/pt.html'
             })
-        })
-    </script>
+        );
 
     </script>
 </body>
