@@ -1,4 +1,4 @@
-# Outdated Browser v1.0.2
+# Outdated Browser v1.1.0
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
