@@ -1,6 +1,13 @@
 
 # Outdated Browser — Changelog
 
+## v1.1.0 
+Date: 2014-08-05
+
+ * @alexprg: Support Languages
+ * @alexprg: Ajax and no Ajax Support 
+
+
 ## v1.0.2 
 Date: 2014-07-03
 
