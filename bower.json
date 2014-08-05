@@ -1,0 +1,24 @@
+{
+  "name": "outdated-browser",
+  "version": "1.1.0",
+  "homepage": "https://github.com/burocratik/outdated-browser",
+  "authors": [
+    "Bürocratik <hello@burocratik.com>"
+  ],
+  "description": "A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "main": [
+    "outdatedbrowser/outdatedbrowser.min.js",
+    "outdatedbrowser/outdatedbrowser.min.css",
+    "outdatedbrowser/lang"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+  }
+}

@@ -5,37 +5,31 @@
 So, you're tired of people visiting your modern website with an outdated browser and not doing anything about it.
 Maybe they aren't "power" users, maybe it's your auntie running a last century browser trying to see awesome CSS3 animations and transforms. Let the user know that’s an outdated browser, and advise them on a better one.
 
-With this solution you can check if the user’s browser can handle your website. If not, it will show a cool [looking notice](http://cl.ly/image/3q012Z0W2W0s) advising the user to update the browser. It'll be up to him/her to decide if he upgrades or not. Don't force the user!
+With this solution you can check if the user’s browser can handle your website. If not, it will show a cool [looking notice](http://buro.pt/Wis6) advising the user to update the browser. It’ll be up to the user to upgrade or not. Don't force the user!
 
 That's it! As simple as it can get.
 
 
 ## How to use it
+Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement this plugin before any other javascripts (plugins or your own scripts) — these browsers have "strange" js errors and the plugin may not be working as intended. 
 
-
-1. Include plugin's script at the bottom of the HTML body:
+1. Include the CSS located in the HTML head:
 
     ```html
-    <script src="outdatedBrowser.min.js"></script>
+    <link rel="stylesheet" href="your_path/outdatedbrowser/outdatedbrowser.min.css">    
     ```
-
-2. Include the CSS located in the HTML head:
+    
+2. Include plugin's script at the bottom of the HTML body:
 
     ```html
-    <link rel="stylesheet" href="outdatedBrowser.min.css">    
+    <script src="your_path/outdatedbrowser/outdatedbrowser.min.js"></script>
     ```
 
 3. Paste the required HTML at the end of your document (see demo examples):
 
     ```html
-    <div id="outdated">
-         <h6>Your browser is out-of-date!</h6>
-         <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
-    </div>
+    <div id="outdated"></div>
     ```
-
-
 
 
 4. Call the plugin by placing the following at the bottom of the HTML body:
@@ -59,7 +53,8 @@ That's it! As simple as it can get.
         outdatedBrowser({
             bgColor: '#f25648',
             color: '#ffffff',
-            lowerThan: 'transform'
+            lowerThan: 'transform',
+            languagePath: 'your_path/outdatedbrowser/lang/en.html'
         })
     );
     ```    
@@ -70,12 +65,37 @@ That's it! As simple as it can get.
         outdatedBrowser({
             bgColor: '#f25648',
             color: '#ffffff',
-            lowerThan: 'transform'
+            lowerThan: 'transform',
+            languagePath: 'your_path/outdatedbrowser/lang/en.html'
         })
     })
-    ```
+    ```    
 
-5. Targeting browsers:
+6. Using the plugin without AJAX calls:
+
+    — Paste the required HTML at the end of your document (see demo examples):
+    ```html
+    <div id="outdated">
+         <h6>Your browser is out-of-date!</h6>
+         <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+    ```
+    <br>
+    — Call the plugin (see 4.) but with the variable languagePath empty:
+     ```javascript
+    //DOM ready or jQuery
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'transform',
+            languagePath: ''
+        })
+    ```     
+    
+    
+    
+6. Targeting browsers:
 
     You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you.
 
@@ -86,7 +106,10 @@ That's it! As simple as it can get.
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
 
+7. Choose the language:
 
+	Download the “lang" folder: If you have the language you want, just write the correct path for the language file in your project; If you don’t have your language, you can write your own html file, and please share it with us.  
+    
 And you're done!
 <br>PS: check the "demo" folder, it may help you.
 ***
@@ -120,6 +143,13 @@ Fork the project.
 <br>Write some tests to make sure we don't accidentally break each other's code.
 <br>Send a pull request.
 
+**TRANSLATIONS** <br>
+Rename with a proper language abbreviation: it — italian , de — german, fr — french, nl — dutch , br — brazilian portuguese, etc. <br>
+NOTE: we are using a two letter code for the language. If you have variations of the same language use URL country code, e.g.: br—brazilian portuguese; us—american english
+
+## CMS, Frameworks, etc
+— [Wordpress Plugin](https://github.com/deblynprado/wp-outdated-browser) by Deblyn Prado<br>
+— [Ruby Gem](https://github.com/luisalima/outdatedbrowser_rails) by Luisa Lima
 
 ## Team
 
