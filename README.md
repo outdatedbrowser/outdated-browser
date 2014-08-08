@@ -29,23 +29,23 @@ Before opening a new issue please check our [FAQ page](https://github.com/burocr
 ## Contributing
 
 Fork the project, and read "How to".<br><br>
-br — 100% (done) <br>
-cz — 100% (done) <br>
-de — 100% (done) <br>
+br — 100% <br>
+cz — 100% <br>
+de — 100% <br>
 
 es — 0% ([#88](https://github.com/burocratik/outdated-browser/issues/88)) <br>
 
-en — 100% (done) <br>
+en — 100% <br>
 
 fi — 0% ( [#83](https://github.com/burocratik/outdated-browser/issues/83) )<br>
 fr — 99% ([#85](https://github.com/burocratik/outdated-browser/issues/85)) <br>
 hu — 99% ([#86](https://github.com/burocratik/outdated-browser/issues/86))<br>
-it - 0% ([#84](https://github.com/burocratik/outdated-browser/issues/84)) <br>
+it — 0% ([#84](https://github.com/burocratik/outdated-browser/issues/84)) <br>
 nl — 99% ([#87](https://github.com/burocratik/outdated-browser/issues/87))<br>
 
-pt — 100% (done) <br>
-ru — 100% (done) <br>
-ua — 100% (done) <br>
+pt — 100% <br>
+ru — 100% <br>
+ua — 100% <br>
 
 
 ## Team
