@@ -31,7 +31,7 @@ $lang['home_version'] = '版本';
 $lang['home_available'] = '在以下操作系统可用';
 
 /*PROJECT*/
-$lang['proj_title1'] = '绝望的 <>br 原因!';
+$lang['proj_title1'] = '绝望的 <br> 原因!';
 $lang['proj_desc1'] = '在为旧版浏览器花费太多时间优化我们的网站之后，我们在 Büro, 决定创建一个不仅节约您的时间，而且让您尽早回家休息的解决方案。<br><br> Pizzas not included!';
 $lang['proj_alt1'] = '绝望';
 $lang['proj_desc1_2'] = '抓狂的开发者';
