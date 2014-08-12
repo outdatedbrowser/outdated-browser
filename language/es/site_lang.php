@@ -57,8 +57,8 @@ $lang['how_title3'] = 'Incluye <br>el HTML <br>Necesario';
 $lang['how_desc3'] = 'You can place this code right before the &lt;/body&gt; tag.';
 $lang['how_desc3_2'] = '
 <h6>Usted está usando un navegador obsoleto.</h6>
-<pActualice su navegador para una mejor experiencia visual en este sitio web. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Actualice su navegador ahora</a></p>
-<p class="last"> <a href="#" id="btnCloseUpdateBrowser" title="Close"> &times; </a> </p>
+<p>Actualice su navegador para una mejor experiencia visual en este sitio web. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Actualice su navegador ahora</a></p>
+<p class="last"> <a href="#" id="btnCloseUpdateBrowser" title="Cerrar"> &times; </a> </p>
 ';
 
 $lang['how_title4'] = 'Llamar al <br>Plugin y';
