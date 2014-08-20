@@ -32,7 +32,7 @@ $lang['home_available'] = 'DISPONIBLE POUR';
 
 /*PROJECT*/
 $lang['proj_title1'] = 'Une Cause <br>Perdue!';
-$lang['proj_desc1'] = 'Après avoir passé beaucoup trop de temps à optimisé nos sites Web pour les anciens navigateurs, nous, chez Büro, avons décidé de créer une solution qui non seulement vous fera sauver du temps, mais vous permettra de rentrer à la maison plus tôt.<br><br> La pizza n&rsquo;est pas incluse!';
+$lang['proj_desc1'] = 'Après avoir passé beaucoup trop de temps à optimiser nos sites Web pour les anciens navigateurs, nous, chez Büro, avons décidé de créer une solution qui non seulement vous fera sauver du temps, mais vous permettra de rentrer plus tôt à la maison.<br><br> La pizza n&rsquo;est pas incluse!';
 $lang['proj_alt1'] = 'désespéré';
 $lang['proj_desc1_2'] = 'Un développeur en perte de contrôle';
 
