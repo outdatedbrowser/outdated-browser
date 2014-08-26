@@ -23,7 +23,7 @@ $lang['txt_keepcalm'] = 'on se calme <br><span class="xs">ceci est un outils pou
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'Pour une expérience optimale, gardez votre navigateur à jour. Obtenez ici les versions les plus récentes.';
-$lang['home_subtitle_nojs'] = 'Javascript is disabled in your web browser. Turn it on for a better experience.';
+$lang['home_subtitle_nojs'] = 'Javascript est désactivé dans votre navigateur. Activez-le pour une meilleure expérience.';
 $lang['home_subtitle_mobile'] = 'Ceci est un outils pour ordinateur, <br>mais libre à vous d&rsquo;explorer.';
 $lang['home_percentage'] = 'des internautes utilisent <br>ce navigateur';
 $lang['home_download'] = 'TÉLÉCHARGER';
@@ -32,7 +32,7 @@ $lang['home_available'] = 'DISPONIBLE POUR';
 
 /*PROJECT*/
 $lang['proj_title1'] = 'Une Cause <br>Perdue!';
-$lang['proj_desc1'] = 'Après avoir passé beaucoup trop de temps à optimisé nos sites Web pour les anciens navigateurs, nous, chez Büro, avons décidé de créer une solution qui non seulement vous fera sauver du temps, mais vous permettra de rentrer à la maison plus tôt.<br><br> La pizza n&rsquo;est pas incluse!';
+$lang['proj_desc1'] = 'Après avoir passé beaucoup trop de temps à optimiser nos sites Web pour les anciens navigateurs, nous, chez Büro, avons décidé de créer une solution qui non seulement vous fera sauver du temps, mais vous permettra de rentrer plus tôt à la maison.<br><br> La pizza n&rsquo;est pas incluse!';
 $lang['proj_alt1'] = 'désespéré';
 $lang['proj_desc1_2'] = 'Un développeur en perte de contrôle';
 
