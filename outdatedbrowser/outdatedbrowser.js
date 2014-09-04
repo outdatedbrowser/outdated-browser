@@ -8,7 +8,8 @@ website:    http://www.burocratik.com
 var outdatedBrowser = function(options) {
 
     //Variable definition (before ajax)
-    var outdated = document.getElementById("outdated");
+    var outdated = document.createElement("div");
+    document.body.appendChild(outdated);
 
     // Default settings
     this.defaultOpts = {
