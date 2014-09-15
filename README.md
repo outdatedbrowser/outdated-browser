@@ -39,7 +39,7 @@ en — 100% <br>
 
 fi — 0% ( [#83](https://github.com/burocratik/outdated-browser/issues/83) )<br>
 fr — 99% ([#85](https://github.com/burocratik/outdated-browser/issues/85)) <br>
-hu — 99% ([#86](https://github.com/burocratik/outdated-browser/issues/86))<br>
+hu — 100%<br>
 it — 0% ([#84](https://github.com/burocratik/outdated-browser/issues/84)) <br>
 nl — 99% ([#87](https://github.com/burocratik/outdated-browser/issues/87))<br>
 
