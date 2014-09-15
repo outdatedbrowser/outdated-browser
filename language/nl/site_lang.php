@@ -69,3 +69,6 @@ $lang['how_alt4'] = 'klaar';
 $lang['how_desc4'] = 'Vanaf nu krijgt elke gebruiker met een verouderde browser bericht met een chique boodschap <br><br> Als je dit project leuk vind, "fork" het en deel het met de wereld';
 $lang['how_desc4_2'] = '//plugin functie, plaats het in de &#34;DOM ready function&#34;';
 
+/*404*/
+$lang['url404'] = "http://outdatedbrowser.com/nl";
+$lang['txt_keepcalm_error'] = 'rustig blijven <br><span class="xs">404 error</span>The page you <br> are looking for<br><span class="xs">cannot be found</span>';

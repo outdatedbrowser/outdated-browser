@@ -66,3 +66,9 @@ $lang['how_alt4'] = 'Feito';
 $lang['how_desc4'] = 'A partir de agora, qualquer utilizador com um browser desatualizado irá ver um aviso no topo da página.<br><br> Se gostas deste projeto partilha com o mundo!';
 $lang['how_desc4_2'] = '//plugin function, place inside DOM ready function';
 
+/*404*/
+$lang['ooops'] = 'Erro 404, volta para trás!';
+
+/*404*/
+$lang['url404'] = "http://outdatedbrowser.com/pt";
+$lang['txt_keepcalm_error'] = 'Calma<br> <span class="xs">erro 404</span> A página <br>que procura<br><span class="xs">não existe</span>';

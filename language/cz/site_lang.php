@@ -66,3 +66,7 @@ $lang['how_title4'] = 'Spusťte <br> plugin a';
 $lang['how_alt4'] = 'dobře';
 $lang['how_desc4'] = 'Od této chvíle bude každý uživatel se starým prohlížečem upozorněn efektním oznámením v horní části stránky. <br><br> Pokud se vám líbí tento projekt, forkujte a sdílejte s celým světem!';
 $lang['how_desc4_2'] = '//plugin funkce místo uvnitř DOM ready funkce';
+
+/*404*/
+$lang['url404'] = "http://outdatedbrowser.com/cz";
+$lang['txt_keepcalm_error'] = 'buďte v klidu <br><span class="xs">404 error</span>The page you <br> are looking for<br><span class="xs">cannot be found</span>';

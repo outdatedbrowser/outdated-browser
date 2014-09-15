@@ -67,3 +67,6 @@ $lang['how_alt4'] = 'kész';
 $lang['how_desc4'] = 'Mostantól, ha bárki régi böngsészővel nézi meg az oldalad egy flancos értesítő fog megjelenni a lap tetején.<br><br> Ha tetszik ez a projekt oszd meg a világgal!';
 $lang['how_desc4_2'] = '//plugin function, place inside DOM ready function';
 
+/*404*/
+$lang['url404'] = "http://outdatedbrowser.com/hu";
+$lang['txt_keepcalm_error'] = 'NYUGI <br><span class="xs">404 error</span>The page you <br> are looking for<br><span class="xs">cannot be found</span>';

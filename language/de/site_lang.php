@@ -66,3 +66,6 @@ $lang['how_alt4'] = 'fertig';
 $lang['how_desc4'] = 'Von nun an wird jedem Benutzer mit einem veralteten Browser eine moderne Warnung oben auf der Seite eingeblendet.<br><br> Wenn dir dieses Projekt gefällt, forke es und teile es mit der Welt!';
 $lang['how_desc4_2'] = '//plugin Funktion, innerhalb vom DOM direkt ausführbereit';
 
+/*404*/
+$lang['url404'] = "http://outdatedbrowser.com/de";
+$lang['txt_keepcalm_error'] = 'Bleib ruhig <br><span class="xs">404 error</span>The page you <br> are looking for<br><span class="xs">cannot be found</span>';

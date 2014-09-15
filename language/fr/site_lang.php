@@ -67,3 +67,6 @@ $lang['how_alt4'] = 'réussi';
 $lang['how_desc4'] = 'À partir de maintenant, tout utilisateur avec un navigateur désuet recevra un avertissement distigué dans le haut de la page.<br><br> Si vous aimez ce projet, <i>forkez</i> le et partagez le avec le monde entier!';
 $lang['how_desc4_2'] = '//méthode d\'initialisation, placez à l\'intérieur d\'une fonction DOM ready';
 
+/*404*/
+$lang['url404'] = "http://outdatedbrowser.com/fr";
+$lang['txt_keepcalm_error'] = 'On se calme <br><span class="xs">erreur 404</span>La page que <br> vous cherchez <br><span class="xs">est introuvable</span>';

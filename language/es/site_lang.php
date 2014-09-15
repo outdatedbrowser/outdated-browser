@@ -66,3 +66,7 @@ $lang['how_alt4'] = 'hecho';
 $lang['how_desc4'] = 'A partir de ahora, cualquier usuario con un navegador obsoleto verá una advertencia en la parte superior de la página.<br><br> Si te gusta este proyecto, compártelo con el mundo!';
 $lang['how_desc4_2'] = '//plugin function, place inside DOM ready function';
 
+
+/*404*/
+$lang['url404'] = "http://outdatedbrowser.com/es";
+$lang['txt_keepcalm_error'] = 'Tranquilo <br><span class="xs">Error 404</span>La página que <br> está buscando <br><span class="xs">no se puede encontrar</span>';

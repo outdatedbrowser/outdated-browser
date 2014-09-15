@@ -66,3 +66,6 @@ $lang['how_alt4'] = 'feito';
 $lang['how_desc4'] = 'Por enquanto, qualquer usuário com um navegador antigo verá a mensagem no topo da página.<br><br> Se você gostou desse projeto, faça um fork e compartilhe com o mundo!';
 $lang['how_desc4_2'] = '//função do plugin, cole dentro da função ready do DOM';
 
+/*404*/
+$lang['url404'] = "http://outdatedbrowser.com/br";
+$lang['txt_keepcalm_error'] = 'Calma<br> <span class="xs">erro 404</span> A página <br>que procura<br><span class="xs">não existe</span>';
