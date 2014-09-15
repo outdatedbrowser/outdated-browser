@@ -33,7 +33,7 @@ br — 100% <br>
 cz — 100% <br>
 de — 100% <br>
 
-es — 0% ([#88](https://github.com/burocratik/outdated-browser/issues/88)) <br>
+es — 100%  <br>
 
 en — 100% <br>
 
