@@ -16,12 +16,12 @@ var outdatedBrowser = function(options) {
         color: '#ffffff',
         lowerThan: 'transform',
         languagePath: '../outdatedbrowser/lang/en.html',
-		fadeInSpeed: 800
+        fadeInSpeed: 800
     }
-	
-	if (!options) {
-		options = {};
-	}
+    
+    if (!options) {
+        options = {};
+    }
 
     if (options) {
         //assign css3 property to IE browser version
@@ -35,12 +35,12 @@ var outdatedBrowser = function(options) {
             options.lowerThan = 'borderImage';
         }
     };//end if options
-	
-	var bkgColor = options.bgColor || defaultOpts.bgColor;
-	var txtColor = options.color || defaultOpts.color;
-	var cssProp = options.lowerThan || defaultOpts.lowerThan;
-	var languagePath = options.languagePath || defaultOpts.languagePath;
-	var fadeInSpeed = typeof options.fadeInSpeed !== "undefined" ? options.fadeInSpeed : defaultOpts.fadeInSpeed;
+    
+    var bkgColor = options.bgColor || defaultOpts.bgColor;
+    var txtColor = options.color || defaultOpts.color;
+    var cssProp = options.lowerThan || defaultOpts.lowerThan;
+    var languagePath = options.languagePath || defaultOpts.languagePath;
+    var fadeInSpeed = typeof options.fadeInSpeed !== "undefined" ? options.fadeInSpeed : defaultOpts.fadeInSpeed;
 
 
     //Define opacity and fadeIn/fadeOut functions
@@ -97,16 +97,16 @@ var outdatedBrowser = function(options) {
 
     //check for css3 property support (transform=default)
     if ( !supports(''+ cssProp +'') ) {
-		if (!fading_is_in_process && outdated.style.opacity !== '1') {
+        if (!fading_is_in_process && outdated.style.opacity !== '1') {
             fading_is_in_process = true;
-			
-			for (var i = 1; i <= 100; i++) {
-				setTimeout((function (x) {
-					return function () {
-						fade_in(x);
-					};
-				})(i), i * fadeInSpeed / 100);
-			}
+            
+            for (var i = 1; i <= 100; i++) {
+                setTimeout((function (x) {
+                    return function () {
+                        fade_in(x);
+                    };
+                })(i), i * fadeInSpeed / 100);
+            }
         }
     };//end if
 
