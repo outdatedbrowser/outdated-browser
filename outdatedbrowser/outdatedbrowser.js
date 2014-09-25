@@ -11,65 +11,61 @@ var outdatedBrowser = function(options) {
     var outdated = document.getElementById("outdated");
 
     // Default settings
-    this.defaultOpts = {
+    var defaultOpts = this.defaultOpts = {
         bgColor: '#f25648',
         color: '#ffffff',
         lowerThan: 'transform',
-        languagePath: '../outdatedbrowser/lang/en.html'
+        languagePath: '../outdatedbrowser/lang/en.html',
+		fadeInSpeed: 800
     }
+	
+	if (!options) {
+		options = {};
+	}
 
     if (options) {
         //assign css3 property to IE browser version
-        if(options.lowerThan == 'IE8' || options.lowerThan == 'borderSpacing') {
+        if(options.lowerThan == 'IE8') {
             options.lowerThan = 'borderSpacing';
-        } else if (options.lowerThan == 'IE9' || options.lowerThan == 'boxShadow') {
+        } else if (options.lowerThan == 'IE9') {
             options.lowerThan = 'boxShadow';
-        } else if (options.lowerThan == 'IE10' || options.lowerThan == 'transform' || options.lowerThan == '' || typeof options.lowerThan === "undefined") {
+        } else if (options.lowerThan == 'IE10' || options.lowerThan == '' || typeof options.lowerThan === "undefined") {
             options.lowerThan = 'transform';
-        } else if (options.lowerThan == 'IE11' || options.lowerThan == 'borderImage') {
+        } else if (options.lowerThan == 'IE11') {
             options.lowerThan = 'borderImage';
         }
-        //all properties
-        this.defaultOpts.bgColor = options.bgColor;
-        this.defaultOpts.color = options.color;
-        this.defaultOpts.lowerThan = options.lowerThan;
-        this.defaultOpts.languagePath = options.languagePath;
-
-        bkgColor = this.defaultOpts.bgColor;
-        txtColor = this.defaultOpts.color;
-        cssProp = this.defaultOpts.lowerThan;
-        languagePath = this.defaultOpts.languagePath;
-    } else {
-        bkgColor = this.defaultOpts.bgColor;
-        txtColor = this.defaultOpts.color;
-        cssProp = this.defaultOpts.lowerThan;
-        languagePath = this.defaultOpts.languagePath;
     };//end if options
+	
+	var bkgColor = options.bgColor || defaultOpts.bgColor;
+	var txtColor = options.color || defaultOpts.color;
+	var cssProp = options.lowerThan || defaultOpts.lowerThan;
+	var languagePath = options.languagePath || defaultOpts.languagePath;
+	var fadeInSpeed = typeof options.fadeInSpeed !== "undefined" ? options.fadeInSpeed : defaultOpts.fadeInSpeed;
 
 
     //Define opacity and fadeIn/fadeOut functions
-    var done = true;
+    var fading_is_in_process = false;
 
-    function function_opacity(opacity_value) {
+    function change_opacity(opacity_value) {
         outdated.style.opacity = opacity_value / 100;
         outdated.style.filter = 'alpha(opacity=' + opacity_value + ')';
     }
 
-    // function function_fade_out(opacity_value) {
-    //     function_opacity(opacity_value);
+    // function fade_out(opacity_value) {
+    //     change_opacity(opacity_value);
     //     if (opacity_value == 1) {
     //         outdated.style.display = 'none';
-    //         done = true;
+    //         fading_is_in_process = false;
     //     }
     // }
 
-    function function_fade_in(opacity_value) {
-        function_opacity(opacity_value);
+    function fade_in(opacity_value) {
+        change_opacity(opacity_value);
         if (opacity_value == 1) {
             outdated.style.display = 'block';
         }
         if (opacity_value == 100) {
-            done = true;
+            fading_is_in_process = false;
         }
     }
 
@@ -101,15 +97,16 @@ var outdatedBrowser = function(options) {
 
     //check for css3 property support (transform=default)
     if ( !supports(''+ cssProp +'') ) {
-        if (done && outdated.style.opacity !== '1') {
-            done = false;
-            for (var i = 1; i <= 100; i++) {
-                setTimeout((function (x) {
-                    return function () {
-                        function_fade_in(x);
-                    };
-                })(i), i * 8);
-            }
+		if (!fading_is_in_process && outdated.style.opacity !== '1') {
+            fading_is_in_process = true;
+			
+			for (var i = 1; i <= 100; i++) {
+				setTimeout((function (x) {
+					return function () {
+						fade_in(x);
+					};
+				})(i), i * fadeInSpeed / 100);
+			}
         }
     };//end if
 
