@@ -22,7 +22,7 @@ $lang['txt_keepcalm'] = 'Oops, <br><span class="xs">dies ist ein Tool für</span
 
 
 /*HOMEPAGE*/
-$lang['home_subtitle'] = 'Halte Sie Ihren Browser stets auf dem neustem Stand. Prüfen Sie hier auf neue Versionen.';
+$lang['home_subtitle'] = 'Halten Sie Ihren Browser stets auf dem neusten Stand. Prüfen Sie hier auf neue Versionen.';
 $lang['home_subtitle_nojs'] = 'In Ihrem Browser ist JavaScript deaktiviert. Bitte aktivieren Sie Javascript um diese Seite in vollem Umfang benutzen zu können.';
 $lang['home_subtitle_mobile'] = 'Dies ist ein Tool für Desktop-PCs, <br>aber schauen Sie sich trotzdem gerne um.';
 $lang['home_percentage'] = 'benutzen <br>diesen Browser';
@@ -32,7 +32,7 @@ $lang['home_available'] = 'VERFUGBAR FÜR';
 
 /*PROJECT*/
 $lang['proj_title1'] = 'Ein hoffnungsloser<br>Fall!';
-$lang['proj_desc1'] = 'Weil wir viel zu viel Zeit damit vergeudet haben Webseiten für alte Browser zu optimieren, haben wir bei Büro für nach einer Lösung gesucht, die nicht nur Zeit spart, sondern auch dir einen frühen Feierabend beschert.';
+$lang['proj_desc1'] = 'Weil wir viel zu viel Zeit damit vergeudet haben, Webseiten für alte Browser zu optimieren, haben wir bei Büro für nach einer Lösung gesucht, die nicht nur Zeit spart, sondern auch dir einen frühen Feierabend beschert.';
 $lang['proj_alt1'] = 'verzweifelt';
 $lang['proj_desc1_2'] = 'Ein Entwickler am Durchdrehen';
 
