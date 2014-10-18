@@ -120,7 +120,7 @@ You can easily show an alert when the user have Javascript disabled. Just add th
 <noscript>
   <div id="js-disabled">
     <h6>You have Javascript disabled!</h6>
-    <p>Enable Javascript to view this website correctly. <a id="btnEnableJs" href="http://www.enable-javascript.com/">Eanble Javascript now </a></p>
+    <p>Enable Javascript to view this website correctly. <a id="btnEnableJs" href="http://www.enable-javascript.com/">Enable Javascript now </a></p>
   </div>
 </noscript>
 ```
