@@ -12,12 +12,12 @@ var outdatedBrowser = function(options) {
 
     // Default settings
     this.defaultOpts = {
+        relative: false,
         bgColor: '#f25648',
         color: '#ffffff',
         lowerThan: 'transform',
         languagePath: '../outdatedbrowser/lang/en.html'
     }
-
     if (options) {
         //assign css3 property to IE browser version
         if(options.lowerThan == 'IE8' || options.lowerThan == 'borderSpacing') {
@@ -30,22 +30,29 @@ var outdatedBrowser = function(options) {
             options.lowerThan = 'borderImage';
         }
         //all properties
+        this.defaultOpts.relative = options.relative;
         this.defaultOpts.bgColor = options.bgColor;
         this.defaultOpts.color = options.color;
         this.defaultOpts.lowerThan = options.lowerThan;
         this.defaultOpts.languagePath = options.languagePath;
 
+        relativePos = this.defaultOpts.relative;
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         languagePath = this.defaultOpts.languagePath;
     } else {
+        relativePos = this.defaultOpts.relative;
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         languagePath = this.defaultOpts.languagePath;
     };//end if options
 
+    // set replative position class
+    if(relativePos){
+        outdated.className += ' outdated-relative';
+    }
 
     //Define opacity and fadeIn/fadeOut functions
     var done = true;
@@ -77,7 +84,6 @@ var outdatedBrowser = function(options) {
     // function hasClass(element, cls) {
     //     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
     // }
-
     var supports = (function() {
        var div = document.createElement('div'),
           vendors = 'Khtml Ms O Moz Webkit'.split(' '),
@@ -207,10 +213,3 @@ var outdatedBrowser = function(options) {
 
 ////////END of outdatedBrowser function
 };
-
-
-
-
-
-
-

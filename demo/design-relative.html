@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Outdated Browser</title>
+    <meta name="description" content="A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../outdatedbrowser/outdatedbrowser.min.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif; text-align: center;
+            background-color: #fafafa; color: #0a0a0a; line-height: 1.5em;
+        }
+        h1{font-size: 2.6em; line-height: 2em;}
+        h3, h4{line-height: 1em; margin: 2.5em 0 -.4em 0; text-transform: uppercase;}
+        h3 span, h4 span{text-transform: none;}
+        p{padding-bottom: 1em;}
+        p.designBy{position: absolute; bottom: 0; right: 1em; font-size: .8em;}
+        a {color: #0a0a0a;}
+        ul{list-style-type: none; padding: 0;}
+        /*do not use this!*/
+        h6, p{color: #0a0a0a;} /* test to be sure that I have inline colors! IE6-9 kills me!*/
+        #outdated{display: block;}
+    </style>
+</head>
+
+<body>
+
+    <!-- ============= Outdated Browser ============= -->
+    <div id="outdated">
+        <h6>Your browser is out-of-date!</h6>
+        <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+        <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+
+    <!-- ============= YOUR CONTENT ============= -->
+    <h1><a href="index.html">Outdated Browser</a></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu accumsan nisi. Aenean consequat, metus faucibus commodo tristique, quam lorem porta eros, fermentum commodo dolor arcu nec est. Vivamus commodo, eros vel accumsan tempus, nisl lorem lobortis nisl, rhoncus pretium odio ligula quis arcu. Praesent eget sapien mattis, aliquam velit ut, hendrerit dui. Aliquam eget sapien erat. Vestibulum tristique tempor dolor. Vestibulum pulvinar condimentum nibh, id cursus massa faucibus vitae.</p>
+    <h3>DEFAULT</h3>
+    <p>bgColor: '#f25648', color: '#ffffff', lowerThan: 'transform'  (&lt;IE10), languagePath: ''</p>
+    <h3>IMPORTANT</h3>
+    <p>DO NOT USE THIS HTML! It's just to show off the design!</p>
+    <p class="designBy">by <a href="http://www.burocratik.com">Bürocratik</a></p>
+
+    <!-- javascript includes -->
+    <script src="../outdatedbrowser/outdatedbrowser.min.js"></script>
+
+
+    <!-- plugin call -->
+    <script>
+        //event listener form DOM ready
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    oldonload();
+                    func();
+                }
+            }
+        }
+        //call function after DOM ready
+        addLoadEvent(
+            outdatedBrowser({
+                relative: true,
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'transform',
+                languagePath: ''
+            })
+        );
+    </script>
+</body>
+</html>
