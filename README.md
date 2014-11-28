@@ -1,4 +1,4 @@
-# Outdated Browser v1.0.2
+# Outdated Browser v1.1.0
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
@@ -111,7 +111,7 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
 	Download the “lang" folder: If you have the language you want, just write the correct path for the language file in your project; If you don’t have your language, you can write your own html file, and please share it with us.  
     
 And you're done!
-<br>PS: check de "demo" folder, it may help you.
+<br>PS: check the "demo" folder, it may help you.
 ***
 
 <!--## Structure
@@ -149,7 +149,9 @@ NOTE: we are using a two letter code for the language. If you have variations of
 
 ## CMS, Frameworks, etc
 — [Wordpress Plugin](https://github.com/deblynprado/wp-outdated-browser) by Deblyn Prado<br>
-— [Ruby Gem](https://github.com/luisalima/outdatedbrowser_rails) by Luisa Lima
+— [Ruby Gem](https://github.com/luisalima/outdatedbrowser_rails) by Luisa Lima <br>
+— [Yii2 widget](http://www.yiiframework.com/extension/yii2-outdated-browser) <br>
+— [Drupal Plugin](https://www.drupal.org/sandbox/agoradesign/2369737) by Mag. Andreas Mayr
 
 ## Team
 
