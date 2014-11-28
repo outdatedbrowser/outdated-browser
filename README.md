@@ -1,4 +1,4 @@
-# outdatedbrowser.com website translation 
+# outdatedbrowser.com website translation
 
 ### The purpose of this branch is to be used solely as language repository of the files/translation for the website: [outdatedbrowser.com](http://outdatedbrowser.com)
 <br><br>
@@ -19,7 +19,7 @@
 
 
 <br>
-Thank you for the help 
+Thank you for the help
 <br><br>
 
 ## FAQ
@@ -30,21 +30,21 @@ Before opening a new issue please check our [FAQ page](https://github.com/burocr
 
 Fork the project, and read "How to".<br><br>
 br — 100% <br>
+cn — 100% (simplified chinese) <br>
 cz — 100% <br>
 de — 100% <br>
-
-es — 100%  <br>
-
+ee — 100% <br>
 en — 100% <br>
-
+es — 100%  <br>
 fi — 0% ( [#83](https://github.com/burocratik/outdated-browser/issues/83) )<br>
-fr — 99% ([#85](https://github.com/burocratik/outdated-browser/issues/85)) <br>
+fr — 100% <br>
 hu — 100%<br>
-it — 0% ([#84](https://github.com/burocratik/outdated-browser/issues/84)) <br>
-nl — 99% ([#87](https://github.com/burocratik/outdated-browser/issues/87))<br>
-
+it — 100% <br>
+nl — 100% <br>
+pl — 100% <br>
 pt — 100% <br>
 ru — 100% <br>
+si — 100% <br>
 ua — 100% <br>
 
 
