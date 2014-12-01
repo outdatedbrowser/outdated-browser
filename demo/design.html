@@ -57,20 +57,22 @@
                 window.onload = func;
             } else {
                 window.onload = function() {
-                    oldonload();
+                    if (oldonload) {
+                        oldonload();
+                    }
                     func();
                 }
             }
         }
         //call function after DOM ready
-        addLoadEvent(
+        addLoadEvent(function(){
             outdatedBrowser({
                 bgColor: '#f25648',
                 color: '#ffffff',
                 lowerThan: 'transform',
                 languagePath: ''
             })
-        );
+        });
     </script>
 </body>
 </html>
