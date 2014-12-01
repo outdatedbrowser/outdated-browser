@@ -37,7 +37,7 @@
     <!-- ============= Outdated Browser ============= -->
     <div id="outdated">
         <h6>Votre navigateur est désuet!</h6>
-        <p>Mettez à jour votre navigateur pour afficher correctement ce site Web. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Mettre à jour maintenant </a></p>
+        <p>Mettez à jour votre navigateur pour afficher correctement ce site Web. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/fr">Mettre à jour maintenant </a></p>
         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Fermer">&times;</a></p>
     </div>
 
@@ -53,21 +53,22 @@
                 window.onload = func;
             } else {
                 window.onload = function() {
-                    oldonload();
+                    if (oldonload) {
+                        oldonload();
+                    }
                     func();
                 }
             }
         }
         //call function after DOM ready
-        addLoadEvent(
+        addLoadEvent(function(){
             outdatedBrowser({
                 bgColor: '#f25648',
                 color: '#ffffff',
                 lowerThan: 'transform',
                 languagePath: ''
             })
-        );
-
+        });
     </script>
 </body>
 </html>

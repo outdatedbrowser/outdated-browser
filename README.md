@@ -43,20 +43,22 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
             window.onload = func;
         } else {
             window.onload = function() {
-                oldonload();
+                if (oldonload) {
+                	oldonload();
+                }	
                 func();
             }
         }
     }
     //call plugin function after DOM ready
     addLoadEvent(
-        outdatedBrowser({
+        outdatedBrowser(function(){
             bgColor: '#f25648',
             color: '#ffffff',
             lowerThan: 'transform',
             languagePath: 'your_path/outdatedbrowser/lang/en.html'
         })
-    );
+    });
     ```    
 <br>
 — Using jQuery (version that supports IE&lt;9) <br>
