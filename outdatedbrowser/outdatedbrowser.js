@@ -99,7 +99,7 @@ var outdatedBrowser = function(options) {
        };
     })();
 
-    //check for css3 property support (transform=default)
+    //if browser does not supports css3 property (transform=default), if does > exit all this
     if ( !supports(''+ cssProp +'') ) {
         if (done && outdated.style.opacity !== '1') {
             done = false;
@@ -111,6 +111,8 @@ var outdatedBrowser = function(options) {
                 })(i), i * 8);
             }
         }
+    }else{
+        return;
     };//end if
 
     //Check AJAX Options: if languagePath == '' > use no Ajax way, html is needed inside <div id="outdated">
@@ -134,7 +136,8 @@ var outdatedBrowser = function(options) {
 
         //check settings attributes
         btnUpdate.style.color = txtColor;
-        btnUpdate.style.borderColor = txtColor;
+        // btnUpdate.style.borderColor = txtColor;
+        if (btnUpdate.style.borderColor) btnUpdate.style.borderColor = txtColor;
         btnClose.style.color = txtColor;
 
         //close button
