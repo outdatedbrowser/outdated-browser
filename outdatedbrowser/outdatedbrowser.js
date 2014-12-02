@@ -134,7 +134,7 @@ var outdatedBrowser = function(options) {
 
         //check settings attributes
         btnUpdate.style.color = txtColor;
-        btnUpdate.style.borderColor = txtColor;
+        if(btnUpdate.style.borderColor) btnUpdate.style.borderColor = txtColor;
         btnClose.style.color = txtColor;
 
         //close button
