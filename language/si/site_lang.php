@@ -22,10 +22,10 @@ $lang['txt_keepcalm'] = 'brez skrbi<br><span class="xs">to je orodje za</span>ra
 
 
 /*HOMEPAGE*/
-$lang['home_subtitle'] = 'Za boljši izkušnjo imejte brskalnik posodobljen. Tukaj preverite za zadnjo izdajo.';
+$lang['home_subtitle'] = 'Za boljšo izkušnjo imejte brskalnik vedno posodobljen. Tukaj lahko preverite najnovejše izdaje.';
 $lang['home_subtitle_nojs'] = 'Javascript je izklopljen. Za boljšo izkušnjo ga vklopite.';
-$lang['home_subtitle_mobile'] = 'To je orodje za računalnike, <br>toda raziskovanje je zaželjeno.';
-$lang['home_percentage'] = 'ljudi uporablja<br>ta brskalnik';
+$lang['home_subtitle_mobile'] = 'To je orodje za računalnike,<br>toda raziskovanje je zaželjeno.';
+$lang['home_percentage'] = 'uporabnikov uporablja<br>ta brskalnik';
 $lang['home_download'] = 'PRENOS';
 $lang['home_version'] = 'VERZIJA';
 $lang['home_available'] = 'NA VOLJO ZA';
