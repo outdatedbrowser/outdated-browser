@@ -32,16 +32,16 @@ $lang['home_available'] = 'DISPONÍVEL PARA';
 
 /*PROJECT*/
 $lang['proj_title1'] = 'Uma Causa <br>Desesperante!';
-$lang['proj_desc1'] = 'Depois de perdermos demasiado tempo a otimizar os nossos sites para browsers antigos, nós na Büro, decidimos criar uma solução que não só nos poupa tempo, como também permite-nos ir para casa mais cedo.<br><br> Pizzas não incluídas!';
+$lang['proj_desc1'] = 'Depois de perdermos demasiado tempo a otimizar os nossos sites para browsers antigos nós, na Büro, decidimos criar uma solução que não só nos poupa tempo, como também permite-nos ir para casa mais cedo.<br><br> Pizzas não incluídas!';
 $lang['proj_alt1'] = 'desesperado';
 $lang['proj_desc1_2'] = 'Um dev a dar em doido';
 
 $lang['proj_title2'] = 'Como <br>Funciona?';
-$lang['proj_desc2'] = 'Quando executado, o script deteta se o browser suporta uma determinada propriedade de CSS. Caso não suporte, é apresentada uma mensagem a sugerir que o utilizador atualize o browser.';
+$lang['proj_desc2'] = 'Quando executado, o script deteta se o browser suporta uma determinada propriedade de CSS. Caso não suporte, é apresentada uma mensagem a sugerir que o utilizador deve atualizar o browser.';
 $lang['proj_desc2_2'] = 'Website num browser desatualizado';
 
 $lang['proj_title3'] = '3 Passos <br>para Começar <br>a Usar!';
-$lang['proj_desc3'] = 'Demora apenas 3 minutos. Inclui o ficheiro de JS e CSS e cola umas linhas de HTML. <br><br>Para mais detalhes consulta o <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> ;)';
+$lang['proj_desc3'] = 'Demora apenas 3 minutos. Basta incluir os ficheiros de JS e CSS e colar umas linhas de HTML. <br><br>Para mais detalhes consulta o <a class="github" href="https://github.com/burocratik/outdated-browser" rel="external" data-track="Github">Github</a> ;)';
 $lang['proj_desc3_2'] = 'Desenvolvido <br> no Bürolabs';
 
 /*HOW*/
@@ -49,12 +49,12 @@ $lang['how_title1'] = 'Download <br>dos Ficheiros';
 $lang['how_desc1'] = 'A pasta contém todos os ficheiros necessários: JS, CSS e idiomas.';
 $lang['how_desc1_2'] = 'Download no Github';
 
-$lang['how_title2'] = 'Inclui-os <br>no Projeto';
+$lang['how_title2'] = 'Incluir <br>no Projeto';
 $lang['how_desc2'] = 'Carrega o ficheiro de CSS no &lt;head&gt; do documento e o ficheiro de JS no final do &lt;body&gt;.';
 $lang['how_desc2_2'] = 'Copiar para o clipboard ';
 $lang['how_alt2'] = 'browser ';
 
-$lang['how_title3'] = 'Inclui <br>o HTML <br>Necessário';
+$lang['how_title3'] = 'Incluir <br>o HTML <br>necessário';
 $lang['how_desc3'] = 'Podes colar este código antes da tag &lt;/body&gt;.';
 $lang['how_desc3_2'] = '
 <h6>O seu browser está desatualizado!</h6>
