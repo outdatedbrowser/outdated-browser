@@ -25,82 +25,66 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
     <script src="your_path/outdatedbrowser/outdatedbrowser.min.js"></script>
     ```
 
-3. Paste the required HTML at the end of your document (see demo examples):
+3. Call the plugin by placing the following at the bottom of the HTML body:
 
+  ##### Without AJAX (static message)
+   
+  a. Paste the required HTML at the end of your document (see demo examples):
+   
     ```html
-    <div id="outdated"></div>
+    <div id="outdated">
+        <h6>Your browser is out-of-date!</h6>
+        <p>
+            Update your browser to view this website correctly. 
+            <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now</a>
+        </p>
+        <p class="last">
+            <a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a>
+        </p>
+    </div>
     ```
-
-
-4. Call the plugin by placing the following at the bottom of the HTML body:
-<br><br>
-— Plain Javascript <br>
-    ```javascript
-    //event listener: DOM ready
-    function addLoadEvent(func) {
-        var oldonload = window.onload;
-        if (typeof window.onload != 'function') {
-            window.onload = func;
-        } else {
-            window.onload = function() {
-                if (oldonload) {
-                	oldonload();
-                }	
-                func();
-            }
-        }
-    }
-    //call plugin function after DOM ready
-    addLoadEvent(
-        outdatedBrowser(function(){
-            bgColor: '#f25648',
-            color: '#ffffff',
-            lowerThan: 'transform',
-            languagePath: 'your_path/outdatedbrowser/lang/en.html'
-        })
-    });
-    ```    
-<br>
-— Using jQuery (version that supports IE&lt;9) <br>
+    
+  b. Call the plugin with `languagePath` empty:
+   
     ```javascript
     $( document ).ready(function() {
         outdatedBrowser({
             bgColor: '#f25648',
             color: '#ffffff',
             lowerThan: 'transform',
-            languagePath: 'your_path/outdatedbrowser/lang/en.html'
-        })
-    })
-    ```    
-
-6. Using the plugin without AJAX calls:
-
-    — Paste the required HTML at the end of your document (see demo examples):
-    ```html
-    <div id="outdated">
-         <h6>Your browser is out-of-date!</h6>
-         <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
-    </div>
-    ```
-    <br>
-    — Call the plugin (see 4.) but with the variable languagePath empty:
-     ```javascript
-    //DOM ready or jQuery
-        outdatedBrowser({
-            bgColor: '#f25648',
-            color: '#ffffff',
-            lowerThan: 'transform',
             languagePath: ''
-        })
-    ```     
+        });
+    });
+    ```
     
+    _If you're not using jQuery, see the [Plain Javascript section](#plain-javascript).)_
     
-    
-6. Targeting browsers:
+  ##### With AJAX (multiple languages)
+  
+  a. Paste the required HTML at the end of your document (see demo examples):
+  
+    ```html
+    <div id="outdated"></div>
+    ```
+  
+  b. Call the plugin with `languagePath` set:
+  
+    ```javascript
+    $( document ).ready(function() {
+      outdatedBrowser({
+        bgColor: '#f25648',
+        color: '#ffffff',
+        lowerThan: 'transform',
+        languagePath: 'your_path/outdatedbrowser/lang/en.html'
+      });
+    });
+    ```
+  
+    _If you're not using jQuery, see the [Plain Javascript section](#plain-javascript).)_
+  
+4. Targeting browsers:
 
     You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you.
-
 
     Lower Than (<):
     * "IE11","borderImage"
@@ -108,9 +92,9 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
 
-7. Choose the language:
-
-	Download the “lang" folder: If you have the language you want, just write the correct path for the language file in your project; If you don’t have your language, you can write your own html file, and please share it with us.  
+5. Choose the language (only applicable for AJAX)
+  
+  Download the “lang" folder: If you have the language you want, just write the correct path for the language file in your project; If you don’t have your language, you can write your own html file, and please share it with us.  
     
 And you're done!
 <br>PS: check the "demo" folder, it may help you.
@@ -133,6 +117,36 @@ The basic structure of the project is given in the following way:
     │   └── outdatedBrowser.css-->
 
 
+## Plain Javascript
+
+If you're not using jQuery, you can modify the usage instructions by creating your own DOM ready, as shown here:
+
+```javascript
+//event listener: DOM ready
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            if (oldonload) {
+              oldonload();
+            } 
+            func();
+        }
+    }
+}
+//call plugin function after DOM ready
+addLoadEvent(
+    outdatedBrowser(function(){
+        bgColor: '#f25648',
+        color: '#ffffff',
+        lowerThan: 'transform',
+        languagePath: 'your_path/outdatedbrowser/lang/en.html'
+    })
+});
+```
+    
 ## FAQ
 
 Before opening a new issue please check our [FAQ page](https://github.com/burocratik/outdated-browser/wiki/FAQ)
