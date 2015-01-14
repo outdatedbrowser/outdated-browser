@@ -51,8 +51,8 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
         }
     }
     //call plugin function after DOM ready
-    addLoadEvent(
-        outdatedBrowser(function(){
+    addLoadEvent(function(){
+        outdatedBrowser({
             bgColor: '#f25648',
             color: '#ffffff',
             lowerThan: 'transform',
