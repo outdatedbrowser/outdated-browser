@@ -5,7 +5,7 @@
     <title>Outdated Browser</title>
     <meta name="description" content="A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.">
     <!-- Styles -->
-    <link rel="stylesheet" href="../outdatedbrowser/outdatedbrowser.min.css">
+    <link rel="stylesheet" href="../dist/outdatedbrowser.css">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <style type="text/css">
@@ -20,9 +20,6 @@
         p.designBy{position: absolute; bottom: 0; right: 1em; font-size: .8em;}
         a {color: #0a0a0a;}
         ul{list-style-type: none; padding: 0;}
-        /*do not use this!*/
-        h6, p{color: #0a0a0a;} /* test to be sure that I have inline colors! IE6-9 kills me!*/
-        #outdated{display: block;}
     </style>
 </head>
 
@@ -45,7 +42,7 @@
     </div>
 
     <!-- javascript includes -->
-    <script src="../outdatedbrowser/outdatedbrowser.min.js"></script>
+    <script src="../dist/outdatedbrowser.js"></script>
 
 
     <!-- plugin call -->
@@ -70,7 +67,8 @@
                 bgColor: '#f25648',
                 color: '#ffffff',
                 lowerThan: 'transform',
-                languagePath: ''
+                languagePath: '',
+                force: true
             })
         });
     </script>
