@@ -16,7 +16,7 @@ var outdatedBrowser = function(options) {
         color: '#ffffff',
         lowerThan: 'transform',
         languagePath: '../outdatedbrowser/lang/en.html'
-    }
+    };
 
     if (options) {
         //assign css3 property to IE browser version
@@ -44,7 +44,7 @@ var outdatedBrowser = function(options) {
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         languagePath = this.defaultOpts.languagePath;
-    };//end if options
+    }//end if options
 
 
     //Define opacity and fadeIn/fadeOut functions
@@ -113,7 +113,7 @@ var outdatedBrowser = function(options) {
         }
     }else{
         return;
-    };//end if
+    }//end if
 
     //Check AJAX Options: if languagePath == '' > use no Ajax way, html is needed inside <div id="outdated">
     if( languagePath === ' ' || languagePath.length == 0 ){
@@ -181,7 +181,7 @@ var outdatedBrowser = function(options) {
         }
       }
       return xhr;
-    };//end function
+    }//end function
 
     function grabFile(file) {
         var request = getHTTPObject();
@@ -193,7 +193,7 @@ var outdatedBrowser = function(options) {
                 request.send(null);
             }
         return false;
-    };//end grabFile
+    }//end grabFile
 
     function displayResponse(request) {
         var insertContentHere = document.getElementById("outdated");
@@ -206,14 +206,7 @@ var outdatedBrowser = function(options) {
             startStylesAndEvents();
         }
       return false;
-    };//end displayResponse
+    }//end displayResponse
 
 ////////END of outdatedBrowser function
 };
-
-
-
-
-
-
-
