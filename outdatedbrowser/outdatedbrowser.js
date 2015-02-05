@@ -8,14 +8,16 @@ website:    http://www.burocratik.com
 var outdatedBrowser = function(options) {
 
     //Variable definition (before ajax)
-    var outdated = document.getElementById("outdated");
+    var outdated = document.getElementById("outdated"),
+        test;
 
     // Default settings
     this.defaultOpts = {
         bgColor: '#f25648',
         color: '#ffffff',
         lowerThan: 'transform',
-        languagePath: '../outdatedbrowser/lang/en.html'
+        languagePath: '../outdatedbrowser/lang/en.html',
+        test: false
     }
 
     if (options) {
@@ -34,16 +36,19 @@ var outdatedBrowser = function(options) {
         this.defaultOpts.color = options.color;
         this.defaultOpts.lowerThan = options.lowerThan;
         this.defaultOpts.languagePath = options.languagePath;
+        this.defaultOpts.test = options.test;
 
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         languagePath = this.defaultOpts.languagePath;
+        test = this.defaultOpts.test;
     } else {
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         languagePath = this.defaultOpts.languagePath;
+        test = this.defaultOpts.test;
     };//end if options
 
 
@@ -100,7 +105,7 @@ var outdatedBrowser = function(options) {
     })();
 
     //if browser does not supports css3 property (transform=default), if does > exit all this
-    if ( !supports(''+ cssProp +'') ) {
+    if ( test || !supports(''+ cssProp +'') ) {
         if (done && outdated.style.opacity !== '1') {
             done = false;
             for (var i = 1; i <= 100; i++) {
