@@ -136,7 +136,8 @@ NOTE: we are using a two letter code for the language. If you have variations of
 — [Wordpress Plugin](https://github.com/deblynprado/wp-outdated-browser) by Deblyn Prado<br>
 — [Ruby Gem](https://github.com/luisalima/outdatedbrowser_rails) by Luisa Lima <br>
 — [Yii2 widget](http://www.yiiframework.com/extension/yii2-outdated-browser) <br>
-— [Drupal Plugin](https://www.drupal.org/sandbox/agoradesign/2369737) by Mag. Andreas Mayr
+— [Drupal Plugin](https://www.drupal.org/sandbox/agoradesign/2369737) by Mag. Andreas Mayr <br>
+— [Magento Extension](https://github.com/gaugeinteractive/magento-outdated-browser) by Joey Hoer
 
 ## Team
 
