@@ -47,6 +47,11 @@ var outdatedBrowser = function(options) {
     };//end if options
 
 
+    // IF AJAX with request ERROR > insert english default
+    var ajaxEnglishDefault = '<h6>Your browser is out-of-date!</h6>'
+        + '<p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>'
+        + '<p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>';
+
     //Define opacity and fadeIn/fadeOut functions
     var done = true;
 
@@ -99,7 +104,7 @@ var outdatedBrowser = function(options) {
        };
     })();
 
-    //if browser does not supports css3 property (transform=default), if does > exit all this
+    //check for css3 property support (transform=default)
     if ( !supports(''+ cssProp +'') ) {
         if (done && outdated.style.opacity !== '1') {
             done = false;
@@ -111,12 +116,11 @@ var outdatedBrowser = function(options) {
                 })(i), i * 8);
             }
         }
-    }else{
-        return;
     };//end if
 
     //Check AJAX Options: if languagePath == '' > use no Ajax way, html is needed inside <div id="outdated">
     if( languagePath === ' ' || languagePath.length == 0 ){
+        document.getElementById("outdated").innerHTML = ajaxEnglishDefault;
         startStylesAndEvents();
     }else{
         grabFile(languagePath);
@@ -136,8 +140,7 @@ var outdatedBrowser = function(options) {
 
         //check settings attributes
         btnUpdate.style.color = txtColor;
-        // btnUpdate.style.borderColor = txtColor;
-        if (btnUpdate.style.borderColor) btnUpdate.style.borderColor = txtColor;
+        btnUpdate.style.borderColor = txtColor;
         btnClose.style.color = txtColor;
 
         //close button
@@ -157,11 +160,6 @@ var outdatedBrowser = function(options) {
         };
     }//end styles and events
 
-
-    // IF AJAX with request ERROR > insert english default
-    var ajaxEnglishDefault = '<h6>Your browser is out-of-date!</h6>'
-        + '<p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>'
-        + '<p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>';
 
 
     //** AJAX FUNCTIONS - Bulletproof Ajax by Jeremy Keith **
@@ -210,10 +208,3 @@ var outdatedBrowser = function(options) {
 
 ////////END of outdatedBrowser function
 };
-
-
-
-
-
-
-
