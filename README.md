@@ -104,7 +104,7 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
 
     Lower Than (<):
     * "IE11","borderImage"
-    * "IE10", "transform" (Default property)
+    * "IE10", "transform 3d" (Default property)
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
 
