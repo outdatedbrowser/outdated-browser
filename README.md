@@ -38,7 +38,8 @@ en — 100% <br>
 es — 100%  <br>
 fi — 0% ( [#83](https://github.com/burocratik/outdated-browser/issues/83) )<br>
 fr — 100% <br>
-hu — 100%<br>
+gr — 100% <br>
+hu — 100% <br>
 it — 100% <br>
 nl — 100% <br>
 pl — 100% <br>
