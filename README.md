@@ -41,6 +41,7 @@ fr — 100% <br>
 gr — 100% <br>
 hu — 100% <br>
 it — 100% <br>
+kr — 100% <br>
 nl — 100% <br>
 pl — 100% <br>
 pt — 100% <br>
