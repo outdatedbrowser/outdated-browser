@@ -1,0 +1,16 @@
+{
+  "name": "outdated-browser",
+  "version": "1.0.0",
+  "description": "A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.",
+  "main": "outdatedbrowser/outdatedbrowser.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burocratik/outdated-browser.git"
+  },
+  "author": "Bürocratik <hello@burocratik.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/burocratik/outdated-browser/issues"
+  },
+  "homepage": "http://outdatedbrowser.com"
+}
