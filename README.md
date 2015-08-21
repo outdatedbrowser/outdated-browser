@@ -103,7 +103,7 @@ That's it! As simple as it can get.
 
 6. Targeting browsers:
 
-    You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you.
+    You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you (for Edge vs IE11 check issue [#198](https://github.com/burocratik/outdated-browser/issues/198)).
 
 
     Lower Than (<):
@@ -111,6 +111,7 @@ That's it! As simple as it can get.
     * "IE10", "transform" (Default property)
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
+    
 
 7. Choose the language:
 
