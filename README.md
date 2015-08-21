@@ -12,7 +12,10 @@ That's it! As simple as it can get.
 
 
 ## How to use it
-Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement this plugin before any other javascripts (plugins or your own scripts) — these browsers have "strange" js errors and the plugin may not be working as intended.
+**Important:** Because of old browsers (e.g. IE6, IE7), we recommend:
+<br>  — Implement this plugin before any other javascripts (plugins or your own scripts); 
+<br> — Although we tested the AJAX approach, and is easier to implement, we recommend the to use the plugin without AJAX calls (5.). Is less prone to have conflicts with your code in very old browsers.
+<br>With these points in consideration is less prone to have conflicts with your code. These browsers have "strange" js errors and the plugin may not be working as intended, so keep it simple! 
 
 1. Include the CSS located in the HTML head:
 
@@ -117,11 +120,12 @@ And you're done!
 <br>PS: check the "demo" folder, it may help you.
 ***
 
+<br>
 ## How to install
 
-You have two options, you can either download the repository manually and do everything by yourself, or you can let bower do everything for you.
+You have several options: you can download the repository manually or you can use a package manager to do that work for you.
 
-Bower install: `bower install outdated-browser`
+— **Bower install**: `bower install outdated-browser`
 
 ## FAQ
 
@@ -134,6 +138,7 @@ Fork the project.
 <br>Read through the issues or report new ones.
 <br>Write some tests to make sure we don't accidentally break each other's code.
 <br>Send a pull request.
+<br>**Note:** mind that this is NOT a plugin for the latest browsers, but the complete opposite! The html, css and javascript must work properly in very old browsers (IE6, IE7, etc), so there is no point to use the latest recommendations. It must work properly at least on IE6, so please double test it before sending a pull request.
 
 **TRANSLATIONS** <br>
 Rename with a proper language abbreviation: it — italian , de — german, fr — french, nl — dutch , br — brazilian portuguese, etc. <br>
