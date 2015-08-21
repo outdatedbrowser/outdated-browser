@@ -1,4 +1,4 @@
-# Outdated Browser v1.1.0
+# Outdated Browser v1.1.1
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
@@ -8,6 +8,7 @@ Maybe they aren't "power" users, maybe it's your auntie running a last century b
 With this solution you can check if the user’s browser can handle your website. If not, it will show a cool [looking notice](http://buro.pt/Wis6) advising the user to update the browser. It’ll be up to the user to upgrade or not. Don't force the user!
 
 That's it! As simple as it can get.
+
 
 
 ## How to use it
@@ -44,7 +45,7 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
         } else {
             window.onload = function() {
                 if (oldonload) {
-                	oldonload();
+                    oldonload();
                 }
                 func();
             }
@@ -110,11 +111,17 @@ Important: Because of old browsers (e.g. IE6, IE7), we recommend to implement th
 
 7. Choose the language:
 
-	Download the “lang" folder: If you have the language you want, just write the correct path for the language file in your project; If you don’t have your language, you can write your own html file, and please share it with us.
+    Download the “lang" folder: If you have the language you want, just write the correct path for the language file in your project; If you don’t have your language, you can write your own html file, and please share it with us.
 
 And you're done!
 <br>PS: check the "demo" folder, it may help you.
 ***
+
+## How to install
+
+You have two options, you can either download the repository manually and do everything by yourself, or you can let bower do everything for you.
+
+Bower install: `bower install outdated-browser`
 
 ## FAQ
 
