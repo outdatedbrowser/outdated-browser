@@ -15,7 +15,8 @@
     "outdatedbrowser/lang"
   ],
   "ignore": [
-    "**/.*",
+    "CHANGELOG.md",
+    "demo",
     "bower_components"
   ],
   "dependencies": {
