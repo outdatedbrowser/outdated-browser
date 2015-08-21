@@ -20,7 +20,7 @@ var outdatedBrowser = function(options) {
 
     if (options) {
         //assign css3 property to IE browser version
-        if(options.lowerThan == 'IE8' || options.lowerThan == 'borderSpacing') {
+        if (options.lowerThan == 'IE8' || options.lowerThan == 'borderSpacing') {
             options.lowerThan = 'borderSpacing';
         } else if (options.lowerThan == 'IE9' || options.lowerThan == 'boxShadow') {
             options.lowerThan = 'boxShadow';
@@ -44,7 +44,7 @@ var outdatedBrowser = function(options) {
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         languagePath = this.defaultOpts.languagePath;
-    };//end if options
+    } //end if options
 
 
     //Define opacity and fadeIn/fadeOut functions
@@ -78,52 +78,52 @@ var outdatedBrowser = function(options) {
     //     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
     // }
 
-    var supports = (function() {
-       var div = document.createElement('div'),
-          vendors = 'Khtml Ms O Moz Webkit'.split(' '),
-          len = vendors.length;
+    var supports = ( function() {
+        var div = document.createElement('div');
+        var vendors = 'Khtml Ms O Moz Webkit'.split(' ');
+        var len = vendors.length;
 
-       return function(prop) {
-          if ( prop in div.style ) return true;
+        return function(prop) {
+            if (prop in div.style) return true;
 
-          prop = prop.replace(/^[a-z]/, function(val) {
-             return val.toUpperCase();
-          });
+            prop = prop.replace(/^[a-z]/, function(val) {
+                return val.toUpperCase();
+            });
 
-          while(len--) {
-             if ( vendors[len] + prop in div.style ) {
-                return true;
-             }
-          }
-          return false;
-       };
-    })();
+            while (len--) {
+                if (vendors[len] + prop in div.style) {
+                    return true;
+                }
+            }
+            return false;
+        };
+    } )();
 
     //if browser does not supports css3 property (transform=default), if does > exit all this
-    if ( !supports(''+ cssProp +'') ) {
+    if (!supports('' + cssProp + '')) {
         if (done && outdated.style.opacity !== '1') {
             done = false;
             for (var i = 1; i <= 100; i++) {
-                setTimeout((function (x) {
-                    return function () {
+                setTimeout(( function(x) {
+                    return function() {
                         function_fade_in(x);
                     };
-                })(i), i * 8);
+                } )(i), i * 8);
             }
         }
-    }else{
+    } else {
         return;
-    };//end if
+    } //end if
 
     //Check AJAX Options: if languagePath == '' > use no Ajax way, html is needed inside <div id="outdated">
-    if( languagePath === ' ' || languagePath.length == 0 ){
+    if (languagePath === ' ' || languagePath.length == 0) {
         startStylesAndEvents();
-    }else{
+    } else {
         grabFile(languagePath);
     }
 
     //events and colors
-    function startStylesAndEvents(){
+    function startStylesAndEvents() {
         var btnClose = document.getElementById("btnCloseUpdateBrowser");
         var btnUpdate = document.getElementById("btnUpdateBrowser");
 
@@ -137,7 +137,9 @@ var outdatedBrowser = function(options) {
         //check settings attributes
         btnUpdate.style.color = txtColor;
         // btnUpdate.style.borderColor = txtColor;
-        if (btnUpdate.style.borderColor) btnUpdate.style.borderColor = txtColor;
+        if (btnUpdate.style.borderColor) {
+            btnUpdate.style.borderColor = txtColor;
+        }
         btnClose.style.color = txtColor;
 
         //close button
@@ -155,7 +157,7 @@ var outdatedBrowser = function(options) {
             this.style.color = txtColor;
             this.style.backgroundColor = bkgColor;
         };
-    }//end styles and events
+    } //end styles and events
 
 
     // IF AJAX with request ERROR > insert english default
@@ -166,47 +168,47 @@ var outdatedBrowser = function(options) {
 
     //** AJAX FUNCTIONS - Bulletproof Ajax by Jeremy Keith **
     function getHTTPObject() {
-      var xhr = false;
-      if (window.XMLHttpRequest) {
-        xhr = new XMLHttpRequest();
-      } else if (window.ActiveXObject) {
-        try {
-          xhr = new ActiveXObject("Msxml2.XMLHTTP");
-        } catch(e) {
-          try {
-            xhr = new ActiveXObject("Microsoft.XMLHTTP");
-          } catch(e) {
-            xhr = false;
-          }
+        var xhr = false;
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            try {
+                xhr = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch ( e ) {
+                try {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch ( e ) {
+                    xhr = false;
+                }
+            }
         }
-      }
-      return xhr;
-    };//end function
+        return xhr;
+    }//end function
 
     function grabFile(file) {
         var request = getHTTPObject();
-            if (request) {
-                request.onreadystatechange = function() {
+        if (request) {
+            request.onreadystatechange = function() {
                 displayResponse(request);
             };
-                request.open("GET", file, true);
-                request.send(null);
-            }
+            request.open("GET", file, true);
+            request.send(null);
+        }
         return false;
-    };//end grabFile
+    } //end grabFile
 
     function displayResponse(request) {
         var insertContentHere = document.getElementById("outdated");
         if (request.readyState == 4) {
             if (request.status == 200 || request.status == 304) {
                 insertContentHere.innerHTML = request.responseText;
-            }else{
+            } else {
                 insertContentHere.innerHTML = ajaxEnglishDefault;
             }
             startStylesAndEvents();
         }
-      return false;
-    };//end displayResponse
+        return false;
+    }//end displayResponse
 
 ////////END of outdatedBrowser function
 };
