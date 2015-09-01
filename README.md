@@ -14,8 +14,8 @@ That's it! As simple as it can get.
 ## How to use it
 **Important:** Because of old browsers (e.g. IE6, IE7), we recommend:
 <br>  — Implement this plugin before any other javascripts (plugins or your own scripts); 
-<br> — Although we tested the AJAX approach, and is easier to implement, we recommend the to use the plugin without AJAX calls (5.). Is less prone to have conflicts with your code in very old browsers.
-<br>With these points in consideration is less prone to have conflicts with your code. These browsers have "strange" js errors and the plugin may not be working as intended, so keep it simple! 
+<br> — Although we tested the AJAX approach, and it's easier to implement, we recommend to use the plugin without AJAX calls (5.).
+<br>With these points in consideration is less prone to have conflicts with your code. These browsers have "strange" js errors and the plugin may not be working as intended. So keep it simple! 
 
 1. Include the CSS located in the HTML head:
 
