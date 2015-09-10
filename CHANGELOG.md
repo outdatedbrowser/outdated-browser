@@ -1,13 +1,18 @@
 
 # Outdated Browser — Changelog
 
+## v1.1.2
+Date: 2015-09-10
+
+ * @alexprg: Add Traditional Chinese
+
 ## v1.1.1
 Date: 2015-08-21
 
  * @alexprg: Bower support
  * @alexprg: New languages
- 
- 
+
+
 ## v1.1.0
 Date: 2014-08-05
 
