@@ -31,6 +31,7 @@ Before opening a new issue please check our [FAQ page](https://github.com/burocr
 Fork the project, and read "How to".<br><br>
 br — 100% <br>
 cn — 100% (simplified chinese) <br>
+tw — 100% (traditional chinese) <br>
 cz — 100% <br>
 de — 100% <br>
 ee — 100% <br>
