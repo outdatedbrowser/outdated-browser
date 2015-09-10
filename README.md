@@ -29,6 +29,7 @@ Before opening a new issue please check our [FAQ page](https://github.com/burocr
 ## Contributing
 
 Fork the project, and read "How to".<br><br>
+arabic - 100% <br>
 br — 100% <br>
 cn — 100% (simplified chinese) <br>
 tw — 100% (traditional chinese) <br>
