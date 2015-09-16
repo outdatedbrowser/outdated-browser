@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /*NAVIGATION and META*/
-$lang['meta_desc'] = 'Un outils pour développeurs qui vous fera sauver du temps. Il détecte les navigateurs désuets et recommande aux utilisateurs de mettre à jour vers la version la plus récente.';
+$lang['meta_desc'] = 'Un outil pour développeurs qui vous fera sauver du temps. Il détecte les navigateurs désuets et recommande aux utilisateurs de mettre à jour vers la version la plus récente.';
 $lang['btn_closenav'] = 'Fermer la navigation';
 $lang['mainNav_home'] = 'ACCUEIL';
 $lang['mainNav_project'] = 'LE PROJET';
@@ -11,20 +11,20 @@ $lang['mainNav_git'] = 'PAGE GITHUB';
 
 /*SHARE*/
 $lang['share_share'] = 'Partager';
-$lang['share_twitter'] = 'Un %23outils pour %23développeurs qui vous fera sauver du temps. Il détecte les %23navigateurs %23désuets et recommande aux utilisateurs de %23mettre à jour vers la version la plus récente.';
+$lang['share_twitter'] = 'Un %23outil pour %23développeurs qui vous fera sauver du temps. Il détecte les %23navigateurs %23désuets et recommande aux utilisateurs de %23mettre à jour vers la version la plus récente.';
 $lang['share_twitter_t'] = 'Partager sur Twitter';
 $lang['share_fb_t'] = 'Partager sur Facebook';
 
 
 /*GENERIC*/
 $lang['txt_close'] = 'Fermer';
-$lang['txt_keepcalm'] = 'on se calme <br><span class="xs">ceci est un outils pour</span>ordinateur<br><span class="xs">et non pour</span> appareils mobiles';
+$lang['txt_keepcalm'] = 'on se calme <br><span class="xs">ceci est un outil pour</span>ordinateur<br><span class="xs">et non pour</span> appareils mobiles';
 
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'Pour une expérience optimale, gardez votre navigateur à jour. Obtenez ici les versions les plus récentes.';
 $lang['home_subtitle_nojs'] = 'Javascript est désactivé dans votre navigateur. Activez-le pour une meilleure expérience.';
-$lang['home_subtitle_mobile'] = 'Ceci est un outils pour ordinateur, <br>mais libre à vous d&rsquo;explorer.';
+$lang['home_subtitle_mobile'] = 'Ceci est un outil pour ordinateur, <br>mais libre à vous d&rsquo;explorer.';
 $lang['home_percentage'] = 'des internautes utilisent <br>ce navigateur';
 $lang['home_download'] = 'TÉLÉCHARGER';
 $lang['home_version'] = 'VERSION';
@@ -62,7 +62,7 @@ $lang['how_desc3_2'] = '
 <p class="last"> <a href="#" id="btnCloseUpdateBrowser" title="Fermer"> &times; </a> </p>
 ';
 
-$lang['how_title4'] = 'Appellez <br> l&rsquo;extension et';
+$lang['how_title4'] = 'Appelez <br> l&rsquo;extension et';
 $lang['how_alt4'] = 'réussi';
 $lang['how_desc4'] = 'À partir de maintenant, tout utilisateur avec un navigateur désuet recevra un avertissement distigué dans le haut de la page.<br><br> Si vous aimez ce projet, <i>forkez</i> le et partagez le avec le monde entier!';
 $lang['how_desc4_2'] = '//méthode d\'initialisation, placez à l\'intérieur d\'une fonction DOM ready';
