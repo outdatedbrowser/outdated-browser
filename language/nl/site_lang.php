@@ -22,7 +22,7 @@ $lang['txt_keepcalm'] = 'rustig blijven <br><span class="xs">Dit is een tool voo
 
 
 /*HOMEPAGE*/
-$lang['home_subtitle'] = 'Hou voor een betere ervaring je brower up to date. Klik hier voor de laatste versies';
+$lang['home_subtitle'] = 'Houd voor een betere ervaring je brower up to date. Klik hier voor de laatste versies.';
 $lang['home_subtitle_nojs'] = 'Javascript staat uitgeschakeld in uw browser. Zet hem op voor een betere ervaring.';
 $lang['home_subtitle_mobile'] = 'Dit is een tool voor desktops, maar neus gerust een keer rond';
 $lang['home_percentage'] = 'mensen gebruiken <br>deze browser';
