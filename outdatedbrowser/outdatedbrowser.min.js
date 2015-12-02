@@ -1,6 +1,6 @@
 /*!--------------------------------------------------------------------
 JAVASCRIPT "Outdated Browser"
-Version:    1.1.0 - 2014
+Version:    1.1.2 - 2015
 author:     Burocratik
 website:    http://www.burocratik.com
 * @preserve
