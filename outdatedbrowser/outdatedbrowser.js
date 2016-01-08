@@ -16,10 +16,10 @@ var outdatedBrowser = function(options) {
         color: '#ffffff',
         lowerThan: 'transform',
         languagePath: '../outdatedbrowser/lang/en.html'
-    }
+    };
 
     if (options) {
-        //assign css3 property to IE browser version
+        //assign css3 property to IE / Android browser version
         if (options.lowerThan == 'IE8' || options.lowerThan == 'borderSpacing') {
             options.lowerThan = 'borderSpacing';
         } else if (options.lowerThan == 'IE9' || options.lowerThan == 'boxShadow') {
@@ -28,6 +28,8 @@ var outdatedBrowser = function(options) {
             options.lowerThan = 'transform';
         } else if (options.lowerThan == 'IE11' || options.lowerThan == 'borderImage') {
             options.lowerThan = 'borderImage';
+        } else if (options.lowerThan == 'A23' || options.lowerThan == 'writing-mode') {
+            options.lowerThan = 'writing-mode';
         }
         //all properties
         this.defaultOpts.bgColor = options.bgColor;
