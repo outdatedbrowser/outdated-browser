@@ -26,7 +26,7 @@ $lang['home_subtitle'] = 'Για μια καλύτερη εμπειρία, δι�
 $lang['home_subtitle_nojs'] = 'Το javascript είναι απενεργοποιημένο στον browser που χρησιμοποιείς αυτή τη στιγμή. Ενεργοποίησέ το για μια καλύτερη εμπειρία.';
 $lang['home_subtitle_mobile'] = 'Αυτό είναι ένα εργαλείο για το desktop, <br>αλλά είσαι ελεύθερος να το εξερευνήσεις.';
 $lang['home_percentage'] = 'άνθρωποι που χρησιμοποιούν <br>αυτό το πρόγραμμα περιήγησης';
-$lang['home_download'] = 'ΚΑΤΕΒΑΣΕ (DOWNLOAD)';
+$lang['home_download'] = 'ΚΑΤΕΒΑΣΕ';
 $lang['home_version'] = 'ΕΚΔΟΣΗ';
 $lang['home_available'] = 'ΔΙΑΘΕΣΙΜΟ ΓΙΑ';
 
