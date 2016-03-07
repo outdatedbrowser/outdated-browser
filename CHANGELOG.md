@@ -1,6 +1,12 @@
 
 # Outdated Browser — Changelog
 
+## v1.1.3
+Date: 2016-03-07
+
+ * New naming system for language files using the IETF language tags.
+ * Changed urls to http://outdatedbrowser.com according to the new language naming system
+
 ## v1.1.2
 Date: 2015-09-10
 

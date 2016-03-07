@@ -1,4 +1,4 @@
-# Outdated Browser v1.1.2
+# Outdated Browser v1.1.3
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
@@ -142,8 +142,9 @@ Fork the project.
 <br>**Note:** mind that this is NOT a plugin for the latest browsers, but the complete opposite! The html, css and javascript must work properly in very old browsers (IE6, IE7, etc), so there is no point to use the latest recommendations. It must work properly at least on IE6, so please double test it before sending a pull request.
 
 **TRANSLATIONS** <br>
-Rename with a proper language abbreviation: it — italian , de — german, fr — french, nl — dutch , br — brazilian portuguese, etc. <br>
-NOTE: we are using a two letter code for the language. If you have variations of the same language use URL country code, e.g.: br—brazilian portuguese; us—american english
+Rename with a proper language abbreviation using the IETF language tags: two-letter language (ISO 639-1)  — two-letter country code (ISO 3166-1). For simplicity we are using all **lower case** and **country code can be omitted if** there is no regional variation. Links with language-country codes: [ISO Language Code Table](http://www.lingoes.net/en/translator/langcode.htm), [Windows Locale Codes](http://www.science.co.il/Language/Locale-codes.asp).
+
+Current available languages: cs, da, de, el, en, es, es-pe, et, fa, fi, fr, hu, id, it, ko, lt,nb,nl, pl, pt, pt-br, ro, ru, sl, sv, tr, uk, zh-cn, zh-tw
 
 ## CMS, Frameworks, etc
 — [Wordpress Plugin](https://github.com/deblynprado/wp-outdated-browser) by Deblyn Prado<br>
