@@ -42,6 +42,7 @@ fi — Finnish <br>
 fr — French <br>
 hu — Hungarian <br>
 it — Italian <br>
+ja — Japanese <br>
 ko — Korean<br>
 nl — Dutch <br>
 pl — Polish <br>
