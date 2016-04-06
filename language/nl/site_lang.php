@@ -18,12 +18,12 @@ $lang['share_fb_t'] = 'Deel op Facebook';
 
 /*GENERIC*/
 $lang['txt_close'] = 'Sluit';
-$lang['txt_keepcalm'] = 'rustig blijven <br><span class="xs">Dit is een tool voor op </span>desktops<br><span class="xs">niet</span> voor mobiele apparaten';
+$lang['txt_keepcalm'] = 'Rustig blijven <br><span class="xs">Dit is een tool voor op </span>desktops<br><span class="xs">niet</span> voor mobiele apparaten.';
 
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'Houd voor een betere ervaring je brower up to date. Klik hier voor de laatste versies.';
-$lang['home_subtitle_nojs'] = 'Javascript staat uitgeschakeld in uw browser. Zet hem op voor een betere ervaring.';
+$lang['home_subtitle_nojs'] = 'Javascript is uitgeschakeld in je browser. Schakel Javascript in voor een betere ervaring.';
 $lang['home_subtitle_mobile'] = 'Dit is een tool voor desktops, maar neus gerust een keer rond';
 $lang['home_percentage'] = 'mensen gebruiken <br>deze browser';
 $lang['home_download'] = 'DOWNLOAD';
@@ -31,7 +31,7 @@ $lang['home_version'] = 'VERSIE';
 $lang['home_available'] = 'BESCHIKBAAR VOOR';
 
 /*PROJECT*/
-$lang['proj_title1'] = 'Een Wanhopig <br>Doel!';
+$lang['proj_title1'] = 'De Oorzaak';
 $lang['proj_desc1'] = 'Na veel tijd te verdoen om onze websites te optimaliseren voor verouderde browsers, besloten we bij Büro een oplossing te creëren die niet enkel tijdsbesparend is maar die je ook vroeger naar huis laat gaan. <br><br>Pizzas niet inbegrepen.';
 $lang['proj_alt1'] = 'wanhopig';
 $lang['proj_desc1_2'] = 'Een ontwikkelaar die gek wordt.';
@@ -47,7 +47,7 @@ $lang['proj_desc3_2'] = 'Ontwikkeld door Bürolabs. <br> Nederlandse vertaling d
 
 /*HOW*/
 $lang['how_title1'] = 'Download <br> het Pakket';
-$lang['how_desc1'] = 'Ons pakket bevat al de vereiste bestanden: JS, CSS en talen.';
+$lang['how_desc1'] = 'Ons pakket bevat alle vereiste bestanden: JS, CSS en talen.';
 $lang['how_desc1_2'] = 'Download op Github';
 
 $lang['how_title2'] = 'Steek ze in <br>Je Project';
@@ -59,16 +59,16 @@ $lang['how_title3'] = 'Voeg de <br>vereiste <br>HTML toe';
 $lang['how_desc3'] = 'Je kan deze code net voor de &lt;/body&gt; tag plaatsen.';
 $lang['how_desc3_2'] = '
 <h6>Je gebruikt een verouderde browser!</h6>
-<p>Update je browser om deze website te bekijken. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update mijn browser now</a></p>
+<p>Update je browser om deze website te bekijken. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update mijn browser nu</a></p>
 <p class="last"> <a href="#" id="btnCloseUpdateBrowser" title="Close"> &times; </a> </p>
 ';
 
 
-$lang['how_title4'] = 'Roep de <br> Plugin en';
+$lang['how_title4'] = 'Roep de <br> Plugin op en';
 $lang['how_alt4'] = 'klaar';
-$lang['how_desc4'] = 'Vanaf nu krijgt elke gebruiker met een verouderde browser bericht met een chique boodschap <br><br> Als je dit project leuk vind, "fork" het en deel het met de wereld';
-$lang['how_desc4_2'] = '//plugin functie, plaats het in de &#34;DOM ready function&#34;';
+$lang['how_desc4'] = 'Vanaf nu krijgt elke gebruiker met een verouderde browser een boodschap te zien. <br><br> Als je dit project leuk vind, "fork" het en deel het met de wereld';
+$lang['how_desc4_2'] = '//plugin functie, plaats het in de &#34;DOM ready functie&#34;';
 
 /*404*/
 $lang['url404'] = "http://outdatedbrowser.com/nl";
-$lang['txt_keepcalm_error'] = 'rustig blijven <br><span class="xs">404 error</span>The page you <br> are looking for<br><span class="xs">cannot be found</span>';
+$lang['txt_keepcalm_error'] = 'Rustig blijven <br><span class="xs">404 fout</span>De pagina you <br> die je zoekt<br><span class="xs">kan niet gevonden worden.</span>';
