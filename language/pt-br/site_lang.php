@@ -24,7 +24,7 @@ $lang['txt_keepcalm'] = 'Fique calmo <br><span class="xs">essa é uma ferramenta
 $lang['home_subtitle'] = 'Para ter uma experiência melhor, mantenha seu navegador atualizado. Confira aqui as últimas versões.';
 $lang['home_subtitle_nojs'] = 'O Javascript está desabilidado em seu navegador. Recomendamos habilitá-lo para uma melhor experiência.';
 $lang['home_subtitle_mobile'] = 'Essa é uma ferramenta para desktop, <br>mas sinta-se livre para explorar.';
-$lang['home_percentage'] = 'Pessoas usando este browser';
+$lang['home_percentage'] = 'Das pessoas usam este browser';
 $lang['home_download'] = 'BAIXAR';
 $lang['home_version'] = 'Versão';
 $lang['home_available'] = 'DISPONÍVEL EM';
