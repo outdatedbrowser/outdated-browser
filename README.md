@@ -151,7 +151,8 @@ Current available languages: cs, da, de, el, en, es, es-pe, et, fa, fi, fr, hu, 
 — [Ruby Gem](https://github.com/luisalima/outdatedbrowser_rails) by Luisa Lima <br>
 — [Yii2 widget](http://www.yiiframework.com/extension/yii2-outdated-browser) <br>
 — [Drupal Plugin](https://www.drupal.org/sandbox/agoradesign/2369737) by Mag. Andreas Mayr <br>
-— [Magento Extension](https://github.com/gaugeinteractive/magento-outdated-browser) by Joey Hoer
+— [Magento Extension](https://github.com/gaugeinteractive/magento-outdated-browser) by Joey Hoer <br>
+— [Contao Open Source CMS Module](https://github.com/lucasgehin/contao-outdatedbrowser) by Lucas Gehin
 
 ## Team
 
