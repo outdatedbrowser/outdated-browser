@@ -161,4 +161,4 @@ Made with love at [Bürocratik](http://burocratik.com)
 
 ## License
 
-[MIT License](http://zenorocha.mit-license.org/)
+[StopNerds Public License](http://stopnerds.org/license/)
