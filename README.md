@@ -108,7 +108,7 @@ That's it! As simple as it can get.
 
     Lower Than (<):
     * "IE11","borderImage"
-    * "IE10", "transform" (Default property)
+    * "IE10", "transform 3d" (Default property)
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
     
