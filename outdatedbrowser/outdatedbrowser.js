@@ -8,7 +8,11 @@ website:    http://www.burocratik.com
 var outdatedBrowser = function(options) {
 
     //Variable definition (before ajax)
-    var outdated = document.getElementById("outdated");
+    var outdated = document.getElementById('outdated');
+    if (outdated === null || typeof outdated === 'undefined') {
+        var outdated = document.createElement('div');
+        document.body.appendChild(outdated);
+    }
 
     // Default settings
     this.defaultOpts = {
@@ -198,7 +202,7 @@ var outdatedBrowser = function(options) {
     } //end grabFile
 
     function displayResponse(request) {
-        var insertContentHere = document.getElementById("outdated");
+        var insertContentHere = outdated;
         if (request.readyState == 4) {
             if (request.status == 200 || request.status == 304) {
                 insertContentHere.innerHTML = request.responseText;
