@@ -1,4 +1,4 @@
-# Outdated Browser v1.1.4
+# Outdated Browser v1.1.5
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
@@ -127,6 +127,7 @@ And you're done!
 You have several options: you can download the repository manually or you can use a package manager to do that work for you.
 
 — **Bower install**: `bower install outdated-browser`
+— **NPM install**: `npm install outdatedbrowser`
 
 ## FAQ
 
