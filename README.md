@@ -144,7 +144,7 @@ Fork the project.
 **TRANSLATIONS** <br>
 Rename with a proper language abbreviation using the IETF language tags: two-letter language (ISO 639-1)  — two-letter country code (ISO 3166-1). For simplicity we are using all **lower case** and **country code can be omitted if** there is no regional variation. Links with language-country codes: [ISO Language Code Table](http://www.lingoes.net/en/translator/langcode.htm), [Windows Locale Codes](http://www.science.co.il/Language/Locale-codes.asp).
 
-Current available languages: cs, da, de, el, en, es, es-pe, et, fa, fi, fr, hu, id, it, ja, ko, lt, nb,nl, pl, pt, pt-br, ro, ru, sl, sv, tr, uk, zh-cn, zh-tw
+Current available languages: ar, cs, da, de, el, en, es, es-pe, et, fa, fi, fr, hr, hu, id, it, ja, ko, lt, nb, nl, pl, pt, pt-br, ro, ru, sk, sl, sv, tr, uk, zh-cn, zh-tw
 
 ## CMS, Frameworks, etc
 — [Wordpress Plugin](https://github.com/deblynprado/wp-outdated-browser) by Deblyn Prado<br>
