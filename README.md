@@ -124,7 +124,8 @@ And you're done!
 <br>PS: check the "demo" folder, it may help you.
 ***
 
-<br>
+<br>  
+
 ## How to install
 
 You have several options: you can download the repository manually or you can use a package manager to do that work for you.
