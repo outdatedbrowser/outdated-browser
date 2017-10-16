@@ -13,9 +13,9 @@ That's it! As simple as it can get.
 
 ## How to use it
 **Important:** Because of old browsers (e.g. IE6, IE7), we recommend:
-<br>  — Implement this plugin before any other javascripts (plugins or your own scripts); 
+<br>  — Implement this plugin before any other javascripts (plugins or your own scripts);
 <br> — Although we tested the AJAX approach, and it's easier to implement, we recommend to use the plugin without AJAX calls (5.).
-<br>With these points in consideration is less prone to have conflicts with your code. These browsers have "strange" js errors and the plugin may not be working as intended. So keep it simple! 
+<br>With these points in consideration is less prone to have conflicts with your code. These browsers have "strange" js errors and the plugin may not be working as intended. So keep it simple!
 
 1. Include the CSS located in the HTML head:
 
@@ -38,44 +38,46 @@ That's it! As simple as it can get.
 
 4. Call the plugin by placing the following at the bottom of the HTML body:
 <br><br>
-— Plain Javascript <br>
-    ```javascript
-    //event listener: DOM ready
-    function addLoadEvent(func) {
-        var oldonload = window.onload;
-        if (typeof window.onload != 'function') {
-            window.onload = func;
-        } else {
-            window.onload = function() {
-                if (oldonload) {
-                    oldonload();
-                }
-                func();
-            }
-        }
-    }
-    //call plugin function after DOM ready
-    addLoadEvent(function(){
-        outdatedBrowser({
-            bgColor: '#f25648',
-            color: '#ffffff',
-            lowerThan: 'transform',
-            languagePath: 'your_path/outdatedbrowser/lang/en.html'
-        })
-    });
-    ```
+— Plain Javascript <br>  
+
+  ```javascript
+  //event listener: DOM ready
+  function addLoadEvent(func) {
+      var oldonload = window.onload;
+      if (typeof window.onload != 'function') {
+          window.onload = func;
+      } else {
+          window.onload = function() {
+              if (oldonload) {
+                  oldonload();
+              }
+              func();
+          }
+      }
+  }
+  //call plugin function after DOM ready
+  addLoadEvent(function(){
+      outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'transform',
+          languagePath: 'your_path/outdatedbrowser/lang/en.html'
+      })
+  });
+  ```
 <br>
-— Using jQuery (version that supports IE&lt;9) <br>
-    ```javascript
-    $( document ).ready(function() {
-        outdatedBrowser({
-            bgColor: '#f25648',
-            color: '#ffffff',
-            lowerThan: 'transform',
-            languagePath: 'your_path/outdatedbrowser/lang/en.html'
-        })
-    })
-    ```
+— Using jQuery (version that supports IE&lt;9) <br>  
+
+  ```javascript
+  $( document ).ready(function() {
+      outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'transform',
+          languagePath: 'your_path/outdatedbrowser/lang/en.html'
+      })
+  })
+  ```
 
 6. Using the plugin without AJAX calls:
 
@@ -88,15 +90,16 @@ That's it! As simple as it can get.
     </div>
     ```
     <br>
-    — Call the plugin (see 4.) but with the variable languagePath empty:
-     ```javascript
+    — Call the plugin (see 4.) but with the variable languagePath empty:  
+
+    ```javascript
     //DOM ready or jQuery
-        outdatedBrowser({
-            bgColor: '#f25648',
-            color: '#ffffff',
-            lowerThan: 'transform',
-            languagePath: ''
-        })
+    outdatedBrowser({
+        bgColor: '#f25648',
+        color: '#ffffff',
+        lowerThan: 'transform',
+        languagePath: ''
+    })
     ```
 
 
@@ -111,7 +114,7 @@ That's it! As simple as it can get.
     * "IE10", "transform" (Default property)
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
-    
+
 
 7. Choose the language:
 
@@ -126,7 +129,7 @@ And you're done!
 
 You have several options: you can download the repository manually or you can use a package manager to do that work for you.
 
-— **Bower install**: `bower install outdated-browser`
+— **Bower install**: `bower install outdated-browser`  
 — **NPM install**: `npm install outdatedbrowser`
 
 ## FAQ
