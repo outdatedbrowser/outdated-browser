@@ -1,6 +1,6 @@
 {
-  "name": "outdated-browser",
-  "version": "1.1.3",
+  "name": "outdatedbrowser",
+  "version": "1.1.5",
   "description": "A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.",
   "main": "outdatedbrowser/outdatedbrowser.js",
   "repository": {
