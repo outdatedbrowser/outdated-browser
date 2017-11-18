@@ -100,7 +100,7 @@ var outdatedBrowser = function(options) {
     } )();
 
     //if browser does not supports css3 property (transform=default), if does > exit all this
-    if (!supports('' + cssProp + '')) {
+    if ( !supports(''+ cssProp +'') && document.cookie.replace(/(?:(?:^|.*;\s*)outdatedclosed\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
         if (done && outdated.style.opacity !== '1') {
             done = false;
             for (var i = 1; i <= 100; i++) {
@@ -145,6 +145,7 @@ var outdatedBrowser = function(options) {
         //close button
         btnClose.onmousedown = function() {
             outdated.style.display = 'none';
+			document.cookie = "outdatedclosed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
             return false;
         };
 
