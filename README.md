@@ -9,13 +9,14 @@ With this solution you can check if the user’s browser can handle your website
 
 That's it! As simple as it can get.
 
-
-
 ## How to use it
 **Important:** Because of old browsers (e.g. IE6, IE7), we recommend:
-<br>  — Implement this plugin before any other javascripts (plugins or your own scripts);
-<br> — Although we tested the AJAX approach, and it's easier to implement, we recommend to use the plugin without AJAX calls (5.).
-<br>With these points in consideration is less prone to have conflicts with your code. These browsers have "strange" js errors and the plugin may not be working as intended. So keep it simple!
+
+
+* Implement this plugin before any other javascripts (plugins or your own scripts); 
+* Although we tested the AJAX approach, and it's easier to implement, we recommend to use the plugin without AJAX calls (5.).
+
+With these points in consideration is less prone to have conflicts with your code. These browsers have "strange" js errors and the plugin may not be working as intended. So keep it simple! 
 
 1. Include the CSS located in the HTML head:
 
@@ -35,65 +36,63 @@ That's it! As simple as it can get.
     <div id="outdated"></div>
     ```
 
-
 4. Call the plugin by placing the following at the bottom of the HTML body:
-<br><br>
-— Plain Javascript <br>  
-
-  ```javascript
-  //event listener: DOM ready
-  function addLoadEvent(func) {
-      var oldonload = window.onload;
-      if (typeof window.onload != 'function') {
-          window.onload = func;
-      } else {
-          window.onload = function() {
-              if (oldonload) {
-                  oldonload();
-              }
-              func();
-          }
-      }
-  }
-  //call plugin function after DOM ready
-  addLoadEvent(function(){
-      outdatedBrowser({
-          bgColor: '#f25648',
-          color: '#ffffff',
-          lowerThan: 'transform',
-          languagePath: 'your_path/outdatedbrowser/lang/en.html'
-      })
-  });
-  ```
-<br>
-— Using jQuery (version that supports IE&lt;9) <br>  
-
-  ```javascript
-  $( document ).ready(function() {
-      outdatedBrowser({
-          bgColor: '#f25648',
-          color: '#ffffff',
-          lowerThan: 'transform',
-          languagePath: 'your_path/outdatedbrowser/lang/en.html'
-      })
-  })
-  ```
-
-6. Using the plugin without AJAX calls:
-
-    — Paste the required HTML at the end of your document (see demo examples):
-    ```html
-    <div id="outdated">
-         <h6>Your browser is out-of-date!</h6>
-         <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
-    </div>
-    ```
-    <br>
-    — Call the plugin (see 4.) but with the variable languagePath empty:  
 
     ```javascript
-    //DOM ready or jQuery
+    // Plain Javascript
+    //event listener: DOM ready
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    //call plugin function after DOM ready
+    addLoadEvent(function(){
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'transform',
+            languagePath: 'your_path/outdatedbrowser/lang/en.html'
+        })
+    });
+    ```
+
+    ```javascript
+    // Using jQuery (version that supports IE < 9)
+    $( document ).ready(function() {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'transform',
+            languagePath: 'your_path/outdatedbrowser/lang/en.html'
+        })
+    })
+    ```
+
+5. Using the plugin without AJAX calls:
+    
+    ```html
+    <!-- Paste the required HTML at the end of your document (see demo examples) -->
+    <div id="outdated">
+        <h6>Your browser is out-of-date!</h6>
+        <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+        <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+    ```
+
+    
+    ```javascript
+    // Call the plugin (see 4.) but with the variable languagePath empty: 
+    // DOM ready or jQuery
+    
     outdatedBrowser({
         bgColor: '#f25648',
         color: '#ffffff',
@@ -102,12 +101,9 @@ That's it! As simple as it can get.
     })
     ```
 
-
-
 6. Targeting browsers:
 
     You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you (for Edge vs IE11 check issue [#198](https://github.com/burocratik/outdated-browser/issues/198)).
-
 
     Lower Than (<):
     * "IE11","borderImage"
@@ -115,23 +111,31 @@ That's it! As simple as it can get.
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
 
-
 7. Choose the language:
 
     Download the “lang" folder: If you have the language you want, just write the correct path for the language file in your project; If you don’t have your language, you can write your own html file, and please share it with us.
 
 And you're done!
-<br>PS: check the "demo" folder, it may help you.
+
+*PS*: check the "demo" folder, it may help you.
+
 ***
 
-<br>  
 
 ## How to install
 
 You have several options: you can download the repository manually or you can use a package manager to do that work for you.
 
-— **Bower install**: `bower install outdated-browser`  
-— **NPM install**: `npm install outdatedbrowser`
+```bash
+# NPM
+$ npm install outdatedbrowser
+
+# Yarn
+$ yarn add outdatedbrowser
+
+# Bower
+$ bower install outdated-browser
+```
 
 ## FAQ
 
@@ -140,23 +144,24 @@ Before opening a new issue please check our [FAQ page](https://github.com/burocr
 
 ## Contributing
 
-Fork the project.
-<br>Read through the issues or report new ones.
-<br>Write some tests to make sure we don't accidentally break each other's code.
-<br>Send a pull request.
-<br>**Note:** mind that this is NOT a plugin for the latest browsers, but the complete opposite! The html, css and javascript must work properly in very old browsers (IE6, IE7, etc), so there is no point to use the latest recommendations. It must work properly at least on IE6, so please double test it before sending a pull request.
+* Fork the project.
+* Read through the issues or report new ones.
+* Write some tests to make sure we don't accidentally break each other's code.
+* Send a pull request.
 
-**TRANSLATIONS** <br>
+**Note:** mind that this is NOT a plugin for the latest browsers, but the complete opposite! The html, css and javascript must work properly in very old browsers (IE6, IE7, etc), so there is no point to use the latest recommendations. It must work properly at least on IE6, so please double test it before sending a pull request.
+
+**TRANSLATIONS**
 Rename with a proper language abbreviation using the IETF language tags: two-letter language (ISO 639-1)  — two-letter country code (ISO 3166-1). For simplicity we are using all **lower case** and **country code can be omitted if** there is no regional variation. Links with language-country codes: [ISO Language Code Table](http://www.lingoes.net/en/translator/langcode.htm), [Windows Locale Codes](http://www.science.co.il/Language/Locale-codes.asp).
 
 Current available languages: ar, cs, da, de, el, en, es, es-pe, et, fa, fi, fr, hr, hu, id, it, ja, ko, lt, nb, nl, pl, pt, pt-br, ro, ru, sk, sl, sv, tr, uk, zh-cn, zh-tw
 
 ## CMS, Frameworks, etc
-— [Wordpress Plugin](https://github.com/deblynprado/wp-outdated-browser) by Deblyn Prado<br>
-— [Ruby Gem](https://github.com/luisalima/outdatedbrowser_rails) by Luisa Lima <br>
-— [Yii2 widget](http://www.yiiframework.com/extension/yii2-outdated-browser) <br>
-— [Drupal Plugin](https://www.drupal.org/sandbox/agoradesign/2369737) by Mag. Andreas Mayr <br>
-— [Magento Extension](https://github.com/gaugeinteractive/magento-outdated-browser) by Joey Hoer <br>
+— [Wordpress Plugin](https://github.com/deblynprado/wp-outdated-browser) by Deblyn Prado
+— [Ruby Gem](https://github.com/luisalima/outdatedbrowser_rails) by Luisa Lima
+— [Yii2 widget](http://www.yiiframework.com/extension/yii2-outdated-browser)
+— [Drupal Plugin](https://www.drupal.org/sandbox/agoradesign/2369737) by Mag. Andreas Mayr
+— [Magento Extension](https://github.com/gaugeinteractive/magento-outdated-browser) by Joey Hoer
 — [Contao Open Source CMS Module](https://github.com/lucasgehin/contao-outdatedbrowser) by Lucas Gehin
 
 ## Team
