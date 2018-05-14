@@ -12,6 +12,7 @@ That's it! As simple as it can get.
 ## How to use it
 **Important:** Because of old browsers (e.g. IE6, IE7), we recommend:
 
+
 * Implement this plugin before any other javascripts (plugins or your own scripts); 
 * Although we tested the AJAX approach, and it's easier to implement, we recommend to use the plugin without AJAX calls (5.).
 
@@ -86,10 +87,12 @@ With these points in consideration is less prone to have conflicts with your cod
         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
     </div>
     ```
+
     
     ```javascript
     // Call the plugin (see 4.) but with the variable languagePath empty: 
     // DOM ready or jQuery
+    
     outdatedBrowser({
         bgColor: '#f25648',
         color: '#ffffff',
@@ -107,7 +110,7 @@ With these points in consideration is less prone to have conflicts with your cod
     * "IE10", "transform" (Default property)
     * "IE9", "boxShadow"
     * "IE8", "borderSpacing"
-    
+
 7. Choose the language:
 
     Download the “lang" folder: If you have the language you want, just write the correct path for the language file in your project; If you don’t have your language, you can write your own html file, and please share it with us.
@@ -117,6 +120,7 @@ And you're done!
 *PS*: check the "demo" folder, it may help you.
 
 ***
+
 
 ## How to install
 
