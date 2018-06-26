@@ -1,6 +1,11 @@
 
 # Outdated Browser — Changelog
 
+## v1.1.6
+Date: 2018-06-26
+
+ * Edge support
+
 ## v1.1.3
 Date: 2016-03-07
 

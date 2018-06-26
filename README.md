@@ -1,4 +1,4 @@
-# Outdated Browser v1.1.3
+# Outdated Browser v1.1.6
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
@@ -107,6 +107,7 @@ That's it! As simple as it can get.
 
 
     Lower Than (<):
+    * "Edge","js:Promise"
     * "IE11","borderImage"
     * "IE10", "transform" (Default property)
     * "IE9", "boxShadow"

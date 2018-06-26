@@ -1,6 +1,6 @@
 /*!--------------------------------------------------------------------
 JAVASCRIPT "Outdated Browser"
-Version:    1.1.2 - 2015
+Version:    1.1.6 - 2018
 author:     Burocratik
 website:    http://www.burocratik.com
 * @preserve
@@ -19,7 +19,7 @@ var outdatedBrowser = function(options) {
     }
 
     if (options) {
-        //assign css3 property to IE browser version
+        //assign css3 property or js property to IE browser version
         if (options.lowerThan == 'IE8' || options.lowerThan == 'borderSpacing') {
             options.lowerThan = 'borderSpacing';
         } else if (options.lowerThan == 'IE9' || options.lowerThan == 'boxShadow') {
@@ -28,7 +28,10 @@ var outdatedBrowser = function(options) {
             options.lowerThan = 'transform';
         } else if (options.lowerThan == 'IE11' || options.lowerThan == 'borderImage') {
             options.lowerThan = 'borderImage';
+        }  else if (options.lowerThan == 'Edge' || options.lowerThan == 'js:Promise') {
+            options.lowerThan = 'js:Promise';
         }
+
         //all properties
         this.defaultOpts.bgColor = options.bgColor;
         this.defaultOpts.color = options.color;
@@ -99,21 +102,42 @@ var outdatedBrowser = function(options) {
         };
     } )();
 
-    //if browser does not supports css3 property (transform=default), if does > exit all this
-    if (!supports('' + cssProp + '')) {
-        if (done && outdated.style.opacity !== '1') {
-            done = false;
-            for (var i = 1; i <= 100; i++) {
-                setTimeout(( function(x) {
-                    return function() {
-                        function_fade_in(x);
-                    };
-                } )(i), i * 8);
-            }
-        }
+    var validBrowser = false;
+
+    // browser check by js props
+    if(/^js:+/g.test(cssProp)) {
+        var jsProp = cssProp.split(':')[1];
+        if(!jsProp)
+            return;
+
+        switch (jsProp) {
+			case 'Promise':
+                validBrowser = window.Promise !== undefined && window.Promise !== null && Object.prototype.toString.call(window.Promise.resolve()) === '[object Promise]';
+                break;
+            default:
+                validBrowser = false;
+		}
     } else {
+        // check by css3 property (transform=default)
+        validBrowser = supports('' + cssProp + '');
+    }
+
+
+	if (!validBrowser) {
+		if (done && outdated.style.opacity !== '1') {
+			done = false;
+			for (var i = 1; i <= 100; i++) {
+				setTimeout((function (x) {
+					return function () {
+						function_fade_in(x);
+					};
+				})(i), i * 8);
+			}
+		}
+	} else {
         return;
     } //end if
+
 
     //Check AJAX Options: if languagePath == '' > use no Ajax way, html is needed inside <div id="outdated">
     if (languagePath === ' ' || languagePath.length == 0) {
@@ -212,10 +236,3 @@ var outdatedBrowser = function(options) {
 
 ////////END of outdatedBrowser function
 };
-
-
-
-
-
-
-
