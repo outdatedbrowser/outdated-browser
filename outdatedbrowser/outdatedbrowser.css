@@ -23,4 +23,6 @@ website:    http://www.burocratik.com
 #outdated #btnCloseUpdateBrowser{
     display: block; position: relative; width: 100%; height: 100%;
     text-decoration: none; color: #ffffff; font-size: 36px; line-height: 36px;
+    background-color: transparent;
+    border: none;
 }
