@@ -166,7 +166,8 @@ Current available languages: ar, cs, da, de, el, en, es, es-pe, et, fa, fi, fr, 
 
 ## Team
 
-Made with love at [Bürocratik](http://burocratik.com)
+Made with love at [Bürocratik](http://burocratik.com) 2014—2019.
+From 1st June 2019, Outdated Browser was acquired by Whired Rhino.
 
 
 ## License
