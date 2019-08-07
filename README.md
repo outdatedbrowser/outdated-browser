@@ -38,6 +38,7 @@ el — Greek <br>
 en — English <br>
 es — Spanish <br>
 et — Estonian <br>
+fa - Farsi (Persian) <br>
 fi — Finnish <br>
 fr — French <br>
 hu — Hungarian <br>
