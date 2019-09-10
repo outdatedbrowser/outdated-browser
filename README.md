@@ -83,7 +83,7 @@ With these points in consideration is less prone to have conflicts with your cod
     <!-- Paste the required HTML at the end of your document (see demo examples) -->
     <div id="outdated">
         <h6>Your browser is out-of-date!</h6>
-        <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+        <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="https://bestvpn.org/outdatedbrowser/"> Outdated Browser </a></p>
         <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
     </div>
     ```
