@@ -159,28 +159,33 @@ var outdatedBrowser = function(options) {
         outdated.children[1].style.color = txtColor;
 
         //check settings attributes
-        btnUpdate.style.color = txtColor;
-        // btnUpdate.style.borderColor = txtColor;
-        if (btnUpdate.style.borderColor) {
-            btnUpdate.style.borderColor = txtColor;
+        if (btnUpdate) {
+            btnUpdate.style.color = txtColor;
+            // btnUpdate.style.borderColor = txtColor;
+            if (btnUpdate.style.borderColor) {
+                btnUpdate.style.borderColor = txtColor;
+            }
+            
+            //Override the update button color to match the background color
+            btnUpdate.onmouseover = function() {
+                this.style.color = bkgColor;
+                this.style.backgroundColor = txtColor;
+            };
+            btnUpdate.onmouseout = function() {
+                this.style.color = txtColor;
+                this.style.backgroundColor = bkgColor;
+            };
         }
-        btnClose.style.color = txtColor;
-
-        //close button
-        btnClose.onmousedown = function() {
-            outdated.style.display = 'none';
-            return false;
-        };
-
-        //Override the update button color to match the background color
-        btnUpdate.onmouseover = function() {
-            this.style.color = bkgColor;
-            this.style.backgroundColor = txtColor;
-        };
-        btnUpdate.onmouseout = function() {
-            this.style.color = txtColor;
-            this.style.backgroundColor = bkgColor;
-        };
+        
+        if (btnClose) {
+            btnClose.style.color = txtColor;
+    
+            //close button
+            btnClose.onmousedown = function() {
+                outdated.style.display = 'none';
+                return false;
+            };
+        }
     } //end styles and events
 
 
