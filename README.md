@@ -1,4 +1,4 @@
-# Outdated Browser v1.1.5
+# Outdated Browser v1.1.6
 
 ### A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
 
@@ -106,6 +106,7 @@ With these points in consideration is less prone to have conflicts with your cod
     You can do it in one of two ways: using Internet Explorer browsers as reference or specifying a CSS property. The outcome is the same, choose what is easier for you (for Edge vs IE11 check issue [#198](https://github.com/burocratik/outdated-browser/issues/198)).
 
     Lower Than (<):
+    * "Edge","js:Promise"
     * "IE11","borderImage"
     * "IE10", "transform" (Default property)
     * "IE9", "boxShadow"
