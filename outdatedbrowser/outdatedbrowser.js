@@ -15,7 +15,8 @@ var outdatedBrowser = function(options) {
         bgColor: '#f25648',
         color: '#ffffff',
         lowerThan: 'transform',
-        languagePath: '../outdatedbrowser/lang/en.html'
+        languagePath: '../outdatedbrowser/lang/en.html',
+        callback: function() { }
     }
 
     if (options) {
@@ -37,16 +38,19 @@ var outdatedBrowser = function(options) {
         this.defaultOpts.color = options.color;
         this.defaultOpts.lowerThan = options.lowerThan;
         this.defaultOpts.languagePath = options.languagePath;
+        this.defaultOpts.callback = options.callback;
 
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         languagePath = this.defaultOpts.languagePath;
+        callback = this.defaultOpts.callback;
     } else {
         bkgColor = this.defaultOpts.bgColor;
         txtColor = this.defaultOpts.color;
         cssProp = this.defaultOpts.lowerThan;
         languagePath = this.defaultOpts.languagePath;
+        callback = this.defaultOpts.callback;
     } //end if options
 
 
@@ -124,16 +128,20 @@ var outdatedBrowser = function(options) {
 
 
 	if (!validBrowser) {
-		if (done && outdated.style.opacity !== '1') {
-			done = false;
-			for (var i = 1; i <= 100; i++) {
-				setTimeout((function (x) {
-					return function () {
-						function_fade_in(x);
-					};
-				})(i), i * 8);
-			}
-		}
+		if (done) {
+            if (outdated && outdated.style.opacity !== '1'){
+                done = false;
+                for (var i = 1; i <= 100; i++) {
+                    setTimeout((function (x) {
+                        return function () {
+                            function_fade_in(x);
+                        };
+                    })(i), i * 8);
+                }
+            }
+			
+            setTimeout(function(x) {callback()}, 8)
+		} 
 	} else {
         return;
     } //end if
