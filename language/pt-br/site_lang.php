@@ -22,21 +22,21 @@ $lang['txt_keepcalm'] = 'Fique calmo <br><span class="xs">essa é uma ferramenta
 
 /*HOMEPAGE*/
 $lang['home_subtitle'] = 'Para ter uma experiência melhor, mantenha seu navegador atualizado. Confira aqui as últimas versões.';
-$lang['home_subtitle_nojs'] = 'O Javascript está desabilidado em seu navegador. Recomendamos habilitá-lo para uma melhor experiência.';
+$lang['home_subtitle_nojs'] = 'O Javascript está desabilitado em seu navegador. Recomendamos habilitá-lo para uma melhor experiência.';
 $lang['home_subtitle_mobile'] = 'Essa é uma ferramenta para desktop, <br>mas sinta-se livre para explorar.';
-$lang['home_percentage'] = 'Das pessoas usam este browser';
+$lang['home_percentage'] = 'das pessoas usam este browser';
 $lang['home_download'] = 'BAIXAR';
-$lang['home_version'] = 'Versão';
+$lang['home_version'] = 'VERSÃO';
 $lang['home_available'] = 'DISPONÍVEL EM';
 
 /*PROJECT*/
 $lang['proj_title1'] = 'Uma Causa <br>Desesperadora!';
-$lang['proj_desc1'] = 'Depois de perder muito tempo otimizando nossos sites para navegadores antigos, nós da Büro, decidimos criar uma solução que não vai apenas reduzir seu tempo, mas também vai deixar você ir para casa mais cedo.<br><br> Pizzas não estão incluídas!';
+$lang['proj_desc1'] = 'Depois de perder muito tempo otimizando nossos sites para navegadores antigos, nós, da Büro, decidimos criar uma solução que não vai apenas poupar seu tempo, mas também deixar você ir para casa mais cedo.<br><br> Pizzas não estão incluídas!';
 $lang['proj_alt1'] = 'desesperado';
 $lang['proj_desc1_2'] = 'Um desenvolvedor ficando louco';
 
 $lang['proj_title2'] = 'Como <br>Funciona?';
-$lang['proj_desc2'] = 'Quando executado, este script detecta se o navegador suporta determinada propriedade da CSS. Caso ele não suporte, é exibida uma mensagem de alerta pedindo para o usuário atualizar o navegador.';
+$lang['proj_desc2'] = 'Quando executado, este script detecta se o navegador suporta determinada propriedade CSS. Caso ele não suporte, é exibida uma mensagem de alerta pedindo para o usuário atualizar o navegador.';
 $lang['proj_desc2_2'] = 'Um site rodando em um velho navegador';
 
 $lang['proj_title3'] = '3 Passos para <br> Começar a Usar!';
@@ -49,7 +49,7 @@ $lang['how_desc1'] = 'Nosso pacote contém todos os arquivos necessários: JS, C
 $lang['how_desc1_2'] = 'Baixar do Github';
 
 $lang['how_title2'] = 'Inclua isso <br> em seu Projeto';
-$lang['how_desc2'] = 'Carregue o arquivo CSS em &lt;head&gt; e o arquivo JS file no final da página &lt;body&gt;.';
+$lang['how_desc2'] = 'Carregue o arquivo CSS na tag &lt;head&gt; e o arquivo JS no final da tag &lt;body&gt;.';
 $lang['how_desc2_2'] = 'Copiar para o clipboard';
 $lang['how_alt2'] = 'browser';
 
@@ -68,4 +68,4 @@ $lang['how_desc4_2'] = '//função do plugin, cole dentro da função ready do D
 
 /*404*/
 $lang['url404'] = "http://outdatedbrowser.com/br";
-$lang['txt_keepcalm_error'] = 'Calma<br> <span class="xs">erro 404</span> A página <br>que procura<br><span class="xs">não existe</span>';
+$lang['txt_keepcalm_error'] = 'Calma<br> <span class="xs">erro 404</span> A página que <br> você tentou acessar<br><span class="xs">não existe</span>';
